@@ -42,11 +42,10 @@ body {
     z-index: 1000;
     padding: 25px 0;
 
-<<<<<<< HEAD
+
   
 
-=======
->>>>>>> d7618c09d1e9f07d54992791bffc31b7763b7137
+
 }
 
 .nav-container {
@@ -58,22 +57,22 @@ body {
 
 /* ===== LOGO ===== */
 .nav-logo img {
-<<<<<<< HEAD
+
      height: 90px;
     margin-bottom: 30px;
     transition: transform 0.3s ease, filter 0.3s ease;
 
-=======
+
     height: 90px;
     margin-bottom: 30px;
     transition: transform 0.3s ease, filter 0.3s ease;
->>>>>>> d7618c09d1e9f07d54992791bffc31b7763b7137
+
 }
 
 .nav-logo img:hover {
     transform: scale(1.1);
     filter: drop-shadow(0 0 12px #ffd700);
-<<<<<<< HEAD
+
 }
 
 .nav-links {
@@ -83,7 +82,7 @@ body {
 }
 .nav-links li{
    width: 100%;
-=======
+
 }
 /* ===== NAV LINKS ===== */
 .nav-links {
@@ -94,7 +93,7 @@ body {
 
 .nav-links li {
     width: 100%;
->>>>>>> d7618c09d1e9f07d54992791bffc31b7763b7137
+
 }
 
 .nav-links a {
@@ -109,8 +108,8 @@ body {
     text-decoration: none;
     position: relative;
     transition: all 0.3s ease;
-<<<<<<< HEAD
-=======
+
+
 }
 
 /* hover glow + slide */
@@ -129,7 +128,7 @@ body {
 .nav-links a:hover::before,
 .nav-links a.active::before {
     width: 100%;
->>>>>>> d7618c09d1e9f07d54992791bffc31b7763b7137
+
 }
 .nav-links a::before {
     content: "";
@@ -150,11 +149,11 @@ body {
 
 .nav-links a:hover,
 .nav-links a.active {
-<<<<<<< HEAD
+
       color: #0c2c55;
-=======
+
     color: #0c2c55;
->>>>>>> d7618c09d1e9f07d54992791bffc31b7763b7137
+
     transform: translateX(6px);
 }
 
@@ -166,13 +165,13 @@ body {
 
 .nav-social img {
     width: 30px;
-<<<<<<< HEAD
+
     cursor: pointer;
     transition: transform 0.3s ease;
-=======
+
     filter: brightness(0) invert(1);
     transition: transform 0.3s ease, filter 0.3s ease;
->>>>>>> d7618c09d1e9f07d54992791bffc31b7763b7137
+
 }
 
 .nav-social img:hover {
