@@ -340,7 +340,7 @@ h1 {
 }
 
 .card-bg ,.belajar h1{
-    color:  purple;
+    color:  white;
     font-family: 'Henny';
      font-size: 100px;
 }
@@ -445,8 +445,9 @@ footer {
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(9, auto);
+    justify-content: center;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -461,7 +462,46 @@ footer {
     justify-content: center;
     gap: 20px;
 }
+.ptn{
+    min-width: 120px;
+    display: flex;
+     flex: 0 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.ptn img{
+    align-items: center;
+    width: 70px;
+}
+ .ugm img{
+        width: 90px;           
+    height: auto;        
+}   
 
+ .ui img{
+        width: 75px;           
+    height: auto;        
+}   
+
+ .ipb img{
+        width: 110px;           
+    height: auto;        
+}  
+
+ .its img{
+        width: 66px;           
+    height: auto;        
+}  
+
+ .undip img{
+        width: 75px;           
+    height: auto;        
+}  
+
+ .unpad img{
+        width: 67px;           
+    height: auto;        
+}  
 .footer-miku-logo {
     height: 30px;
 }
@@ -473,13 +513,20 @@ footer {
 }
 
 /* ===== RESPONSIVE ===== */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     main { padding: 40px; }
+        .footer-content {
+        grid-template-columns: repeat(5, auto);
+        }
 }
 
 @media (max-width: 768px) {
     .nav-links, .nav-social { display: none; }
     .hamburger { display: flex; }
+
+        .footer-content {
+        grid-template-columns: repeat(3, auto);
+        }
 }
 
 @media (max-width: 480px) {
