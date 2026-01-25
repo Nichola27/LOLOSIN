@@ -30,7 +30,7 @@ body {
     min-height: 100vh;
 }
 
-/* ===== TOP NAVIGATION ===== */
+/* ===== SIDEBAR NAVBAR (UPGRADE) ===== */
 .top-nav {
    position: fixed;
     top: 0;
@@ -41,28 +41,38 @@ body {
     box-shadow: 4px 0 25px rgba(0, 0, 0, 0.35);
     z-index: 1000;
     padding: 25px 0;
+<<<<<<< HEAD
   
 
+=======
+>>>>>>> d7618c09d1e9f07d54992791bffc31b7763b7137
 }
 
 .nav-container {
-    
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
 }
 
+/* ===== LOGO ===== */
 .nav-logo img {
+<<<<<<< HEAD
      height: 90px;
     margin-bottom: 30px;
     transition: transform 0.3s ease, filter 0.3s ease;
 
+=======
+    height: 90px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+>>>>>>> d7618c09d1e9f07d54992791bffc31b7763b7137
 }
 
 .nav-logo img:hover {
     transform: scale(1.1);
     filter: drop-shadow(0 0 12px #ffd700);
+<<<<<<< HEAD
 }
 
 .nav-links {
@@ -72,7 +82,20 @@ body {
 }
 .nav-links li{
    width: 100%;
+=======
 }
+/* ===== NAV LINKS ===== */
+.nav-links {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+.nav-links li {
+    width: 100%;
+>>>>>>> d7618c09d1e9f07d54992791bffc31b7763b7137
+}
+
 .nav-links a {
     display: block;
     width: 100%;
@@ -85,6 +108,27 @@ body {
     text-decoration: none;
     position: relative;
     transition: all 0.3s ease;
+<<<<<<< HEAD
+=======
+}
+
+/* hover glow + slide */
+.nav-links a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, #ffd700, #ff7bff);
+    z-index: -1;
+    transition: width 0.35s ease;
+}
+
+.nav-links a:hover::before,
+.nav-links a.active::before {
+    width: 100%;
+>>>>>>> d7618c09d1e9f07d54992791bffc31b7763b7137
 }
 .nav-links a::before {
     content: "";
@@ -105,24 +149,34 @@ body {
 
 .nav-links a:hover,
 .nav-links a.active {
+<<<<<<< HEAD
       color: #0c2c55;
+=======
+    color: #0c2c55;
+>>>>>>> d7618c09d1e9f07d54992791bffc31b7763b7137
     transform: translateX(6px);
 }
 
+/* ===== SOCIAL ===== */
 .nav-social {
-    display: flex;
-    gap: 15px;
-    align-items: center;
+    margin-top: auto;
+    padding-bottom: 20px;
 }
 
 .nav-social img {
     width: 30px;
+<<<<<<< HEAD
     cursor: pointer;
     transition: transform 0.3s ease;
+=======
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease, filter 0.3s ease;
+>>>>>>> d7618c09d1e9f07d54992791bffc31b7763b7137
 }
 
 .nav-social img:hover {
-    transform: scale(1.15);
+    transform: scale(1.25) rotate(8deg);
+    filter: drop-shadow(0 0 10px #ffd700);
 }
 
 /* ===== HAMBURGER MENU ===== */
