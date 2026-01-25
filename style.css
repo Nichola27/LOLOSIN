@@ -10,6 +10,11 @@
 }
 
 @font-face {
+    font-family: 'TitanOne';
+    src: url('asets/Font/TitanOne-Regular.ttf');
+}
+
+@font-face {
     font-family: 'Shippori Antique B1';
     src: url('assets/font/ShipporiAntique   B1-Regular.ttf');
 }
@@ -277,6 +282,7 @@ h1 {
 }
 
 .card-bg {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -287,8 +293,12 @@ h1 {
     overflow: hidden;
     box-shadow: 0 4px 1 5px rgba(0, 0, 0, 0.2);
     transition: all 0.5s ease;
-    
+
  
+}
+
+.enem{
+      padding-top: 100px;
 }
 .card-bg::before {
     content: attr(data-title);
@@ -300,13 +310,13 @@ h1 {
     background: linear-gradient(90deg, #ffffff, #f5f5f5);
     padding: 14px 0;
     text-align: center;
-
+    justify-content: center;
+    align-content: center;
     font-family: 'Asset', sans-serif;
     font-size: 26px;      /* 🔥 LEBIH BESAR */
     font-weight: bold;
     letter-spacing: 1.5px;
     color: #0c2c55;
-
     border-radius: 15px 15px 0 0;
     z-index: 2;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
