@@ -10,6 +10,11 @@
 }
 
 @font-face {
+    font-family: 'Jacquard';
+    src: url('asets/Font/Jacquard12-Regular.ttf');
+}
+
+@font-face {
     font-family: 'Shippori Antique B1';
     src: url('assets/font/ShipporiAntique   B1-Regular.ttf');
 }
@@ -306,6 +311,7 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
     gap: 30px;
     justify-content: center;
+    
 }
 
 .event-card {
@@ -326,6 +332,7 @@ h1 {
     overflow: visible;
 }
 
+
 .card-bg {
     width: 100%;
     height: 100%;
@@ -338,6 +345,28 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.card-bg::before {
+    content: attr(data-title);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 18%;
+    background: linear-gradient(90deg, #ffffff, #f5f5f5);
+    padding: 14px 0;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Asset', sans-serif;
+    font-size: 26px;      /* 🔥 LEBIH BESAR */
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #0c2c55;
+    border-radius: 15px 15px 0 0;
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 .card-char {
