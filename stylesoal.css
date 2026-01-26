@@ -364,9 +364,89 @@ h1 {
     padding-left: 100px;
     z-index: 1;
     filter: drop-shadow(0 0 6px #F6CE71);
+    overflow-y: auto;
 }
 
+#opsi{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* ← 5 KOLOM */
+    gap: 15px;
+}
 
+#opsi .opsi {
+    padding: 15px 10px;
+    background: #f8f9fa;
+    color: #333;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-family: 'Shippori Antique B1', sans-serif;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-break: break-word;
+}
+
+#opsi .opsi:hover {
+    background: #e9ecef;
+    border-color: #adb5bd;
+    transform: translateY(-2px);
+}
+
+#opsi .opsi:active {
+    transform: scale(0.98);
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid #eee;
+}
+
+#prev-btn, #next-btn, #submit-btn {
+  padding: 12px 25px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#prev-btn:hover, #next-btn:hover, #submit-btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+#prev-btn:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+  transform: none;
+}
+
+#submit-btn {
+  background: #10b981;
+}
+
+#submit-btn:hover {
+  background: #059669;
+}
+
+.nomor-soal li.answered {
+  background-color: #3b82f6 !important;  /* BIRU */
+  color: white !important;
+  font-weight: bold;
+}
+#opsi .opsi:empty {
+    display: none;
+}
 #pertanyaan{
     font-size: 30px;
 }
