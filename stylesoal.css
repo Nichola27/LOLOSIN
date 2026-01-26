@@ -45,8 +45,8 @@ body {
 .top-nav {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 220px;
+    right: 0;
+    width: 350px;
     height: 100vh;
     background: linear-gradient(180deg, #0c2c55, #3b1d5a);
     box-shadow: 4px 0 25px rgba(0, 0, 0, 0.35);
@@ -228,7 +228,7 @@ body {
 
 /* ===== MAIN CONTENT ===== */
 main {
-    margin-left: 210px;
+    margin-left: 350px;
     padding: 60px 80px;
     min-height: 100vh;
     background-color: transparent;
@@ -338,6 +338,73 @@ h1 {
     animation: floatAnimation 4s ease-in-out infinite;
     transition: all 0.8s ease;
 }
+.soal-box{
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 90%;          
+  max-width: 320px;   
+  margin-top: 100px;
+}
+
+.nomor-soal li:hover{
+  background-color: #1d4ed8;
+  color: white;
+}
+.box-pertanyaan{
+    background-color: white;
+    border: 3px solid #F6CE71;
+    border-radius: 10px;
+    width: calc(90vw - 300px); 
+    height: 85vh;
+    position: absolute;
+    left: 0;
+    margin-left: 40px; 
+    padding: 20px;
+    padding-left: 100px;
+    z-index: 1;
+    filter: drop-shadow(0 0 6px #F6CE71);
+}
+
+
+#pertanyaan{
+    font-size: 30px;
+}
+.nomor-soal{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+ .progress span{
+    color: purple;
+}
+
+.progress{
+    color: black ;
+}
+.nomor-soal li{
+  border: 1px solid #ccc;
+  padding: 12px 0;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  background: white;
+}
+
+.nomor-soal li.active{
+  background: #1d4ed8;
+  color: white;
+}
+
+.nomor-soal li.done{
+  background: #10b981;
+  color: white;
+}
+
 
 .card-bg ,.belajar h1{
     color:  white;
@@ -446,11 +513,13 @@ footer {
 
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(9, auto);
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    justify-content: start;
+    
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+      margin-left: 0;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -465,8 +534,8 @@ footer {
 .ptn{
     min-width: 120px;
     display: flex;
-     flex: 0 0 auto;
-    justify-content: center;
+    flex: auto;
+    justify-content: left;
     align-items: center;
 }
 .ptn img{
@@ -513,10 +582,10 @@ footer {
 }
 
 /* ===== RESPONSIVE ===== */
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
     main { padding: 40px; }
         .footer-content {
-        grid-template-columns: repeat(5, auto);
+        grid-template-columns: repeat(5, 1fr);
         }
 }
 
@@ -525,7 +594,7 @@ footer {
     .hamburger { display: flex; }
 
         .footer-content {
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(3, 1fr);
         }
 }
 
@@ -537,4 +606,3 @@ footer {
 h1 a{
     text-decoration:  none;
 }
-/* ===== FORCE ALL TEXT TO BLACK ===== */
