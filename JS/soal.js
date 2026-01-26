@@ -2,8 +2,8 @@ console.log("JS soal.js dimuat");
 
 // Variabel global
 let currentQuestion = 0;
-let userAnswers = new Array(20).fill(undefined); // Inisialisasi 20 slot
-let userCorrect = new Array(20).fill(false);
+let userAnswers = new Array(30).fill(undefined); // Inisialisasi 20 slot
+let userCorrect = new Array(30).fill(false);
 let quizCompleted = false;
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const question = soal[index];
     
     // Tampilkan nomor soal dan pertanyaan
-    pertanyaanEl.textContent = `${question.tanya}`;
+    pertanyaanEl.innerHTML = `${question.tanya}`;
     
     // Tampilkan opsi
     opsiButtons.forEach((btn, i) => {
