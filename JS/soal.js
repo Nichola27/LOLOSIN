@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const nextBtn = document.getElementById("next-btn");
   const submitBtn = document.getElementById("submit-btn");
   
-  // Update progress total
+
   if (progressTotal) {
     progressTotal.textContent = soal.length;
   }
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const question = soal[index];
     
     // Tampilkan nomor soal dan pertanyaan
-    pertanyaanEl.textContent = `${index + 1}. ${question.tanya}`;
+    pertanyaanEl.textContent = `${question.tanya}`;
     
     // Tampilkan opsi
     opsiButtons.forEach((btn, i) => {

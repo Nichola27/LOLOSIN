@@ -359,20 +359,56 @@ h1 {
     height: 85vh;
     position: absolute;
     left: 0;
-    margin-left: 40px; 
+    margin-left: 50px; 
     padding: 20px;
     padding-left: 100px;
     z-index: 1;
     filter: drop-shadow(0 0 6px #F6CE71);
     overflow-y: auto;
+    flex-direction: column; 
 }
 
-#opsi{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); /* ← 5 KOLOM */
+.tempat-konten{
+    margin-left: 350px; 
+    padding: 60px 80px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#opsi {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+    max-width: 700px;
+}
+
+.opsi-item {
+    display: flex;
+    align-items: center;
     gap: 15px;
+    width: 150%;
 }
 
+
+.option-letter {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white; /* BULLET warna biru */
+    color: white;        /* HURUF warna putih */
+    font-weight: bold;
+    font-size: 18px;
+    margin: 12px;
+    border-radius: 50%;  /* Bentuk LINGKARAN */
+    font-family: 'Asset', sans-serif;
+    box-shadow: 0 4px 6px rgba(59, 130, 246, 0.3);
+    transition: all 0.3s ease;
+}
 #opsi .opsi {
     padding: 15px 10px;
     background: #f8f9fa;
@@ -380,6 +416,8 @@ h1 {
     border: 2px solid #dee2e6;
     border-radius: 8px;
     font-size: 16px;
+    margin: 1px;
+    width: 120%;
     cursor: pointer;
     transition: all 0.3s ease;
     text-align: center;
@@ -387,7 +425,7 @@ h1 {
     min-height: 60px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     word-break: break-word;
 }
 
@@ -401,12 +439,45 @@ h1 {
     transform: scale(0.98);
 }
 
-.navigation-buttons {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-  padding-top: 20px;
-  border-top: 2px solid #eee;
+.question-content {
+    flex: 1;
+    overflow-y: auto; 
+    padding-right: 20px; 
+
+}
+
+.nav-bottom {
+    margin-top: auto;
+    flex-shrink: 0;
+    width: 100%;
+    padding: 20px 0;
+    background: transparent;
+}
+
+.navigation-buttons { 
+
+    top: 60px;
+    bottom: 0px; /* Jarak dari bawah layar */
+    left: 3px; 
+    right: 0px; 
+    padding: 15px 20px;
+    border-radius: 10px;
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.opsi-item.selected .opsi {
+    background: #3b82f6;
+    color: white;
+    border-color: #2563eb;
+}
+
+.opsi-item.selected .option-letter {
+    background: #2563eb; 
+    box-shadow: 0 4px 8px rgba(37, 99, 235, 0.4);
+    transform: scale(1.1);
 }
 
 #prev-btn, #next-btn, #submit-btn {
@@ -449,6 +520,9 @@ h1 {
 }
 #pertanyaan{
     font-size: 30px;
+    white-space: pre-line; 
+    font-family: 'serif';
+    color: black;
 }
 .nomor-soal{
   list-style: none;
@@ -491,6 +565,8 @@ h1 {
     font-family: 'Henny';
      font-size: 100px;
 }
+
+
 
 @keyframes floatAnimation {
     0%, 100% {
