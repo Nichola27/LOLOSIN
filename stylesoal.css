@@ -342,7 +342,7 @@ h1 {
   background: #ffffff;
   border-radius: 12px;
   padding: 20px;
-  width: 90%;          
+  width: 90%;   
   max-width: 320px;   
   margin-top: 80px;
 }
@@ -551,7 +551,7 @@ h1 {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+    background: linear-gradient(135deg, #ACBAC4 0%, #BFC9D1 100%);
     cursor: pointer;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -808,19 +808,47 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .nav-links, .nav-social { display: none; }
-    .hamburger { display: flex; }
+    .top-nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
 
-        .footer-content {
-        grid-template-columns: repeat(3, 1fr);
-        }
+    main {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .tempat-konten {
+        margin-left: 0;
+        padding: 20px;
+    }
+    .opsi-item,
+    #opsi .opsi {
+        width: 100%;
+    }
+        .box-pertanyaan {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 15px;
+    }
 }
+
 
 @media (max-width: 480px) {
     h1 { font-size: 20px; }
     h2 { font-size: 16px; }
+    #pertanyaan {
+        font-size: 18px;
+    }
+    .nomor-soal {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 h1 a{
     text-decoration:  none;
 }
+
