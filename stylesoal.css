@@ -328,7 +328,73 @@ h1 {
     z-index: 2;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
+/* Tambahkan style untuk timer */
+.timer-container {
+    position: fixed;
+    top: 120px;
+    right: 75px;
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 12px;
+    font-family: 'Courier New', monospace;
+    font-size: 28px;
+    font-weight: bold;
+    box-shadow: 0 6px 20px rgba(30, 58, 138, 0.3);
+    z-index: 1000;
+    min-width: 150px;
+    width: 200px;
+    text-align: center;
+    border: 3px solid #60a5fa;
+    transition: all 0.3s ease;
+}
 
+.timer-subtest {
+    font-size: 12px;
+    opacity: 0.9;
+    margin-top: 5px;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.timer-container.warning {
+    background: linear-gradient(135deg, #d97706, #f59e0b);
+    border-color: #fbbf24;
+    animation: pulse 1.5s infinite;
+}
+
+.timer-container.danger {
+    background: linear-gradient(135deg, #dc2626, #ef4444);
+    border-color: #f87171;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* Responsive timer */
+@media (max-width: 768px) {
+    .timer-container {
+        position: fixed;
+        top: 80px;
+        right: 10px;
+        font-size: 20px;
+        padding: 10px 15px;
+        min-width: 120px;
+        z-index: 999;
+    }
+    
+    .timer-subtest {
+        font-size: 10px;
+    }
+}
 
 
 .card-bg h1{
@@ -811,7 +877,7 @@ footer {
 @media (max-width: 768px) {
     .top-nav {
         position: relative;
-        width: 100%;
+        width: 200%;
         height: auto;
     }
 
@@ -848,6 +914,12 @@ footer {
     }
     .nomor-soal {
         grid-template-columns: repeat(4, 1fr);
+    }
+        .tempat-konten {
+        width: 200%;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 20px;
     }
 }
 

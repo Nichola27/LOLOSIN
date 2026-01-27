@@ -18,6 +18,10 @@
                 </a>
             </div>
 
+    <div class="timer-container" id="timerContainer">
+        <div id="timerDisplay">45:00</div>
+        <div class="timer-subtest" id="subtestName">TPS - Penalaran Umum</div>
+    </div>
             <div class="soal-box">
             <p class="progress">
                 <span>0</span>
@@ -25,7 +29,6 @@
                 <span>20</span> 
                  Soal dikerjakan</p>
                 
- 
       
             <ul class="nomor-soal">
                 <li class="active">1</li>
@@ -181,8 +184,8 @@
         </div>
     
     </footer>
-
         <script src="JS/data-soal.js"></script>
+        <script src="JS/timer.js"></script>
         <script src="JS/soal.js"></script>
         <script>
 document.querySelectorAll('.nomor-soal li').forEach((li, index) => {
@@ -210,6 +213,8 @@ document.querySelectorAll('.nomor-soal li').forEach((li, index) => {
         }
     });
 });</script>
+
+
 
 </body>
 </html>
