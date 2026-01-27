@@ -228,7 +228,8 @@ body {
 
 /* ===== MAIN CONTENT ===== */
 main {
-    margin-left: 350px;
+    margin-left: 0px;
+    margin-right: 350px;
     padding: 60px 80px;
     min-height: 100vh;
     background-color: transparent;
@@ -820,6 +821,8 @@ footer {
     }
 
     .tempat-konten {
+        width: 450%;
+        margin-right: 0;
         margin-left: 0;
         padding: 20px;
     }
