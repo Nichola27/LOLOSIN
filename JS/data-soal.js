@@ -1,12 +1,12 @@
 
-
-const soal = [
+const SOAL_DATA = {
+ "pu" : [
   {
     // soal no 1
     tanya: "Semua insinyur memiliki kemampuan berpikir cepat dan teliti.\n\n"+
             "Sebagian insinyur mampu bekerja di bawah tekanan.\n\n"+
             "Simpulan yang <strong style= color:red;>PALING TEPAT </strong> dari pernyataan di atas adalah …"
-  ,  
+  ,
     opsi: [`Semua insinyur tidak mampu berpikir cepat dan teliti tetapi mampu bekerja di bawah tekanan`, 
       "Sebagian insinyur mampu bekerja di bawah tekanan serta memiliki kemampuan berpikir cepat dan teliti", 
       "Semua insinyur mampu berpikir cepat tetapi tidak teliti dan tidak mampu bekerja di bawah tekanan", 
@@ -582,6 +582,76 @@ const soal = [
     }
 
 
+  ],
 
+  "ppu" : [
+            {
+    //soal no 1
+      tanya: `Diketahui X, Y, dan Z adalah perusahaan layanan taksi daring. Berikut adalah informasi mengenai ketiga perusahaan tersebut pada bulan ini.
+      
+             (i) Perusahaan X dan Y memiliki selisih jumlah pengguna sebanyak 1.200 orang.
+(ii) Perbandingan jumlah pengguna di Perusahaan X dan Z adalah 4 : 9.
+(iii) Jumlah pengguna di Perusahaan Y tiga kali lipat dari jumlah pengguna di Perusahaan Z.
+(iv) Jumlah pengguna di Perusahaan X pada bulan lalu adalah 3.000 orang dan bertambah 25% pada bulan ini.
+              
+          Informasi manakah yang dapat digunakan untuk menentukan jumlah pengguna di Perusahaan Y pada bulan ini?`,
 
-];
+       opsi: ["(i) dan (ii)", 
+              "(i) dan (iii)",
+              "(ii) dan (iii)",
+              "(ii) dan (iv)",
+               "(iii) dan (iv)"],
+
+      jawab: 2
+    },
+    
+  ]
+
+}
+
+// Config untuk setiap subtes
+const SUBTES_CONFIG = {
+    "TPS - Penalaran Umum": {
+        key: "pu",
+        total: 30,
+        time: 30 * 60
+    },
+    "TPS - Pemahaman Bacaan": {
+        key: "ppu", 
+        total: 20,
+        time: 40 * 60
+    },
+    // Tambahkan subtes lain...
+};
+
+// Inisialisasi
+let currentSubtest = "TPS - Pemahaman Bacaan"; // Contoh untuk PPU
+let config = SUBTES_CONFIG[currentSubtest];
+let soalData = SOAL_DATA[config.key];
+let totalQuestions = config.total;
+let currentQuestionIndex = 0;
+
+// Saat memulai
+function initSubtest(subtestName) {
+    currentSubtest = subtestName;
+    config = SUBTES_CONFIG[subtestName];
+    soalData = SOAL_DATA[config.key];
+    totalQuestions = config.total;
+    currentQuestionIndex = 0;
+    
+    // Update tampilan
+    document.getElementById('subtestName').textContent = subtestName;
+    generateQuestionNumbers(totalQuestions);
+    updateProgressText(0, totalQuestions);
+    startTimer(config.time);
+    loadQuestion(0);
+}
+
+// Saat halaman load
+window.addEventListener('DOMContentLoaded', function() {
+    // Ambil subtes dari URL parameter atau default
+    const urlParams = new URLSearchParams(window.location.search);
+    const subtest = urlParams.get('subtest') || "TPS - Pemahaman Bacaan";
+    
+    initSubtest(subtest);
+});

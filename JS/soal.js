@@ -1,364 +1,289 @@
-console.log("JS soal.js dimuat");
+// validasi.js - WAKTU YANG BENAR
+const SUBTES_ORDER = ["pu", "ppu", "pbm"];
+const params = new URLSearchParams(window.location.search);
+const subtes = params.get("subtes") || "pu";
 
-// Variabel global
+// Validasi
+if (!SOAL_DATA[subtes]) {
+    alert("Subtes tidak valid");
+    window.location.href = "index.html";
+}
+
+// Cek urutan
+const idx = SUBTES_ORDER.indexOf(subtes);
+if (idx > 0) {
+    const prevSubtes = SUBTES_ORDER[idx - 1];
+    if (localStorage.getItem(`done_${prevSubtes}`) !== "true") {
+        alert(`Selesaikan ${prevSubtes.toUpperCase()} dulu!`);
+        window.location.href = "index.html";
+    }
+}
+
+// =============== WAKTU YANG BENAR SESUAI INFORMASI ANDA ===============
+const SUBTES_TIMES = {
+    "pu": 30 * 60,   
+    "ppu": 20 * 60,    
+    "pbm": 25 * 60    
+};
+
+const SUBTES_NAMES = {
+    "pu": "TPS - Penalaran Umum",
+    "ppu": "TPS - Pemahaman Bacaan", 
+    "pbm": "TPS - Pengetahuan & Pemahaman Umum"
+};
+
+// Inisialisasi
+const soal = SOAL_DATA[subtes];
 let currentQuestion = 0;
-let userAnswers = new Array(30).fill(undefined); // Inisialisasi 20 slot
-let userCorrect = new Array(30).fill(false);
-let quizCompleted = false;
+const userAnswers = new Array(soal.length).fill(null);
 
-document.addEventListener("DOMContentLoaded", function() {
-  console.log("DOM sudah siap");
-  
-  // Validasi data
-  if (typeof soal === 'undefined' || !Array.isArray(soal) || soal.length === 0) {
-    document.getElementById("pertanyaan").textContent = "Data soal tidak tersedia";
-    console.error("Data soal tidak valid");
-    return;
-  }
-  
-  console.log("Data soal ditemukan:", soal.length, "soal");
-  
-  // Elemen DOM
-  const pertanyaanEl = document.getElementById("pertanyaan");
-  const opsiButtons = document.querySelectorAll("#opsi .opsi");
-  const nomorSoalItems = document.querySelectorAll(".nomor-soal li");
-  const progressCurrent = document.querySelector(".progress span:first-child");
-  const progressTotal = document.querySelector(".progress span:last-child");
-  
-  // Tombol navigasi
-  const prevBtn = document.getElementById("prev-btn");
-  const nextBtn = document.getElementById("next-btn");
-  const submitBtn = document.getElementById("submit-btn");
-  
+console.log("=== KONFIGURASI SUBTES ===");
+console.log("Subtes:", subtes);
+console.log("Nama:", SUBTES_NAMES[subtes]);
+console.log("Waktu:", SUBTES_TIMES[subtes] / 60, "menit");
+console.log("Jumlah soal:", soal.length);
 
-  if (progressTotal) {
-    progressTotal.textContent = soal.length;
-  }
-  
-  // Fungsi untuk menampilkan soal
-  function showQuestion(index) {
-    if (index < 0 || index >= soal.length) return;
+// =============== SISANYA TETAP SAMA ===============
+// Generate nomor soal
+function generateQuestionNumbers() {
+    const container = document.getElementById('nomorSoalContainer');
+    container.innerHTML = '';
     
-    currentQuestion = index;
-    const question = soal[index];
-    
-    // Tampilkan nomor soal dan pertanyaan
-    pertanyaanEl.innerHTML = `${question.tanya}`;
-    
-    // Tampilkan opsi
-    opsiButtons.forEach((btn, i) => {
-      if (question.opsi && question.opsi[i]) {
-        btn.textContent = question.opsi[i];
-        btn.dataset.index = i;
-        btn.style.display = "flex";
+    for (let i = 1; i <= soal.length; i++) {
+        const li = document.createElement('li');
+        li.textContent = i;
+        li.dataset.index = i - 1;
         
-        // Reset semua button dulu
-        btn.classList.remove("selected", "correct-final", "wrong-final");
-        btn.style.backgroundColor = "";
-        btn.style.color = "";
-        btn.style.borderColor = "";
-        btn.disabled = false;
-        
-        // Jika sudah dijawab dan quiz belum selesai
-        if (userAnswers[index] !== undefined && !quizCompleted) {
-          if (userAnswers[index] === i) {
-            btn.classList.add("selected");
-            btn.style.backgroundColor = "#3b82f6";
-            btn.style.color = "white";
-          }
-        }
-        
-        // Jika quiz sudah selesai, tampilkan warna benar/salah
-        if (quizCompleted && userAnswers[index] !== undefined) {
-          if (userAnswers[index] === i) {
-            if (userCorrect[index]) {
-              btn.classList.add("correct-final");
-              btn.style.backgroundColor = "#10b981";
-            } else {
-              btn.classList.add("wrong-final");
-              btn.style.backgroundColor = "#ef4444";
-            }
-            btn.style.color = "white";
-          }
-          
-          // Tampilkan jawaban yang benar (hijau outline)
-          if (typeof question.jawab === 'number' && question.jawab === i) {
-            btn.style.border = "3px solid #10b981";
-          }
-        }
-      } else {
-        btn.style.display = "none";
-      }
-    });
-    
-    // Update nomor aktif di sidebar
-    nomorSoalItems.forEach((item, i) => {
-      item.classList.remove("active");
-      if (i === index) {
-        item.classList.add("active");
-      }
-      
-      // Tandai yang sudah dijawab dengan BACKGROUND BIRU
-      if (userAnswers[i] !== undefined && !quizCompleted) {
-        item.classList.add("answered");
-      } else {
-        item.classList.remove("answered");
-      }
-      
-      // Jika quiz selesai, update warna benar/salah
-      if (quizCompleted && userAnswers[i] !== undefined) {
-        if (userCorrect[i]) {
-          item.classList.add("correct");
-          item.classList.remove("answered");
-        } else {
-          item.classList.add("wrong");
-          item.classList.remove("answered");
-        }
-      }
-    });
-    
-    // Update progress (jumlah yang sudah dijawab)
-    if (progressCurrent) {
-      const answered = userAnswers.filter(answer => answer !== undefined).length;
-      progressCurrent.textContent = answered;
-    }
-    
-    // Update tombol navigasi
-    updateNavigationButtons();
-    
-    console.log(`Menampilkan soal ${index + 1}`);
-  }
-  
-  // Fungsi untuk cek jawaban
-  function checkAnswer(questionIndex, selectedIndex) {
-    const question = soal[questionIndex];
-    let isCorrect = false;
-    
-    if (typeof question.jawab === 'number') {
-      isCorrect = (selectedIndex === question.jawab);
-    } else {
-      isCorrect = (question.opsi[selectedIndex] === question.jawab);
-    }
-    
-    return isCorrect;
-  }
-  
-  // Fungsi update tombol navigasi
-  function updateNavigationButtons() {
-    if (!prevBtn || !nextBtn || !submitBtn) return;
-    
-    // Tombol sebelumnya
-    prevBtn.disabled = (currentQuestion === 0);
-    prevBtn.style.opacity = prevBtn.disabled ? "0.5" : "1";
-    
-    // Tombol selanjutnya
-    if (currentQuestion === soal.length - 1) {
-      nextBtn.style.display = "none";
-      // Tampilkan submit button jika semua sudah dijawab
-      const allAnswered = userAnswers.every(answer => answer !== undefined);
-      submitBtn.style.display = allAnswered ? "inline-block" : "none";
-    } else {
-      nextBtn.style.display = "inline-block";
-      submitBtn.style.display = "none";
-    }
-  }
-  
-  // Fungsi untuk tampilkan hasil setelah selesai
-  function showResults() {
-    quizCompleted = true;
-    
-    // Hitung skor
-    const score = userCorrect.filter(correct => correct).length;
-    const totalQuestions = soal.length;
-    const percentage = Math.round((score / totalQuestions) * 100);
-    
-    // Tampilkan hasil di alert
-    let resultMessage = `📊 HASIL UJIAN\n`;
-    resultMessage += `═══════════════════\n`;
-    resultMessage += `Jumlah Soal: ${totalQuestions}\n`;
-    resultMessage += `Dijawab: ${userAnswers.filter(a => a !== undefined).length}\n`;
-    resultMessage += `Benar: ${score}\n`;
-    resultMessage += `Salah: ${totalQuestions - score}\n`;
-    resultMessage += `Nilai: ${percentage}/100\n\n`;
-    
-    // Tampilkan nomor yang salah
-    const wrongQuestions = [];
-    const correctQuestions = [];
-    
-    soal.forEach((q, i) => {
-      if (userAnswers[i] !== undefined) {
-        if (userCorrect[i]) {
-          correctQuestions.push(i + 1);
-        } else {
-          wrongQuestions.push(i + 1);
-        }
-      }
-    });
-    
-    if (wrongQuestions.length > 0) {
-      resultMessage += `❌ Soal yang salah: ${wrongQuestions.join(', ')}\n`;
-    }
-    if (correctQuestions.length > 0) {
-      resultMessage += `✅ Soal yang benar: ${correctQuestions.join(', ')}\n`;
-    }
-    
-    resultMessage += `\n`;
-    
-    // Tampilkan detail soal yang salah
-    if (wrongQuestions.length > 0) {
-      resultMessage += `📝 Review jawaban salah:\n`;
-      wrongQuestions.slice(0, 3).forEach(no => { // Tampilkan maks 3 soal
-        const idx = no - 1;
-        const question = soal[idx];
-        const userAnswer = question.opsi[userAnswers[idx]];
-        let correctAnswer = "";
-        
-        if (typeof question.jawab === 'number') {
-          correctAnswer = question.opsi[question.jawab];
-        } else {
-          correctAnswer = question.jawab;
-        }
-        
-        resultMessage += `Soal ${no}: ${question.tanya}\n`;
-        resultMessage += `  ✗ Jawaban kamu: ${userAnswer}\n`;
-        resultMessage += `  ✓ Jawaban benar: ${correctAnswer}\n\n`;
-      });
-      
-      if (wrongQuestions.length > 3) {
-        resultMessage += `... dan ${wrongQuestions.length - 3} soal lainnya\n\n`;
-      }
-    }
-    
-    // Pesan motivasi
-    if (percentage === 100) {
-      resultMessage += "🎉 SEMPURNA! LUAR BIASA! 🏆";
-    } else if (percentage >= 80) {
-      resultMessage += "🎉 Excellent! Kerja bagus!";
-    } else if (percentage >= 60) {
-      resultMessage += "👍 Good job! Tingkatkan lagi!";
-    } else if (percentage >= 40) {
-      resultMessage += "💪 Lumayan, perlu belajar lebih giat!";
-    } else {
-      resultMessage += "📚 Jangan menyerah! Ayo belajar lagi!";
-    }
-    
-    // Tampilkan alert
-    alert(resultMessage);
-    
-    // Refresh tampilan untuk update warna
-    showQuestion(currentQuestion);
-    
-    // Nonaktifkan semua button opsi setelah selesai
-    opsiButtons.forEach(btn => {
-      btn.disabled = true;
-    });
-    
-    // Sembunyikan tombol submit
-    submitBtn.style.display = "none";
-    
-    console.log("Quiz selesai. Skor:", score, "/", totalQuestions);
-  }
-  
-  // Event listener untuk button opsi
-  opsiButtons.forEach(btn => {
-    btn.addEventListener("click", function() {
-      if (quizCompleted) return; // Jangan biarkan jawab setelah selesai
-      
-      const selectedIndex = parseInt(this.dataset.index);
-      const question = soal[currentQuestion];
-      
-      console.log(`Soal ${currentQuestion + 1}: Memilih opsi ${selectedIndex} (${question.opsi[selectedIndex]})`);
-      
-      // Simpan jawaban user
-      userAnswers[currentQuestion] = selectedIndex;
-      
-      // Cek dan simpan hasil jawaban
-      userCorrect[currentQuestion] = checkAnswer(currentQuestion, selectedIndex);
-      
-      // Tandai nomor di sidebar dengan BACKGROUND BIRU
-      nomorSoalItems[currentQuestion].classList.add("answered");
-      
-      // Tandai button yang dipilih (biru)
-      opsiButtons.forEach(b => {
-        b.classList.remove("selected");
-        b.style.backgroundColor = "";
-        b.style.color = "";
-      });
-      
-      this.classList.add("selected");
-      this.style.backgroundColor = "#3b82f6";
-      this.style.color = "white";
-      
-      // Update progress
-      if (progressCurrent) {
-        const answered = userAnswers.filter(answer => answer !== undefined).length;
-        progressCurrent.textContent = answered;
-      }
-      
-      // Update tombol navigasi
-      updateNavigationButtons();
-      
-      // Cek apakah semua sudah dijawab
-      const allAnswered = userAnswers.every(answer => answer !== undefined);
-      if (allAnswered) {
-        console.log("Semua soal sudah dijawab!");
-        submitBtn.style.display = "inline-block";
-      }
-    });
-  });
-  
-  // Event listener untuk tombol navigasi
-  if (prevBtn) {
-    prevBtn.addEventListener("click", function() {
-      if (currentQuestion > 0) {
-        showQuestion(currentQuestion - 1);
-      }
-    });
-  }
-  
-  if (nextBtn) {
-    nextBtn.addEventListener("click", function() {
-      if (currentQuestion < soal.length - 1) {
-        showQuestion(currentQuestion + 1);
-      }
-    });
-  }
-  
-  if (submitBtn) {
-    submitBtn.addEventListener("click", function() {
-      // Cek apakah semua sudah dijawab
-      const allAnswered = userAnswers.every(answer => answer !== undefined);
-      
-      if (!allAnswered) {
-        // Cari nomor yang belum dijawab
-        const unanswered = [];
-        userAnswers.forEach((answer, i) => {
-          if (answer === undefined) unanswered.push(i + 1);
+        li.addEventListener('click', function() {
+            const index = parseInt(this.dataset.index);
+            currentQuestion = index;
+            loadQuestion();
         });
         
-        const confirmSubmit = confirm(`Masih ada ${unanswered.length} soal yang belum dijawab:\nNomor: ${unanswered.join(', ')}\n\nYakin ingin mengakhiri quiz?`);
+        container.appendChild(li);
+    }
+}
+
+// Update active question
+function updateActiveQuestion() {
+    const allItems = document.querySelectorAll('#nomorSoalContainer li');
+    allItems.forEach(item => item.classList.remove('active'));
+    if (allItems[currentQuestion]) {
+        allItems[currentQuestion].classList.add('active');
+    }
+}
+
+// Load question
+function loadQuestion() {
+    const q = soal[currentQuestion];
+    
+    // Tampilkan pertanyaan
+    document.getElementById("pertanyaan").innerHTML = q.tanya;
+    
+    // Tampilkan pilihan
+    const opsiContainer = document.getElementById("opsi");
+    opsiContainer.innerHTML = "";
+    
+    q.opsi.forEach((opt, i) => {
+        const div = document.createElement("div");
+        div.className = "opsi-item";
         
-        if (!confirmSubmit) {
-          return; // Batalkan jika user tidak yakin
+        // Check if this option is selected
+        const isSelected = userAnswers[currentQuestion] === i;
+        if (isSelected) {
+            div.classList.add('selected');
         }
-      }
-      
-      // Tampilkan hasil
-      showResults();
+        
+        div.innerHTML = `
+            <div class="option-letter">${String.fromCharCode(65 + i)}</div>
+            <button class="opsi" data-index="${i}">${opt}</button>
+        `;
+        
+        // Event listener untuk opsi
+        const button = div.querySelector('.opsi');
+        button.addEventListener('click', function(e) {
+            e.stopPropagation();
+            
+            const index = parseInt(this.getAttribute('data-index'));
+            
+            // Hapus class selected dari semua opsi
+            document.querySelectorAll('.opsi-item').forEach(item => {
+                item.classList.remove('selected');
+            });
+            
+            // Tambah class selected ke opsi yang dipilih
+            div.classList.add('selected');
+            
+            // Simpan jawaban
+            selectAnswer(index);
+        });
+        
+        opsiContainer.appendChild(div);
     });
-  }
-  
-  // Event listener untuk nomor di sidebar
-  nomorSoalItems.forEach((item, index) => {
-    item.addEventListener("click", function() {
-      showQuestion(index);
+    
+    // Update progress
+    const totalDijawab = userAnswers.filter(a => a !== null).length;
+    document.querySelector(".progress span:first-child").textContent = totalDijawab;
+    document.querySelector(".progress span:last-child").textContent = soal.length;
+    
+    // Update tombol
+    document.getElementById("prev-btn").style.display = currentQuestion === 0 ? "none" : "block";
+    document.getElementById("next-btn").style.display = currentQuestion === soal.length - 1 ? "none" : "block";
+    document.getElementById("submit-btn").style.display = currentQuestion === soal.length - 1 ? "block" : "none";
+    
+    // Update nomor aktif
+    updateActiveQuestion();
+    
+    // Update status answered
+    updateQuestionStatus();
+}
+
+// Update status soal
+function updateQuestionStatus() {
+    const allItems = document.querySelectorAll('#nomorSoalContainer li');
+    allItems.forEach((item, index) => {
+        item.classList.remove('answered');
+        if (userAnswers[index] !== null) {
+            item.classList.add('answered');
+        }
     });
-  });
-  
-  // Tampilkan soal pertama
-  showQuestion(0);
-  
-  // Debug info
-  console.log("Jumlah button opsi:", opsiButtons.length);
-  console.log("Jumlah nomor soal di sidebar:", nomorSoalItems.length);
+}
+
+// Pilih jawaban
+function selectAnswer(answerIndex) {
+    console.log("Memilih jawaban:", answerIndex, "untuk soal:", currentQuestion);
+    userAnswers[currentQuestion] = answerIndex;
+    saveAnswers();
+    updateQuestionStatus();
+    
+    // Update progress
+    const totalDijawab = userAnswers.filter(a => a !== null).length;
+    document.querySelector(".progress span:first-child").textContent = totalDijawab;
+}
+
+// Save answers
+function saveAnswers() {
+    localStorage.setItem(`jawaban_${subtes}`, JSON.stringify(userAnswers));
+}
+
+// Load saved answers
+function loadSavedAnswers() {
+    const saved = localStorage.getItem(`jawaban_${subtes}`);
+    if (saved) {
+        const parsed = JSON.parse(saved);
+        parsed.forEach((ans, i) => {
+            if (ans !== null) userAnswers[i] = ans;
+        });
+    }
+}
+
+// Navigasi
+function nextQuestion() {
+    if (currentQuestion < soal.length - 1) {
+        currentQuestion++;
+        loadQuestion();
+    } else {
+        submitAnswers();
+    }
+}
+
+function prevQuestion() {
+    if (currentQuestion > 0) {
+        currentQuestion--;
+        loadQuestion();
+    }
+}
+
+// Submit
+function submitAnswers() {
+    const unanswered = userAnswers.filter(a => a === null).length;
+    
+    if (unanswered > 0 && !confirm(`Masih ada ${unanswered} soal belum dijawab. Lanjut?`)) {
+        return;
+    }
+    
+    lanjutKeSubtesBerikutnya();
+}
+
+// Lanjut ke subtes berikutnya
+function lanjutKeSubtesBerikutnya() {
+    // Simpan hasil
+    let score = 0;
+    soal.forEach((q, i) => {
+        if (userAnswers[i] === q.jawab) score++;
+    });
+    
+    localStorage.setItem(`skor_${subtes}`, score);
+    localStorage.setItem(`total_${subtes}`, soal.length);
+    localStorage.setItem(`done_${subtes}`, "true");
+    
+    // Hentikan timer
+    if (typeof resetTimer === 'function') {
+        resetTimer();
+    }
+    
+    // Cek subtes berikutnya
+    const nextIdx = SUBTES_ORDER.indexOf(subtes) + 1;
+    
+    if (nextIdx < SUBTES_ORDER.length) {
+        const nextSubtes = SUBTES_ORDER[nextIdx];
+        alert(`✅ Subtes ${SUBTES_NAMES[subtes]} selesai!\nMengarahkan ke ${SUBTES_NAMES[nextSubtes]}...`);
+        
+        setTimeout(() => {
+            window.location.href = `soal.html?subtes=${nextSubtes}`;
+        }, 1500);
+    } else {
+        alert(`🎉 SELESAI! Semua subtes telah dikerjakan!\nMengarahkan ke halaman hasil...`);
+        
+        setTimeout(() => {
+            window.location.href = "hasil.html";
+        }, 1500);
+    }
+}
+
+// Initialize
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("=== VALIDASI.JS DIMUAT ===");
+    console.log("Subtes aktif:", subtes);
+    console.log("Nama subtes:", SUBTES_NAMES[subtes]);
+    console.log("Waktu subtes:", SUBTES_TIMES[subtes], "detik", "(", SUBTES_TIMES[subtes]/60, "menit )");
+    console.log("Jumlah soal:", soal.length);
+    
+    // Load saved answers
+    loadSavedAnswers();
+    
+    // Generate nomor soal
+    generateQuestionNumbers();
+    
+    // Event listeners untuk tombol navigasi
+    document.getElementById("prev-btn").addEventListener("click", prevQuestion);
+    document.getElementById("next-btn").addEventListener("click", nextQuestion);
+    document.getElementById("submit-btn").addEventListener("click", submitAnswers);
+    
+    // Set nama subtes di display
+    const subtestNameElement = document.getElementById("subtestName");
+    if (subtestNameElement) {
+        subtestNameElement.textContent = SUBTES_NAMES[subtes] || "TPS - Ujian";
+    }
+    
+    // Load soal pertama
+    loadQuestion();
+    
+    // Start timer dengan nama subtes yang benar
+    if (typeof startTimer === 'function') {
+        console.log("Memulai timer untuk", SUBTES_NAMES[subtes]);
+        startTimer(SUBTES_TIMES[subtes], SUBTES_NAMES[subtes]);
+    } else {
+        console.error("Fungsi startTimer tidak ditemukan!");
+    }
+    
+    // Debug: Cek apakah timer berjalan
+    setTimeout(() => {
+        console.log("Timer check - 2 detik setelah load:");
+        const timerDisplay = document.getElementById('timerDisplay');
+        if (timerDisplay) {
+            console.log("Timer display value:", timerDisplay.textContent);
+        }
+    }, 2000);
 });
+
