@@ -808,11 +808,283 @@ const SOAL_DATA = {
 
       jawab: 1
     },
-    
-    
-  ]
+        {
+    //soal no 11
+      tanya:  `<sup style= "font-size: 20px; color: red;";>1</sup>Meski fasilitas terbatas, sekolah di pegunungan itu berhasil mencetak prestasi akademik membanggakan dalam olimpiade sains nasional.`+
+              `<sup style= "font-size: 20px; color: red;";>2</sup>Kesuksesan ini tidak terlepas dari dedikasi guru-guru yang rela mengajar tanpa memperhatikan gaji yang sering terlambat dibayarkan.`+
+              `<sup style= "font-size: 20px; color: red;";>3</sup>Prestasi tersebut mendapat perhatian khusus dari kementerian pendidikan, yang kemudian memberikan bantuan peralatan laboratorium lengkap.`+
+              `<sup style= "font-size: 20px; color: red;";>4</sup>Ini dianggap sebagai bukti nyata bahwa semangat belajar tidak bergantung pada kemewahan fasilitas.`+
+              `<sup style= "font-size: 20px; color: red;";>5</sup>Padahal, banyak sekolah di kota dengan fasilitas lengkap justru menunjukkan penurunan motivasi belajar siswa.` +
+              `<sup style= "font-size: 20px; color: red;";>6</sup>Contohnya adalah meningkatnya angka bolos sekolah dan ketergantungan berlebihan pada bimbingan belajar di daerah perkotaan.`+
+              `<sup style= "font-size: 20px; color: red;";>7</sup>Sekolah pegunungan ini justru menunjukkan bahwa ketekunan dan kreativitas dapat mengatasi segala keterbatasan.
+              
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 11 s.d. 13, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+               Perumpamaan pada bacaan tersebut ditemukan pada …`,
 
+
+       opsi: ["kalimat (1)", 
+              "kalimat (2)",
+              "kalimat (3)",
+              "kalimat (4)",
+               "kalimat (5)"],
+
+      jawab: 3
+    },
+{  //soal no 12
+          tanya:  `<sup style= "font-size: 20px; color: red;";>1</sup>Meski fasilitas terbatas, sekolah di pegunungan itu berhasil mencetak prestasi akademik membanggakan dalam olimpiade sains nasional.`+
+              `<sup style= "font-size: 20px; color: red;";>2</sup>Kesuksesan ini tidak terlepas dari dedikasi guru-guru yang rela mengajar tanpa memperhatikan gaji yang sering terlambat dibayarkan.`+
+              `<sup style= "font-size: 20px; color: red;";>3</sup>Prestasi tersebut mendapat perhatian khusus dari kementerian pendidikan, yang kemudian memberikan bantuan peralatan laboratorium lengkap.`+
+              `<sup style= "font-size: 20px; color: red;";>4</sup>Ini dianggap sebagai bukti nyata bahwa semangat belajar tidak bergantung pada kemewahan fasilitas.`+
+              `<sup style= "font-size: 20px; color: red;";>5</sup>Padahal, banyak sekolah di kota dengan fasilitas lengkap justru menunjukkan penurunan motivasi belajar siswa.` +
+              `<sup style= "font-size: 20px; color: red;";>6</sup>Contohnya adalah meningkatnya angka bolos sekolah dan ketergantungan berlebihan pada bimbingan belajar di daerah perkotaan.`+
+              `<sup style= "font-size: 20px; color: red;";>7</sup>Sekolah pegunungan ini justru menunjukkan bahwa ketekunan dan kreativitas dapat mengatasi segala keterbatasan.
+              
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 11 s.d. 13, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+               Ungkapan "prestasi akademik, motivasi belajar, bimbingan belajar, dan ketekunan kreativitas" pada kalimat (1), (5), (6), dan (7) dapat disempurnakan menjadi ….`,
+
+
+       opsi: ["prestasi akademik, motivasi belajar, bimbingan belajar, dan ketekunan kreativitas", 
+              "pencapaian akademik, dorongan belajar, kursus tambahan, dan usaha kreatif",
+              "hasil akademik, semangat belajar, les privat, dan kerja keras inovatif",
+              "prestasi akademik, motivasi belajar, bimbingan belajar, dan ketekunan serta kreativitas",
+               "prestasi belajar, kemauan belajar, pembelajaran tambahan, dan ketekunan kreatif"],
+
+      jawab: 3
+    },
+    {  //soal no 13
+          tanya:  `<sup style= "font-size: 20px; color: red;";>1</sup>Meski fasilitas terbatas, sekolah di pegunungan itu berhasil mencetak prestasi akademik membanggakan dalam olimpiade sains nasional.`+
+              `<sup style= "font-size: 20px; color: red;";>2</sup>Kesuksesan ini tidak terlepas dari dedikasi guru-guru yang rela mengajar tanpa memperhatikan gaji yang sering terlambat dibayarkan.`+
+              `<sup style= "font-size: 20px; color: red;";>3</sup>Prestasi tersebut mendapat perhatian khusus dari kementerian pendidikan, yang kemudian memberikan bantuan peralatan laboratorium lengkap.`+
+              `<sup style= "font-size: 20px; color: red;";>4</sup>Ini dianggap sebagai bukti nyata bahwa semangat belajar tidak bergantung pada kemewahan fasilitas.`+
+              `<sup style= "font-size: 20px; color: red;";>5</sup>Padahal, banyak sekolah di kota dengan fasilitas lengkap justru menunjukkan penurunan motivasi belajar siswa.` +
+              `<sup style= "font-size: 20px; color: red;";>6</sup>Contohnya adalah meningkatnya angka bolos sekolah dan ketergantungan berlebihan pada bimbingan belajar di daerah perkotaan.`+
+              `<sup style= "font-size: 20px; color: red;";>7</sup>Sekolah pegunungan ini justru menunjukkan bahwa ketekunan dan kreativitas dapat mengatasi segala keterbatasan.
+              
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 11 s.d. 13, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+              Kata manakah pada bacaan tersebut yang berkandungan jenis kata yang sama dengan jenis kata sangat pada potongan kalimat sangat tinggi?`,
+
+
+       opsi: ["Kata terbatas dalam kalimat (1)", 
+              "Kata tanpa dalam kalimat (2)",
+              "Kata khusus dalam kalimat (3)",
+              "Kata nyata dalam kalimat (4) ",
+               "Kata berlebihan dalam kalimat (6)"],
+
+      jawab: 3
+    },
+    
+        {  //soal no 14
+          tanya:  `<sup style= "font-size: 20px; color: red;";>1</sup>Bumi saat ini berputar dengan arah rotasinya bergerak dari barat ke timur.`+
+              `<sup style= "font-size: 20px; color: red;";>2</sup>Matahari kelihatan terbit dari timur.`+
+              `<sup style= "font-size: 20px; color: red;";>3</sup>Jika bumi dilihat dari atas Kutub Utara, arah rotasinya berlawanan dengan arah jarum jam.`+
+              `<sup style= "font-size: 20px; color: red;";>4</sup>Apa yang terjadi jika matahari terbit dari barat?`+
+              `<sup style= "font-size: 20px; color: red;";>5</sup>Bumi akan mengalami perubahan, mulai dari perubahan pada lanskap alam di beberapa benua hingga perunbahan iklim.` +
+              `<sup style= "font-size: 20px; color: red;";>6</sup>Jika arah matahari terbit berubah, bukit pasir yang gersang akan menggantikan hamparan hutan hujan Amazon di Amerika Selatan.`+
+              `<sup style= "font-size: 20px; color: red;";>7</sup>Gurun akan menutupi Amerika Utara.</sup>`+
+              `<sup style= "font-size: 20px; color: red;";>8</sup>Sebaliknya, lanskap kering di Amerika Tengah,Gurun Sahara di Afrika Barat, dan Arab Saudi akan berubah menjadi hijau.</sup>`+
+              `<sup style= "font-size: 20px; color: red;";>9</sup>Dampak lain, setelah mempresentasikan hasil simulasi komputer tahun 2018 di Austria, Eropa Barat disimpulkan akan beku akibat musim dingin dahsyat oleh para ahli.</sup>`+
+              `<sup style= "font-size: 20px; color: red;";>10</sup>Namun, simulasi tersebut tidak menunjukan apakah daerah tropis akan mengalami perubahan drastis seperti yang dialami Eropa.</sup>
+              
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 14 s.d. 16, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+              Dari Bacaan tersebut, frasa yang berpola makna sama dengan frasa <i>makanan enak</i> adalah ...?`,
+
+
+       opsi: ["jarum jam", 
+              "perubahan iklim",
+              "lasnkap kering",
+              "simulasi komputer",
+               "persamaan geosains"],
+
+      jawab: 2
+    },
+
+          {  //soal no 15
+          tanya:  `<sup style= "font-size: 20px; color: red;";>1</sup>Bumi saat ini berputar dengan arah rotasinya bergerak dari barat ke timur.`+
+              `<sup style= "font-size: 20px; color: red;";>2</sup>Matahari kelihatan terbit dari timur.`+
+              `<sup style= "font-size: 20px; color: red;";>3</sup>Jika bumi dilihat dari atas Kutub Utara, arah rotasinya berlawanan dengan arah jarum jam.`+
+              `<sup style= "font-size: 20px; color: red;";>4</sup>Apa yang terjadi jika matahari terbit dari barat?`+
+              `<sup style= "font-size: 20px; color: red;";>5</sup>Bumi akan mengalami perubahan, mulai dari perubahan pada lanskap alam di beberapa benua hingga perunbahan iklim.` +
+              `<sup style= "font-size: 20px; color: red;";>6</sup>Jika arah matahari terbit berubah, bukit pasir yang gersang akan menggantikan hamparan hutan hujan Amazon di Amerika Selatan.`+
+              `<sup style= "font-size: 20px; color: red;";>7</sup>Gurun akan menutupi Amerika Utara.</sup>`+
+              `<sup style= "font-size: 20px; color: red;";>8</sup>Sebaliknya, lanskap kering di Amerika Tengah,Gurun Sahara di Afrika Barat, dan Arab Saudi akan berubah menjadi hijau.</sup>`+
+              `<sup style= "font-size: 20px; color: red;";>9</sup>Dampak lain, setelah mempresentasikan hasil simulasi komputer tahun 2018 di Austria, Eropa Barat disimpulkan akan beku akibat musim dingin dahsyat oleh para ahli.</sup>`+
+              `<sup style= "font-size: 20px; color: red;";>10</sup>Namun, simulasi tersebut tidak menunjukan apakah daerah tropis akan mengalami perubahan drastis seperti yang dialami Eropa.</sup>
+              
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 14 s.d. 16, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+              Dari Bacaan tersebut, kalimat yang berpola dasar sama dengan pola dasar kalimat <i> Karena Budi tekun belajar, prestasi belajarnya meningkat dengan pesat</i> adalah ...`,
+
+
+       opsi: ["Jika bumi dilihat dari atas Kutub Utara, arah rotasinya berlawanan dengan arah Jarum Jam.", 
+              "Bumi akan mengalami perubahan, mulai dari perubahan pada lanskap alam di beberapa benua hingga perubahan iklim.",
+              "Jika arah matahari terbit berubah, bukit pasir yang gersang akan menggantikan hamparan hutan hujan Amazom di Amerika Selatan.",
+              "Sebaliknya, lanskap kering di Amerika Tengah, Gurun Sahara di Afrika Barat, dan Arab Saudi akan berubah menjadii hijau.",
+               "Namun, simulasi tersebut tidak menunjukan apakah daerah tropis akan mengalami perubahan drastis seperti yang dialami Eropa."],
+
+      jawab: 0
+       },
+
+                {  //soal no 16
+          tanya:  `<sup style= "font-size: 20px; color: red;";>1</sup>Bumi saat ini berputar dengan arah rotasinya bergerak dari barat ke timur.`+
+              `<sup style= "font-size: 20px; color: red;";>2</sup>Matahari kelihatan terbit dari timur.`+
+              `<sup style= "font-size: 20px; color: red;";>3</sup>Jika bumi dilihat dari atas Kutub Utara, arah rotasinya berlawanan dengan arah jarum jam.`+
+              `<sup style= "font-size: 20px; color: red;";>4</sup>Apa yang terjadi jika matahari terbit dari barat?`+
+              `<sup style= "font-size: 20px; color: red;";>5</sup>Bumi akan mengalami perubahan, mulai dari perubahan pada lanskap alam di beberapa benua hingga perunbahan iklim.` +
+              `<sup style= "font-size: 20px; color: red;";>6</sup>Jika arah matahari terbit berubah, bukit pasir yang gersang akan menggantikan hamparan hutan hujan Amazon di Amerika Selatan.`+
+              `<sup style= "font-size: 20px; color: red;";>7</sup>Gurun akan menutupi Amerika Utara.</sup>`+
+              `<sup style= "font-size: 20px; color: red;";>8</sup>Sebaliknya, lanskap kering di Amerika Tengah,Gurun Sahara di Afrika Barat, dan Arab Saudi akan berubah menjadi hijau.</sup>`+
+              `<sup style= "font-size: 20px; color: red;";>9</sup>Dampak lain, setelah mempresentasikan hasil simulasi komputer tahun 2018 di Austria, Eropa Barat disimpulkan akan beku akibat musim dingin dahsyat oleh para ahli.</sup>`+
+              `<sup style= "font-size: 20px; color: red;";>10</sup>Namun, simulasi tersebut tidak menunjukan apakah daerah tropis akan mengalami perubahan drastis seperti yang dialami Eropa.</sup>
+              
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 14 s.d. 16, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+              Pernyataan yang paling tepat untuk menjelaskan sebab-akibat pada teks adalah …`,
+
+
+       opsi: ["Bumi berputar berlawanan arah jarum jam sehingga Matahari terbit dari timur.", 
+              "Simulasi komputer tahun 2018 membuktikan Eropa Barat akan membeku tanpa pengecualian",
+              "Perubahan arah terbit Matahari berpotensi menyebabkan redistribusi iklim global",
+              "Gurun Sahara menjadi hijau karena rotasi Bumi semakin cepat",
+               "Daerah tropis dipastikan mengalami perubahan ekstrem seperti Eropa"],
+
+      jawab: 2
+       },
+
+                       {  //soal no 17
+          tanya: `<sup style="font-size: 20px; color: red;">1</sup>Perkembangan teknologi digital saat ini berlangsung sangat cepat.`+
+`<sup style="font-size: 20px; color: red;">2</sup>Internet menjadi sarana utama penyebaran informasi di berbagai bidang kehidupan.`+
+`<sup style="font-size: 20px; color: red;">3</sup>Media sosial memungkinkan setiap individu untuk memproduksi dan menyebarkan informasi secara mandiri.`+
+`<sup style="font-size: 20px; color: red;">4</sup>Namun, kemudahan tersebut juga meningkatkan risiko penyebaran informasi yang tidak akurat.`+
+`<sup style="font-size: 20px; color: red;">5</sup>Informasi yang tidak terverifikasi dapat memengaruhi opini publik secara luas.`+
+`<sup style="font-size: 20px; color: red;">6</sup>Oleh karena itu, literasi digital menjadi kemampuan penting bagi masyarakat modern.`+
+`<sup style="font-size: 20px; color: red;">7</sup>Literasi digital mencakup kemampuan mengakses, memahami, dan mengevaluasi informasi secara kritis.`+
+`<sup style="font-size: 20px; color: red;">8</sup>Selain itu, literasi digital juga berkaitan dengan etika dalam menggunakan teknologi.`+
+`<sup style="font-size: 20px; color: red;">9</sup>Peningkatan literasi digital diharapkan dapat menekan dampak negatif penyalahgunaan informasi.`+
+`<sup style="font-size: 20px; color: red;">10</sup>Dengan demikian, teknologi digital dapat dimanfaatkan secara lebih bijak dan bertanggung jawab.
+
+              
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 17 s.d. 20, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+             Kalimat yang mengandung makna lain (implisit) dari yang tertulis adalah kalimat …`,
+
+
+       opsi: ["kalimat (1)", 
+              "kalimat (2)",
+              "kalimat (3)",
+              "kalimat (4)",
+               "kalimat (5)"],
+
+      jawab: 3
+       },
+
+                            {  //soal no 18
+          tanya: `<sup style="font-size: 20px; color: red;">1</sup>Perkembangan teknologi digital saat ini berlangsung sangat cepat.`+
+`<sup style="font-size: 20px; color: red;">2</sup>Internet menjadi sarana utama penyebaran informasi di berbagai bidang kehidupan.`+
+`<sup style="font-size: 20px; color: red;">3</sup>Media sosial memungkinkan setiap individu untuk memproduksi dan menyebarkan informasi secara mandiri.`+
+`<sup style="font-size: 20px; color: red;">4</sup>Namun, kemudahan tersebut juga meningkatkan risiko penyebaran informasi yang tidak akurat.`+
+`<sup style="font-size: 20px; color: red;">5</sup>Informasi yang tidak terverifikasi dapat memengaruhi opini publik secara luas.`+
+`<sup style="font-size: 20px; color: red;">6</sup>Oleh karena itu, literasi digital menjadi kemampuan penting bagi masyarakat modern.`+
+`<sup style="font-size: 20px; color: red;">7</sup>Literasi digital mencakup kemampuan mengakses, memahami, dan mengevaluasi informasi secara kritis.`+
+`<sup style="font-size: 20px; color: red;">8</sup>Selain itu, literasi digital juga berkaitan dengan etika dalam menggunakan teknologi.`+
+`<sup style="font-size: 20px; color: red;">9</sup>Peningkatan literasi digital diharapkan dapat menekan dampak negatif penyalahgunaan informasi.`+
+`<sup style="font-size: 20px; color: red;">10</sup>Dengan demikian, teknologi digital dapat dimanfaatkan secara lebih bijak dan bertanggung jawab.
+
+              
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 17 s.d. 20, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+             Kata menekan pada kalimat (9) memiliki makna yang sama dengan kata menekan pada kalimat …`,
+
+
+       opsi: ["Pemerintah berupaya menekan laju inflasi agar perekonomian tetap stabil.", 
+              "Ia menekan tombol darurat saat terjadi kebakaran.",
+              "Anak itu menekan luka di lengannya agar darah berhenti mengalir.",
+              "Guru menekan siswa agar segera mengumpulkan tugas.",
+               "Ia menekan kertas dengan penggaris agar tidak bergeser."],
+
+      jawab: 0
+       },
+
+                              {  //soal no 19
+          tanya: `<sup style="font-size: 20px; color: red;">1</sup>Perkembangan teknologi digital saat ini berlangsung sangat cepat.`+
+`<sup style="font-size: 20px; color: red;">2</sup>Internet menjadi sarana utama penyebaran informasi di berbagai bidang kehidupan.`+
+`<sup style="font-size: 20px; color: red;">3</sup>Media sosial memungkinkan setiap individu untuk memproduksi dan menyebarkan informasi secara mandiri.`+
+`<sup style="font-size: 20px; color: red;">4</sup>Namun, kemudahan tersebut juga meningkatkan risiko penyebaran informasi yang tidak akurat.`+
+`<sup style="font-size: 20px; color: red;">5</sup>Informasi yang tidak terverifikasi dapat memengaruhi opini publik secara luas.`+
+`<sup style="font-size: 20px; color: red;">6</sup>Oleh karena itu, literasi digital menjadi kemampuan penting bagi masyarakat modern.`+
+`<sup style="font-size: 20px; color: red;">7</sup>Literasi digital mencakup kemampuan mengakses, memahami, dan mengevaluasi informasi secara kritis.`+
+`<sup style="font-size: 20px; color: red;">8</sup>Selain itu, literasi digital juga berkaitan dengan etika dalam menggunakan teknologi.`+
+`<sup style="font-size: 20px; color: red;">9</sup>Peningkatan literasi digital diharapkan dapat menekan dampak negatif penyalahgunaan informasi.`+
+`<sup style="font-size: 20px; color: red;">10</sup>Dengan demikian, teknologi digital dapat dimanfaatkan secara lebih bijak dan bertanggung jawab.
+
+              
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 17 s.d. 20, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+             Kalimat “Literasi digital menjadi kemampuan penting bagi masyarakat modern.” memiliki pola kalimat yang sama dengan kalimat …`,
+
+
+       opsi: ["kalimat (1)", 
+              "kalimat (2)",
+              "kalimat (3)",
+              "kalimat (4)",
+               "kalimat (5)"],
+
+      jawab: 0
+       },
+       
+                              {  //soal no 20
+          tanya: `<sup style="font-size: 20px; color: red;">1</sup>Perkembangan teknologi digital saat ini berlangsung sangat cepat.`+
+`<sup style="font-size: 20px; color: red;">2</sup>Internet menjadi sarana utama penyebaran informasi di berbagai bidang kehidupan.`+
+`<sup style="font-size: 20px; color: red;">3</sup>Media sosial memungkinkan setiap individu untuk memproduksi dan menyebarkan informasi secara mandiri.`+
+`<sup style="font-size: 20px; color: red;">4</sup>Namun, kemudahan tersebut juga meningkatkan risiko penyebaran informasi yang tidak akurat.`+
+`<sup style="font-size: 20px; color: red;">5</sup>Informasi yang tidak terverifikasi dapat memengaruhi opini publik secara luas.`+
+`<sup style="font-size: 20px; color: red;">6</sup>Oleh karena itu, literasi digital menjadi kemampuan penting bagi masyarakat modern.`+
+`<sup style="font-size: 20px; color: red;">7</sup>Literasi digital mencakup kemampuan mengakses, memahami, dan mengevaluasi informasi secara kritis.`+
+`<sup style="font-size: 20px; color: red;">8</sup>Selain itu, literasi digital juga berkaitan dengan etika dalam menggunakan teknologi.`+
+`<sup style="font-size: 20px; color: red;">9</sup>Peningkatan literasi digital diharapkan dapat menekan dampak negatif penyalahgunaan informasi.`+
+`<sup style="font-size: 20px; color: red;">10</sup>Dengan demikian, teknologi digital dapat dimanfaatkan secara lebih bijak dan bertanggung jawab.
+
+              
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 17 s.d. 20, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+             Hubungan sebab–akibat yang tepat berdasarkan kalimat 1 – 6 adalah …`,
+
+
+       opsi: ["Perkembangan teknologi digital yang cepat menyebabkan masyarakat enggan memanfaatkan internet.", 
+              "Kemudahan penyebaran informasi melalui media sosial menurunkan kebutuhan akan literasi digital.",
+              "Risiko penyebaran informasi tidak akurat mendorong pentingnya literasi digital.",
+              "Literasi digital muncul karena masyarakat modern tidak mampu menggunakan teknologi.  ",
+               "Internet menjadi penyebab utama penyalahgunaan informasi di masyarakat."],
+
+      jawab: 2
+       },
+  
+    
+  ],
+
+  "pbm" : [
+                                  {  //soal no 20
+          tanya: `<sup style="font-size: 20px; color: red;">1</sup>Perkembangan teknologi digital saat ini berlangsung sangat cepat.`+
+`<sup style="font-size: 20px; color: red;">2</sup>Internet menjadi sarana utama penyebaran informasi di berbagai bidang kehidupan.`+
+`<sup style="font-size: 20px; color: red;">3</sup>Media sosial memungkinkan setiap individu untuk memproduksi dan menyebarkan informasi secara mandiri.`+
+`<sup style="font-size: 20px; color: red;">4</sup>Namun, kemudahan tersebut juga meningkatkan risiko penyebaran informasi yang tidak akurat.`+
+`<sup style="font-size: 20px; color: red;">5</sup>Informasi yang tidak terverifikasi dapat memengaruhi opini publik secara luas.`+
+`<sup style="font-size: 20px; color: red;">6</sup>Oleh karena itu, literasi digital menjadi kemampuan penting bagi masyarakat modern.`+
+`<sup style="font-size: 20px; color: red;">7</sup>Literasi digital mencakup kemampuan mengakses, memahami, dan mengevaluasi informasi secara kritis.`+
+`<sup style="font-size: 20px; color: red;">8</sup>Selain itu, literasi digital juga berkaitan dengan etika dalam menggunakan teknologi.`+
+`<sup style="font-size: 20px; color: red;">9</sup>Peningkatan literasi digital diharapkan dapat menekan dampak negatif penyalahgunaan informasi.`+
+`<sup style="font-size: 20px; color: red;">10</sup>Dengan demikian, teknologi digital dapat dimanfaatkan secara lebih bijak dan bertanggung jawab.
+
+              
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 17 s.d. 20, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+             Hubungan sebab–akibat yang tepat berdasarkan kalimat 1 – 6 adalah …`,
+
+
+       opsi: ["Perkembangan teknologi digital yang cepat menyebabkan masyarakat enggan memanfaatkan internet.", 
+              "Kemudahan penyebaran informasi melalui media sosial menurunkan kebutuhan akan literasi digital.",
+              "Risiko penyebaran informasi tidak akurat mendorong pentingnya literasi digital.",
+              "Literasi digital muncul karena masyarakat modern tidak mampu menggunakan teknologi.  ",
+               "Internet menjadi penyebab utama penyalahgunaan informasi di masyarakat."],
+
+      jawab: 2
+       }
+  ]
 }
+
+
 
 // Config untuk setiap subtes
 const SUBTES_CONFIG = {
@@ -821,16 +1093,21 @@ const SUBTES_CONFIG = {
         total: 30,
         time: 30 * 60
     },
-    "TPS - Pemahaman Bacaan": {
+    "TPS - Pengetahuan dan Pemahaman Umum": {
         key: "ppu", 
         total: 20,
         time: 20 * 60
     },
-    // Tambahkan subtes lain...
+        "TPS - Pemahaman Bacaan dan Menulis": {
+        key: "ppu", 
+        total: 20,
+        time: 20 * 60
+    },
+   
 };
 
 // Inisialisasi
-let currentSubtest = "TPS - Pemahaman Bacaan"; // Contoh untuk PPU
+let currentSubtest = ""// Contoh untuk PPU
 let config = SUBTES_CONFIG[currentSubtest];
 let soalData = SOAL_DATA[config.key];
 let totalQuestions = config.total;
