@@ -535,7 +535,7 @@ const SOAL_DATA = {
       
 },{
   // soal no 28
-   tanya: `Manakah di antara bilangan berikut yang PALING mendekati hasil dari <p><sup>2</sup>/<sub>7</sub></p> + 0,683?`,
+   tanya: `Manakah di antara bilangan berikut yang PALING mendekati hasil dari <p><sup>2</sup>/<sub>7</sub> + 0,683?</p>`,
      opsi: ["97%", 
            "98%",
            "99%",
