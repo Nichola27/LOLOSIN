@@ -587,23 +587,228 @@ const SOAL_DATA = {
   "ppu" : [
             {
     //soal no 1
-      tanya: `Diketahui X, Y, dan Z adalah perusahaan layanan taksi daring. Berikut adalah informasi mengenai ketiga perusahaan tersebut pada bulan ini.
-      
-             (i) Perusahaan X dan Y memiliki selisih jumlah pengguna sebanyak 1.200 orang.
-(ii) Perbandingan jumlah pengguna di Perusahaan X dan Z adalah 4 : 9.
-(iii) Jumlah pengguna di Perusahaan Y tiga kali lipat dari jumlah pengguna di Perusahaan Z.
-(iv) Jumlah pengguna di Perusahaan X pada bulan lalu adalah 3.000 orang dan bertambah 25% pada bulan ini.
+      tanya:  `<sup style= "font-size: 20px; color: red;";>1</sup>Alih-alih menjarah ikan yang berhamburan, warga sekitar berbondong-bondong membantu memungut ikan dan mengembalikannya tanpa mengambil satu ekor pun.`+
+              `<sup style= "font-size: 20px; color: red;";>2</sup>Aksi penuh nilai moral ini terjadi saat truk bermuatan ikan mengalami kecelakaan dan terbalik di Jalan Lintas Banda Aceh, Meulaboh, Kecamatan Lhong, Aceh Besar.`+
+              `<sup style= "font-size: 20px; color: red;";>3</sup>Tindakan warga tersebut mendapat apresiasi yang baik di media sosial.`+
+              `<sup style= "font-size: 20px; color: red;";>4</sup>Ini dianggap contoh nyata kejujuran yang patut diteladankan.`+
+              `<sup style= "font-size: 20px; color: red;";>5</sup>Padahal, banyak orang yang mungkin tergoda mengambil keuntungan dari musibah orang lain.` +
+              `<sup style= "font-size: 20px; color: red;";>6</sup>Contohnya adalah banyak peristiwa penjarahan di daerah lain terhadap mobil pengangkut barang yang mengalami kecelakaan.`+
+              `<sup style= "font-size: 20px; color: red;";>7</sup>Warga Aceh justru menunjukkan empati dan kepeduliannya.
               
-          Informasi manakah yang dapat digunakan untuk menentukan jumlah pengguna di Perusahaan Y pada bulan ini?`,
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 01 s.d. 05, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+              Kata apresiasi dalam kalimat (3) berasosiasi dengan ....`,
 
-       opsi: ["(i) dan (ii)", 
-              "(i) dan (iii)",
-              "(ii) dan (iii)",
-              "(ii) dan (iv)",
-               "(iii) dan (iv)"],
+
+       opsi: ["Penilaian", 
+              "Penggemar",
+              "Penghormatan",
+              "Perhatian",
+               "Penghargaan"],  
+
+      jawab: 4
+    },
+                {
+    //soal no 2
+      tanya:  `<sup style= "font-size: 20px; color: red;";>1</sup>Alih-alih menjarah ikan yang berhamburan, warga sekitar berbondong-bondong membantu memungut ikan dan mengembalikannya tanpa mengambil satu ekor pun.`+
+              `<sup style= "font-size: 20px; color: red;";>2</sup>Aksi penuh nilai moral ini terjadi saat truk bermuatan ikan mengalami kecelakaan dan terbalik di Jalan Lintas Banda Aceh, Meulaboh, Kecamatan Lhong, Aceh Besar.`+
+              `<sup style= "font-size: 20px; color: red;";>3</sup>Tindakan warga tersebut mendapat apresiasi yang baik di media sosial.`+
+              `<sup style= "font-size: 20px; color: red;";>4</sup>Ini dianggap contoh nyata kejujuran yang patut diteladankan.`+
+              `<sup style= "font-size: 20px; color: red;";>5</sup>Padahal, banyak orang yang mungkin tergoda mengambil keuntungan dari musibah orang lain.` +
+              `<sup style= "font-size: 20px; color: red;";>6</sup>Contohnya adalah banyak peristiwa penjarahan di daerah lain terhadap mobil pengangkut barang yang mengalami kecelakaan.`+
+              `<sup style= "font-size: 20px; color: red;";>7</sup>Warga Aceh justru menunjukkan empati dan kepeduliannya.
+              
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 01 s.d. 05, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+              Pola kalimat pasif yang dibentuk dari kalimat aktif "Fast fashion memiliki dampak negatif yang terstruktur" memiliki struktur yang sama dengan kalimat ....`,
+
+
+       opsi: ["(1)", 
+              "(2)",
+              "(3)",
+              "(4)",
+               "(5)"],
+
+      jawab: 3
+    },
+                    {
+    //soal no 3
+      tanya:  `<sup style= "font-size: 20px; color: red;";>1</sup>Alih-alih menjarah ikan yang berhamburan, warga sekitar berbondong-bondong membantu memungut ikan dan mengembalikannya tanpa mengambil satu ekor pun.`+
+              `<sup style= "font-size: 20px; color: red;";>2</sup>Aksi penuh nilai moral ini terjadi saat truk bermuatan ikan mengalami kecelakaan dan terbalik di Jalan Lintas Banda Aceh, Meulaboh, Kecamatan Lhong, Aceh Besar.`+
+              `<sup style= "font-size: 20px; color: red;";>3</sup>Tindakan warga tersebut mendapat apresiasi yang baik di media sosial.`+
+              `<sup style= "font-size: 20px; color: red;";>4</sup>Ini dianggap contoh nyata kejujuran yang patut diteladankan.`+
+              `<sup style= "font-size: 20px; color: red;";>5</sup>Padahal, banyak orang yang mungkin tergoda mengambil keuntungan dari musibah orang lain.` +
+              `<sup style= "font-size: 20px; color: red;";>6</sup>Contohnya adalah banyak peristiwa penjarahan di daerah lain terhadap mobil pengangkut barang yang mengalami kecelakaan.`+
+              `<sup style= "font-size: 20px; color: red;";>7</sup>Warga Aceh justru menunjukkan empati dan kepeduliannya.
+              
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 01 s.d. 05, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+              Kata berhamburan dalam kalimat <sup style= "font-size: 20px; color: red;";>1</sup> bermakna “berserakan atau bertebaran tak teratur (biasanya benda).” Bentuk ber-an pada kata tersebut tidak mempunyai kesamaan makna dengan bentuk ber-an dalam kalimat …`,
+
+
+       opsi: ["Naskah yang dipegangnya berhamburan karena bertabrakan dengan orang yang berlari.", 
+              "Mereka mencari kerang yang berhamburan di sepanjang pantai.",
+              "Semenit dari bel berbunyi, anak-anak berhamburan ke luar kelas",
+              "Demi melihat air terjun yang indah, kami berhamburan terjun tanpa memperhatikan bahaya yang",
+               "Air matanya berhamburan saat menceritakan kisah tragis adiknya yang dirundung teman"],
 
       jawab: 2
     },
+
+        {
+    //soal no 4
+      tanya:  `<sup style= "font-size: 20px; color: red;";>1</sup>Alih-alih menjarah ikan yang berhamburan, warga sekitar berbondong-bondong membantu memungut ikan dan mengembalikannya tanpa mengambil satu ekor pun.`+
+              `<sup style= "font-size: 20px; color: red;";>2</sup>Aksi penuh nilai moral ini terjadi saat truk bermuatan ikan mengalami kecelakaan dan terbalik di Jalan Lintas Banda Aceh, Meulaboh, Kecamatan Lhong, Aceh Besar.`+
+              `<sup style= "font-size: 20px; color: red;";>3</sup>Tindakan warga tersebut mendapat apresiasi yang baik di media sosial.`+
+              `<sup style= "font-size: 20px; color: red;";>4</sup>Ini dianggap contoh nyata kejujuran yang patut diteladankan.`+
+              `<sup style= "font-size: 20px; color: red;";>5</sup>Padahal, banyak orang yang mungkin tergoda mengambil keuntungan dari musibah orang lain.` +
+              `<sup style= "font-size: 20px; color: red;";>6</sup>Contohnya adalah banyak peristiwa penjarahan di daerah lain terhadap mobil pengangkut barang yang mengalami kecelakaan.`+
+              `<sup style= "font-size: 20px; color: red;";>7</sup>Warga Aceh justru menunjukkan empati dan kepeduliannya.
+              
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 01 s.d. 05, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+               Kata nilai pada frasa nilai moral dalam kalimat (2) membentuk hubungan makna yang mirip dengan pasangan kata dalam frasa ... `,
+
+
+       opsi: ["warga sekitar", 
+              "daerah lain",
+              "contoh nyata",
+              " peristiwa penjarahan",
+               "media sosial"],
+
+      jawab: 2
+    },
+
+            {
+    //soal no 5
+      tanya:  `<sup style= "font-size: 20px; color: red;";>1</sup>Alih-alih menjarah ikan yang berhamburan, warga sekitar berbondong-bondong membantu memungut ikan dan mengembalikannya tanpa mengambil satu ekor pun.`+
+              `<sup style= "font-size: 20px; color: red;";>2</sup>Aksi penuh nilai moral ini terjadi saat truk bermuatan ikan mengalami kecelakaan dan terbalik di Jalan Lintas Banda Aceh, Meulaboh, Kecamatan Lhong, Aceh Besar.`+
+              `<sup style= "font-size: 20px; color: red;";>3</sup>Tindakan warga tersebut mendapat apresiasi yang baik di media sosial.`+
+              `<sup style= "font-size: 20px; color: red;";>4</sup>Ini dianggap contoh nyata kejujuran yang patut diteladankan.`+
+              `<sup style= "font-size: 20px; color: red;";>5</sup>Padahal, banyak orang yang mungkin tergoda mengambil keuntungan dari musibah orang lain.` +
+              `<sup style= "font-size: 20px; color: red;";>6</sup>Contohnya adalah banyak peristiwa penjarahan di daerah lain terhadap mobil pengangkut barang yang mengalami kecelakaan.`+
+              `<sup style= "font-size: 20px; color: red;";>7</sup>Warga Aceh justru menunjukkan empati dan kepeduliannya.
+              
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 01 s.d. 05, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+               Kata justru dalam kalimat (7) menunjukkan hubungan ... dengan isi kalimat (6). `,
+
+
+       opsi: [" sebab-akibat", 
+              "urutan waktu",
+              "pertentangan",
+              "penjelasan",
+               "penegasan"],
+
+      jawab: 2
+    },
+
+    {
+    //soal no 6
+      tanya:  `<sup style= "font-size: 20px; color: red;";>1</sup>Sebagai upaya menjaga ekosistem laut, pemerintah melarang penggunaan jaring pukat harimau secara permanen.`+
+              `<sup style= "font-size: 20px; color: red;";>2</Langkah tegas ini diambil setelah studi ilmiah menunjukkan kerusakan parah pada terumbu karang dan penurunan drastis populasi ikan tangkapan.`+
+              `<sup style= "font-size: 20px; color: red;";>3</sup>Aturan baru tersebut menuai kritik tajam dari nelayan tradisional yang menganggap mata pencaharian mereka terancam.`+
+              `<sup style= "font-size: 20px; color: red;";>4</sup>Namun, berbagai kalangan aktivis lingkungan justru menyambut gembira kebijakan ini.`+
+              `<sup style= "font-size: 20px; color: red;";>5</sup>Mereka berpendapat, keberlanjutan ekosistem lebih penting daripada keuntungan jangka pendek.` +
+              `<sup style= "font-size: 20px; color: red;";>6</sup>Sebagai solusi, pemerintah berencana memberikan pelatihan dan bantuan alat tangkap ramah lingkungan kepada nelayan terdampak.`+
+              `<sup style= "font-size: 20px; color: red;";>7</sup>Dengan demikian, diharapkan terjadi keseimbangan antara pelestarian alam dan kebutuhan ekonomi masyarakat pesisir.
+              
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 06 s.d. 10, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+              Kata menuai dalam kalimat (3) memiliki makna yang paling dekat dengan …`,
+
+
+       opsi: ["menanam", 
+              "menghasilkan",
+              "menyabit",
+              "memperoleh",
+               "menanggapi"],
+
+      jawab: 1
+    },
+
+        {
+    //soal no 7
+      tanya:  `<sup style= "font-size: 20px; color: red;";>1</sup>Sebagai upaya menjaga ekosistem laut, pemerintah melarang penggunaan jaring pukat harimau secara permanen.`+
+              `<sup style= "font-size: 20px; color: red;";>2</Langkah tegas ini diambil setelah studi ilmiah menunjukkan kerusakan parah pada terumbu karang dan penurunan drastis populasi ikan tangkapan.`+
+              `<sup style= "font-size: 20px; color: red;";>3</sup>Aturan baru tersebut menuai kritik tajam dari nelayan tradisional yang menganggap mata pencaharian mereka terancam.`+
+              `<sup style= "font-size: 20px; color: red;";>4</sup>Namun, berbagai kalangan aktivis lingkungan justru menyambut gembira kebijakan ini.`+
+              `<sup style= "font-size: 20px; color: red;";>5</sup>Mereka berpendapat, keberlanjutan ekosistem lebih penting daripada keuntungan jangka pendek.` +
+              `<sup style= "font-size: 20px; color: red;";>6</sup>Sebagai solusi, pemerintah berencana memberikan pelatihan dan bantuan alat tangkap ramah lingkungan kepada nelayan terdampak.`+
+              `<sup style= "font-size: 20px; color: red;";>7</sup>Dengan demikian, diharapkan terjadi keseimbangan antara pelestarian alam dan kebutuhan ekonomi masyarakat pesisir.
+              
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 06 s.d. 10, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+              Kalimat nonformal dalam bacaan tersebut adalah …`,
+
+
+       opsi: ["kalimat (1)", 
+              "kalimat (2)",
+              "kalimat (3)",
+              "kalimat (4)",
+               "kalimat (5)"],
+
+      jawab: 3
+    },
+            {
+    //soal no 8
+      tanya:  `<sup style= "font-size: 20px; color: red;";>1</sup>Sebagai upaya menjaga ekosistem laut, pemerintah melarang penggunaan jaring pukat harimau secara permanen.`+
+              `<sup style= "font-size: 20px; color: red;";>2</Langkah tegas ini diambil setelah studi ilmiah menunjukkan kerusakan parah pada terumbu karang dan penurunan drastis populasi ikan tangkapan.`+
+              `<sup style= "font-size: 20px; color: red;";>3</sup>Aturan baru tersebut menuai kritik tajam dari nelayan tradisional yang menganggap mata pencaharian mereka terancam.`+
+              `<sup style= "font-size: 20px; color: red;";>4</sup>Namun, berbagai kalangan aktivis lingkungan justru menyambut gembira kebijakan ini.`+
+              `<sup style= "font-size: 20px; color: red;";>5</sup>Mereka berpendapat, keberlanjutan ekosistem lebih penting daripada keuntungan jangka pendek.` +
+              `<sup style= "font-size: 20px; color: red;";>6</sup>Sebagai solusi, pemerintah berencana memberikan pelatihan dan bantuan alat tangkap ramah lingkungan kepada nelayan terdampak.`+
+              `<sup style= "font-size: 20px; color: red;";>7</sup>Dengan demikian, diharapkan terjadi keseimbangan antara pelestarian alam dan kebutuhan ekonomi masyarakat pesisir.
+              
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 06 s.d. 10, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+               Lawan kata demonstrasi dalam kalimat (1) adalah ...`,
+
+
+       opsi: ["keyakinan", 
+              " protes",
+              "takluk",
+              "keberatan",
+               "unjuk rasa"],
+
+      jawab: 3
+    },            {
+    //soal no 9
+      tanya:  `<sup style= "font-size: 20px; color: red;";>1</sup>Sebagai upaya menjaga ekosistem laut, pemerintah melarang penggunaan jaring pukat harimau secara permanen.`+
+              `<sup style= "font-size: 20px; color: red;";>2</Langkah tegas ini diambil setelah studi ilmiah menunjukkan kerusakan parah pada terumbu karang dan penurunan drastis populasi ikan tangkapan.`+
+              `<sup style= "font-size: 20px; color: red;";>3</sup>Aturan baru tersebut menuai kritik tajam dari nelayan tradisional yang menganggap mata pencaharian mereka terancam.`+
+              `<sup style= "font-size: 20px; color: red;";>4</sup>Namun, berbagai kalangan aktivis lingkungan justru menyambut gembira kebijakan ini.`+
+              `<sup style= "font-size: 20px; color: red;";>5</sup>Mereka berpendapat, keberlanjutan ekosistem lebih penting daripada keuntungan jangka pendek.` +
+              `<sup style= "font-size: 20px; color: red;";>6</sup>Sebagai solusi, pemerintah berencana memberikan pelatihan dan bantuan alat tangkap ramah lingkungan kepada nelayan terdampak.`+
+              `<sup style= "font-size: 20px; color: red;";>7</sup>Dengan demikian, diharapkan terjadi keseimbangan antara pelestarian alam dan kebutuhan ekonomi masyarakat pesisir.
+              
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 06 s.d. 10, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+              Kelompok kata berpasangan tetap dalam bacaan tersebut adalah ...`,
+
+
+       opsi: ["aksi demonstrasi", 
+              "polemik publik",
+              "penundaan pengangkatan",
+              "mengundurkan diri",
+               "penghasilan tetap"],
+
+      jawab: 2
+    },
+    {
+    //soal no 10
+      tanya:  `<sup style= "font-size: 20px; color: red;";>1</sup>Sebagai upaya menjaga ekosistem laut, pemerintah melarang penggunaan jaring pukat harimau secara permanen.`+
+              `<sup style= "font-size: 20px; color: red;";>2</Langkah tegas ini diambil setelah studi ilmiah menunjukkan kerusakan parah pada terumbu karang dan penurunan drastis populasi ikan tangkapan.`+
+              `<sup style= "font-size: 20px; color: red;";>3</sup>Aturan baru tersebut menuai kritik tajam dari nelayan tradisional yang menganggap mata pencaharian mereka terancam.`+
+              `<sup style= "font-size: 20px; color: red;";>4</sup>Namun, berbagai kalangan aktivis lingkungan justru menyambut gembira kebijakan ini.`+
+              `<sup style= "font-size: 20px; color: red;";>5</sup>Mereka berpendapat, keberlanjutan ekosistem lebih penting daripada keuntungan jangka pendek.` +
+              `<sup style= "font-size: 20px; color: red;";>6</sup>Sebagai solusi, pemerintah berencana memberikan pelatihan dan bantuan alat tangkap ramah lingkungan kepada nelayan terdampak.`+
+              `<sup style= "font-size: 20px; color: red;";>7</sup>Dengan demikian, diharapkan terjadi keseimbangan antara pelestarian alam dan kebutuhan ekonomi masyarakat pesisir.
+              
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 06 s.d. 10, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+              Fungsi kata penghubung “seperti diketahui” dalam kalimat (2) adalah …`,
+
+
+       opsi: ["memaparkan gagasan", 
+              "menjelaskan informasi",
+              "menambahkan informasi",
+              "mempertentangkan gagasan ",
+               "menyimpulkan pernyataan"],
+
+      jawab: 1
+    },
+    
     
   ]
 
@@ -619,7 +824,7 @@ const SUBTES_CONFIG = {
     "TPS - Pemahaman Bacaan": {
         key: "ppu", 
         total: 20,
-        time: 40 * 60
+        time: 20 * 60
     },
     // Tambahkan subtes lain...
 };

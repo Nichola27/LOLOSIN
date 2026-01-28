@@ -1,0 +1,1175 @@
+PENJELASAN SOAL PAKET LOLOSIN 1 
+
+PENALARAN UMUM : 
+
+1.Premis 1: Semua insinyur → cepat & teliti
+
+Premis 2: Sebagian insinyur → mampu bekerja di bawah tekanan
+
+Maka: sebagian insinyur pasti punya semua sifat itu sekaligus
+
+
+2.Soalnya (versi Ardi & Bima, inti logika)
+
+Ardi: Siswa lulus PTN karena daya juang tinggi + motivasi terjaga.
+
+Bima: Siswa lulus PTN jika punya >3 prestasi + eligible.
+
+Data PTN: Siswa yang lulus PTN punya dorongan kuat, tekun belajar, dan mampu bertahan dalam kesulitan.
+
+
+3.Tidur larut malam → konsentrasi menurun
+
+Olahraga rutin → tubuh bugar
+
+Konsentrasi tidak menurun atau tubuh tidak bugar
+
+Misalkan:
+
+A = tidur larut malam
+
+B = konsentrasi menurun
+
+C = olahraga rutin
+
+D = tubuh bugar
+
+Diketahui:
+
+A → B
+
+C → D
+
+¬B ∨ ¬D
+
+Ubah implikasi ke kontrapositif:
+
+A → B ⟹ ¬B → ¬A
+C → D ⟹ ¬D → ¬C
+
+Premis ke-3 bilang: ¬B atau ¬D
+Artinya:
+
+kalau ¬B → ¬A
+
+kalau ¬D → ¬C
+
+Maka simpulan pastinya:
+👉 ¬A ∨ ¬C
+= tidak tidur larut malam ATAU tidak berolahraga secara rutin
+
+4.
+
+Diketahui:
+
+Jika teknisi tidak melakukan perawatan rutin → sistem pendingin tidak berfungsi
+
+Jika sistem pendingin tidak berfungsi → sebagian data tidak dapat diakses
+
+Rantai logika:
+👉 Teknisi tidak merawat → sebagian data tidak dapat diakses
+
+Itu persis opsi D.
+
+Pilihan lain:
+
+❌ A & B: kebalik (konversi salah)
+
+❌ C: bertentangan (kalau dirawat justru aman)
+
+❌ E: sebab–akibat kacau
+
+
+
+5.   Pembahasan Singkat (anti-ribet)
+
+Di soal disebutkan dampak akhir → emosi atlet lebih stabil
+
+Emosi stabil → tetap tenang saat tekanan pertandingan
+
+A, B, D, E = penyebab / proses sebelum berhasil
+
+C = akibat langsung dari keberhasilan
+
+👉 Jadi yang PALING MUNGKIN terjadi adalah C
+
+
+6.Syarat insentif:
+
+Target tercapai (bukan hampir)
+
+Penilaian “Sangat Baik” (bukan hampir)
+
+Fakta tentang Rina:
+
+Target belum tercapai
+
+Penilaian belum didapat
+
+Tapi simpulan bilang “layak mendapatkan insentif”
+
+👉 Karena syarat wajib belum terpenuhi, simpulan bertentangan langsung dengan informasi.
+
+🔴 Bukan “mungkin”
+🔴 Bukan “kurang data”
+✅ Tapi PASTI SALAH
+
+7.
+Semua analis data → berpikir sistematis & teliti
+
+Sebagian analis data → mampu bekerja di bawah tekanan
+
+Maka:
+👉 Sebagian analis data yang mampu bekerja di bawah tekanan
+👉 PASTI termasuk analis data, sehingga
+👉 PASTI berpikir sistematis dan teliti
+
+Pilihan lain:
+
+❌ A, D → terlalu menggeneralisasi “semua”
+
+❌ C → bertentangan (dibilang tidak sistematis)
+
+❌ E → mengada-ada (tidak disebut tidak mampu)
+
+
+8.
+Data menekankan: dukungan dan kebijakan pemerintah
+
+Pengamat B: prestasi atlet dipengaruhi dukungan pemerintah → sesuai dengan data
+
+Pengamat A: bicara soal metode pelatih → tidak dibahas dalam data
+
+👉 Jadi data memperkuat pendapat B, bukan A.
+
+9.Pembahasan Singkat (ringkas & logis)
+
+Jika tidak mencatat → bawa laptop
+
+Jika ikut kelas tambahan → pakai tablet
+
+Fakta: tidak bawa laptop ATAU tidak pakai tablet
+
+Artinya:
+
+tidak bawa laptop → berarti mencatat materi
+
+tidak pakai tablet → berarti tidak ikut kelas tambahan
+
+Maka simpulan yang pasti:
+👉 mencatat materi ATAU mengikuti kelas tambahan
+
+10.Analisis pilihan:
+
+A. Penurunan kualitas hubungan personal muncul dikarenakan seseorang memiliki kecanduan kerja yang sangat ekstrem.
+→ Teks hanya menyatakan workaholic bisa sebabkan kelelahan kronis yang perlahan bisa berdampak pada penurunan kualitas hubungan. Tetapi teks tidak mengatakan bahwa penurunan hubungan personal hanya terjadi jika kecanduan kerja "sangat ekstrem". Bisa jadi tingkat sedang juga bisa, tapi teks tidak menyatakan harus "sangat ekstrem". Jadi tidak PASTI BENAR dari teks.
+
+B. Rasa tidak produktif akan mengakibatkan seseorang mengalami kelelahan kronis.
+→ Tidak langsung. Rasa tidak produktif menyebabkan workaholic, baru workaholic bisa menyebabkan kelelahan kronis. Jadi “akan mengakibatkan” terlalu langsung dan pasti, padahal mungkin saja ada faktor lain atau tidak selalu terjadi. Tidak pasti benar.
+
+C. Jika tidak ada perasaan tidak produktif, maka tidak akan mengalami workaholic.
+→ Menurut teks, workaholic terjadi karena merasa tidak produktif jika tidak bekerja, dan kerja adalah cara mengatasi rasa tidak produktif. Ini menunjukkan perasaan tidak produktif adalah penyebab menurut teks, tapi apakah satu-satunya penyebab? Teks tidak mengatakan workaholic hanya bisa disebabkan oleh itu. Mungkin ada penyebab lain (misal tuntutan kerja, kultur, dll). Jadi “tidak akan” terlalu mutlak dan tidak pasti dari teks.
+
+D. Workaholic disebabkan karena merasa tidak produktif yang cukup berat.
+→ Teks menyatakan workaholic terjadi karena pekerja merasa tidak produktif jika tidak bekerja. Tapi apakah harus "cukup berat"? Teks tidak menyebut tingkat berat-ringannya. Jadi "cukup berat" adalah tambahan yang tidak ada di teks. Tidak pasti benar.
+
+E. Tidak dapat disimpulkan.
+→ Dari analisis di atas, A, B, C, D semuanya memiliki unsur yang tidak pasti berdasarkan teks. Teks hanya menjelaskan hubungan secara umum tapi tidak cukup untuk memastikan pernyataan spesifik A–D.
+
+Namah, perhatikan C: Jika kita membaca teks dengan logika sebab-akibat yang diberikan, workaholic dijelaskan terjadi karena merasa tidak produktif jika tidak bekerja. Ini implikasi: jika tidak ada perasaan tidak produktif, maka tidak akan workaholic (dari penjelasan yang diberikan). Tetapi, apakah mungkin workaholic terjadi tanpa perasaan tidak produktif? Teks tidak membahas kemungkinan lain, tetapi juga tidak mengecualikan penyebab lain. Biasanya soal "PASTI BENAR" dari teks mengharuskan semua yang dinyatakan di pilihan langsung didukung teks tanpa tambahan asumsi.
+
+Di sini teks mengatakan: “Tentu saja hal tersebut terjadi karena pekerja merasa tidak produktif jika tidak bekerja” → berarti penulis memberi alasan mengapa workaholic terjadi. Itu sebab kerja menjadi cara mengatasi rasa tidak produktif. Jadi, bisa disimpulkan bahwa rasa tidak produktif adalah penyebab dalam kasus ini. Apakah itu berarti tanpa rasa tidak produktif mustahil workaholic? Tidak, mungkin saja ada penyebab lain, tetapi teks tidak membahas itu, sehingga kita tidak bisa mengambil kesimpulan bahwa C pasti benar secara universal.
+
+Karena semua pilihan A–D mengandung unsur yang tidak didukung teks secara pasti, maka E adalah jawaban yang paling aman.|
+
+
+
+11.A. “Manajer lama tidak pakai sistem digital”
+
+Sebagian benar, tapi soal menekankan mengapa produktivitas meningkat, bukan sekadar penggunaan aplikasi. Jadi ini tidak lengkap.
+
+B. “Tim kebetulan motivasinya tinggi”
+
+Ini jebakan klasik. Motivasi kebetulan bisa membantu, tapi peningkatan signifikan disebabkan oleh sistem dan metode baru, bukan keberuntungan. Salah.
+
+C. “Manajer lama sudah memberikan target, tapi tim tidak disiplin”
+
+Ini terdengar logis, tapi tidak menjelaskan strategi yang membuat tim berhasil sekarang. Masih kurang tepat.
+
+D. “Rina lebih strategis dalam merancang sistem pemantauan” ✅
+
+Ini paling tepat. Peningkatan produktivitas dijelaskan oleh sistem yang dirancang Rina—tim sadar progres pekerjaan dan menerima feedback, sehingga perbedaan produktivitas bisa dijelaskan secara logis.
+
+E. “Tim ingin terlihat baik di mata manajer baru”
+
+Ini jebakan psikologis. Hanya menekankan pencitraan, bukan hasil nyata. Salah.
+
+12.Kita ubah pernyataan ke bentuk logika:
+
+Semua A → B
+(Semua buku referensi akademik → mengandung informasi ilmiah)
+
+Sebagian A → C
+(Sebagian buku referensi akademik → harga terjangkau)
+
+Artinya:
+
+Ada sebagian objek yang A + C
+
+Karena semua A pasti B → maka objek itu juga B
+
+Secara logika:
+
+Sebagian C → B
+
+13.
+🔹 Pembahasan (step-by-step, tanpa lompat logika)
+1️⃣ Tentukan hari
+
+Hari ini = Sabtu
+3 hari yang lalu:
+
+Sabtu → Jumat (1)
+
+Jumat → Kamis (2)
+
+Kamis → Rabu (3)
+
+👉 Jadi 3 hari yang lalu = Rabu
+
+2️⃣ Cek aturan sepatu
+
+Senin, Rabu, Jumat → sepatu hitam
+
+Hari lain → sepatu bebas
+
+Karena Rabu termasuk hari wajib sepatu hitam, maka tidak ada kemungkinan lain.	
+
+14.
+✅ A
+
+Intensitas pendampingan belajar berkontribusi terhadap tingginya kelulusan
+
+✔️ Benar dan tepat
+
+Langsung sesuai hubungan sebab–akibat di soal
+
+Tidak menambah asumsi baru
+
+Kata “berkontribusi” → aman secara logika (tidak berlebihan)
+
+➡️ Jawaban PALING MUNGKIN BENAR
+
+❌ B
+
+Fasilitas lebih lengkap
+
+✖️ Salah.
+
+Tidak disebutkan dalam informasi
+
+Variabel baru (fasilitas) → asumsi liar
+
+❌ C
+
+Sekolah lain kelulusannya lebih rendah
+
+✖️ Tidak bisa disimpulkan.
+
+Soal tidak membandingkan secara langsung
+
+Fokus hanya pada Sekolah XYZ
+
+❌ D
+
+Rendahnya kelulusan pasti disebabkan metode
+
+✖️ Salah fatal.
+
+Kata “pasti” terlalu absolut
+
+Penyebab tidak disebutkan
+
+❌ E
+
+Keberhasilan sepenuhnya ditentukan kecerdasan
+
+✖️ Bertentangan dengan premis
+
+Soal justru menekankan peran sistem pendampingan
+
+15.
+A ❌
+
+Sesuai teks → BENAR, bukan pasti salah
+
+B ❌
+
+Disebut eksplisit → BENAR
+
+C ✅ PASTI SALAH
+
+“sepenuhnya bebas dari risiko operasional”
+
+❗ SALAH TOTAL
+Karena teks bilang:
+
+Bisa terganggu
+
+Butuh sistem cadangan
+
+➡️ Ini kontradiksi langsung
+
+D ❌
+
+Sesuai teks → BENAR
+
+E ❌
+
+Disebut di awal → BENAR
+
+16.
+A ❌
+
+“Semua” → terlalu luas, tidak disebutkan
+
+B ❌
+
+“Hanya” → pembatas mutlak, tidak ada di teks
+
+C ❌
+
+Membandingkan festival lain → tidak didukung data
+
+✅ D
+
+Festival makanan tradisional adalah bagian dari festival kuliner dan diminati masyarakat
+➡️ INI KESIMPULAN LANGSUNG & TAK TERBANTAH
+
+E ❌
+
+“Satu-satunya alasan” → salah
+Karena teks menyebut kualitas DAN harga
+
+17.
+
+A. Banyak calon siswa lebih memilih sekolah dengan pembelajaran tatap muka penuh.
+✔️ INI PALING MELEMAHKAN
+
+Langsung menyerang asumsi utama
+
+Kalau mayoritas calon siswa justru tidak suka daring, maka:
+
+menambah kelas daring ❌ tidak efektif meningkatkan minat
+
+➡️ Pukulan langsung ke inti argumen
+
+B. Beberapa sekolah lain telah menerapkan kelas daring sejak lama.
+❌ Netral
+
+Tidak bilang berhasil atau gagal
+
+Tidak melemahkan argumen
+
+C. Pelaksanaan kelas daring memerlukan perangkat teknologi yang memadai.
+❌ Hambatan teknis, bukan bukti minat turun
+
+Argumen masih bisa jalan
+
+D. Guru perlu waktu menyesuaikan diri dengan sistem daring.
+❌ Masalah internal, tidak membantah minat siswa
+
+E. Jumlah siswa yang mengikuti kelas daring terus meningkat.
+❌ Ini malah MENGUATKAN argumen
+
+18.
+
+A. Kedisiplinan belajar tinggi
+
+❌ Tidak pasti
+
+Fokus saat ujian tidak langsung menunjukkan disiplin jangka panjang
+
+B. Terbiasa belajar teratur
+
+❌ Turunan terlalu jauh
+
+Fokus ≠ bukti kebiasaan belajar
+
+C. Berhasil menyelesaikan studi
+
+❌ Terlalu jauh & futuristik
+
+Fokus saat ujian ≠ lulus studi
+
+D. Tekun mengerjakan tugas
+
+❌ Indikator disiplin, bukan fokus ujian
+
+E.
+🔑 Struktur sebab–akibat dalam soal:
+
+Dukungan lingkungan akademik → kepercayaan diri meningkat
+
+Kepercayaan diri → fokus tinggi & emosi stabil
+
+Diketahui: fokus mahasiswa sangat baik 
+
+19.
+A. Pendanaan + alat berat
+20% + 20% = 40% lebih cepat
+
+B. Pendanaan + tenaga kerja profesional
+20% + 30% = 50% lebih cepat ✅
+
+C. Alat berat + tenaga kerja profesional
+20% + 30% = 50% lebih cepat
+⚠️ Tapi dibandingkan B, pendanaan cair lebih krusial dalam konteks proyek (logis & umum di soal TPS)
+
+D. Alat berat + kendala cuaca
+20% − 10% = 10% lebih cepat
+
+E. Tenaga kerja profesional + kendala cuaca
+30% − 10% = 20% lebih cepat
+
+20.
+I. (i) + (ii)
+15% + 10% = 25% lebih cepat
+
+II. (i) + (iii)
+15% + 25% = 40% lebih cepat ✅
+
+III. (ii) + (iii)
+10% + 25% = 35% lebih cepat
+
+IV. (ii) + (iv)
+10% − 5% = 5% lebih cepat
+
+V. (iii) + (iv)
+25% − 5% = 20% lebih cepat
+
+21.
+ADE =0,3(70)+0,7(80)=21+56=77
+
+Sutrisn = 0,3(85)+0,7(75)=25,5+52,5=78
+
+Boni = 0,3(90)+0,7(60)=27+42=69
+
+Hendro = 0,3(70)+0,7(90)=21+63=84
+
+edison= 0,3(75)+0,7(85)=22,5+59,5=82
+
+22.
+📘 PEMBAHASAN
+
+Hitung kenaikan tiap jurusan dan periode.
+
+Jurusan Listrik
+
+2018 → 2019 = 55 − 50 = +5
+
+2019 → 2020 = 75 − 55 = +20
+
+2020 → 2021 = 90 − 75 = +15
+
+Jurusan Mesin
+
+2018 → 2019 = 65 − 60 = +5
+
+2019 → 2020 = 70 − 65 = +5
+
+2020 → 2021 = 80 − 70 = +10
+
+Analisis
+
+Kenaikan paling besar adalah +20%, terjadi pada:
+
+Jurusan Listrik periode 2019–2020
+
+23.
+2/3 ​×Target=84
+
+Target=84÷ 2/3
+	​
+
+=
+84 X 3/2 = 126
+
+24.
+Artinya 10% sisanya = 10 orang (tenaga pendukung)
+
+➡️ Maka total anggota panitia:
+
+10
+÷
+10
+%
+=
+10
+÷
+0,10
+=
+100
+ orang
+10÷10%=10÷0,10=100 orang
+
+Jumlah dosen:
+
+40
+%
+×
+100
+=
+40
+ orang
+40%×100=40 orang
+
+Jumlah staf administrasi:
+
+30
+%
+×
+100
+=
+30
+ orang
+30%×100=30 orang
+
+Selisih:
+
+40
+−
+30
+=
+10
+40−30=10
+
+25.
+1️⃣ Total beban pekerjaan
+
+24
+×
+75
+=
+1800
+ satuan kerja
+24×75=1800 satuan kerja
+
+2️⃣ Pekerjaan yang sudah diselesaikan
+
+24
+×
+30
+=
+720
+24×30=720
+
+Sisa pekerjaan:
+
+1800
+−
+720
+=
+1080
+1800−720=1080
+
+3️⃣ Waktu tersisa setelah jeda
+Total hari: 75
+Terpakai + berhenti:
+
+30
++
+5
+=
+35
+30+5=35
+
+Sisa waktu: 75−35=40 hari
+
+Yang sering dilupakan → hari berhenti tetap memakan jadwal, jadi tekanan kerja meningkat.
+
+Namun karena kemampuan pekerja bulat & minimum, jumlah pekerja harus dibulatkan ke atas agar benar-benar selesai tepat waktu.
+
+⇒
+30
+ pekerja total
+⇒30 pekerja total
+
+Tambahan:
+
+30
+−
+24
+=
+6
+30−24=6
+
+26.
+Diketahui data penjualan minggu ke-2 sampai ke-6:
+M
+2
+=
+23
+M 
+2
+​
+ =23
+M
+3
+=
+19
+M 
+3
+​
+ =19
+M
+4
+=
+22
+M 
+4
+​
+ =22
+M
+5
+=
+18
+M 
+5
+​
+ =18
+M
+6
+=
+21
+M 
+6
+​
+ =21
+
+Selisih antar minggu:
+M
+3
+−
+M
+2
+=
+19
+−
+23
+=
+−
+4
+M 
+3
+​
+ −M 
+2
+​
+ =19−23=−4
+M
+4
+−
+M
+3
+=
+22
+−
+19
+=
++
+3
+M 
+4
+​
+ −M 
+3
+​
+ =22−19=+3
+M
+5
+−
+M
+4
+=
+18
+−
+22
+=
+−
+4
+M 
+5
+​
+ −M 
+4
+​
+ =18−22=−4
+M
+6
+−
+M
+5
+=
+21
+−
+18
+=
++
+3
+M 
+6
+​
+ −M 
+5
+​
+ =21−18=+3
+
+Polanya: −4, +3, −4, +3 berulang.
+
+Maka selisih 
+M
+1
+M 
+1
+​
+  ke 
+M
+2
+M 
+2
+​
+  harus +3 agar siklus selisih dari 
+M
+1
+M 
+1
+​
+  lengkap:
++3, −4, +3, −4, +3, −4, ...
+
+Hitung 
+M
+1
+M 
+1
+​
+ :
+M
+1
++
+3
+=
+M
+2
+=
+23
+M 
+1
+​
+ +3=M 
+2
+​
+ =23
+M
+1
+=
+23
+−
+3
+=
+20
+M 
+1
+​
+ =23−3=20	
+
+27.
+Harga dua tahun lalu = 40% lebih murah dari harga tahun ini.
+Artinya:
+Harga dulu = Harga tahun ini − 40% dari Harga tahun ini
+→ Harga dulu = 60% dari Harga tahun ini
+
+Diketahui: Harga dua tahun lalu = Rp48.000,00
+Maka:
+
+60
+%
+×
+Harga tahun ini
+=
+48.000
+60%×Harga tahun ini=48.000
+0
+,
+6
+×
+H
+=
+48.000
+0,6×H=48.000
+H
+=
+48.000
+0
+,
+6
+=
+80.000
+H= 
+0,6
+48.000
+​
+ =80.000
+Jadi harga tahun ini = Rp80.000,00
+
+Jawaban: C. Rp80.000,00
+
+28.
+Ubah 
+2
+7
+7
+2
+​
+  ke desimal:
+
+2
+7
+≈
+0
+,
+285714...
+7
+2
+​
+ ≈0,285714...
+Jumlahkan dengan 0,683:
+
+0
+,
+285714
++
+0
+,
+683
+=
+0
+,
+968714...
+0,285714+0,683=0,968714...
+Ubah ke persen:
+
+0
+,
+968714
+×
+100
+%
+≈
+96
+,
+8714
+%
+0,968714×100%≈96,8714%
+Bandingkan dengan pilihan (dalam %):
+
+97% → selisih ≈ 0,1286%
+
+98% → selisih ≈ 1,1286%
+
+99% → selisih ≈ 2,1286%
+
+100% → selisih ≈ 3,1286%
+
+101% → selisih ≈ 4,1286%
+
+Yang paling mendekati adalah 97%.
+
+29.
+Perbandingan tepung : gula : keju = 
+3
+:
+5
+:
+7
+3:5:7
+Misal berat tepung = 
+3
+x
+3x, gula = 
+5
+x
+5x, keju = 
+7
+x
+7x.
+
+Mentega = 
+1
+3
+×
+tepung
+=
+1
+3
+×
+3
+x
+=
+x
+3
+1
+​
+ ×tepung= 
+3
+1
+​
+ ×3x=x.
+
+Diketahui mentega = 120 gram → 
+x
+=
+120
+x=120.
+
+Gula pasir = 
+5
+x
+=
+5
+×
+120
+=
+600
+5x=5×120=600 gram.
+
+30.Misal:
+
+X
+X = jumlah pengguna X bulan ini
+
+Y
+Y = jumlah pengguna Y bulan ini
+
+Z
+Z = jumlah pengguna Z bulan ini
+
+Dari (ii): 
+X
+:
+Z
+=
+4
+:
+9
+X:Z=4:9 → 
+X
+=
+4
+9
+Z
+X= 
+9
+4
+​
+ Z atau 
+Z
+=
+9
+4
+X
+Z= 
+4
+9
+​
+ X
+Dari (iii): 
+Y
+=
+3
+Z
+Y=3Z → 
+Y
+=
+3
+×
+9
+4
+X
+=
+27
+4
+X
+Y=3× 
+4
+9
+​
+ X= 
+4
+27
+​
+ X
+
+Dengan (ii) dan (iii) saja, hubungan X, Y, Z sudah lengkap. Kita bisa cari Y kalau tahu salah satu X, Y, atau Z.
+
+Apakah (iv) bisa memberi nilai X? Ya, dari (iv) X bulan lalu 3000, naik 25%:
+X
+=
+3000
+×
+1,25
+=
+3750
+X=3000×1,25=3750.
+
+Dari X = 3750, dengan (ii) dan (iii) bisa cari Y:
+Z
+=
+9
+4
+×
+3750
+=
+8437,5
+Z= 
+4
+9
+​
+ ×3750=8437,5 (agak aneh karena desimal, tapi mungkin data disengaja untuk tes).
+Lalu 
+Y
+=
+3
+×
+8437,5
+=
+25312,5
+Y=3×8437,5=25312,5.
+
+Tapi soal meminta “informasi yang dapat digunakan” tanpa harus mengecek kelogisan angka.
+
+Jika pakai (ii) dan (iv): dari (iv) dapat X, dari (ii) dapat Z, tapi untuk dapat Y perlu hubungan Y-Z, tidak ada di pilihan itu.
+
+Jika pakai (iii) dan (iv): dari (iv) dapat X, dari (iii) tidak bisa langsung dapat Y karena Z belum diketahui tanpa (ii). Jadi perlu (ii) juga.
+
+Cek pilihan yang lengkap:
+
+(ii) dan (iii) → dapat hubungan Y = 27/4 X → tapi X belum diketahui tanpa (iv).
+
+(ii) dan (iv) → dapat X dan Z, tapi Y tidak diketahui.
+
+(iii) dan (iv) → dapat X, tapi Z belum diketahui, jadi Y tidak bisa.
+
+Ternyata perlu tiga informasi: misal (ii), (iii), dan (iv) atau (i), (ii), dan (iii).
+
+Tapi pilihan cuma dua-dua.
+
+Coba lihat (i) dan (iii):
+(iii) Y = 3Z
+(i) |X - Y| = 1200 → tapi X belum diketahui tanpa (ii). Jadi perlu (ii) juga.
+
+Yang pasti cukup adalah kalau punya (ii) dan (iii) plus salah satu (i) atau (iv) untuk dapat angka pasti, tapi pilihan cuma dua-dua.
+
+Mungkin maksud soal: manakah dua informasi yang cukup jika digabung untuk tentukan Y?
+Cek:
+
+(ii) dan (iii) → hubungan lengkap tapi belum ada nilai pasti, perlu satu lagi untuk substitusi numerik.
+
+(iii) dan (iv) → dari (iv) dapat X, tapi dari (iii) tidak bisa dapat Y tanpa tahu Z, padahal Z tak diketahui. Jadi tidak cukup.
+
+(ii) dan (iv) → dapat X dan Z, tapi Y tidak diketahui.
+
+(i) dan (ii) → X - Y = ±1200 dan X : Z = 4:9 → masih ada dua variabel bebas (X dan Z, Y belum terkait kecuali ada (iii)).
+
+Kesimpulan: mungkin mereka menganggap dengan (ii) dan (iii) kita bisa cari Y dalam bentuk X, lalu (iv) memberi nilai X. Jadi cukup (ii), (iii), dan (iv). Tapi pilihan hanya dua.
+
+Jika harus memilih dari pilihan, maka yang paling mendekati cukup adalah (ii) dan (iv) tidak cukup, (iii) dan (iv) tidak cukup, (i) dan (iii) tidak cukup tanpa X, (i) dan (ii) tanpa hubungan Y-Z.
+
+Dari sini, mungkin jawaban dimaksud C. (ii) dan (iii), karena dengan itu kita bisa cari Y jika ada informasi tambahan lain (misal salah satu dari i atau iv). Tapi karena hanya dua informasi yang dipilih, mungkin mereka berpikir bahwa kita bisa hitung dari (ii) dan (iii) saja jika ada nilai total atau selisih? Tidak, belum cukup.
+
+Mari kita tes: Dari (ii) X : Z = 4 : 9 → Z = (9/4)X.
+Dari (iii) Y = 3Z = 3*(9/4)X = (27/4)X.
+Maka X = (4/27)Y.
+
+(i) |X - Y| = 1200 → |(4/27)Y - Y| = 1200 → |(-23/27)Y| = 1200 → Y = ± (1200*27/23).
+
+Jadi dengan (i) dan (ii) saja tidak bisa tanpa (iii), dengan (ii) dan (iii) belum cukup tanpa nilai X atau Y.
+
+Tapi mungkin dalam konteks soal, mereka menganggap bahwa dari (iv) bisa dapat X secara terpisah (diberikan fakta, bukan pilihan), jadi jika kita sudah punya (ii) dan (iii) cukup untuk cari Y asal tahu X. Maka (ii) dan (iii) adalah minimal hubungan yang diperlukan.
+
+Berdasarkan itu, C. (ii) dan (iii).
+
+
+PPU:
+1.Pertanyaan:
+Kata apresiasi dalam kalimat (3) berasosiasi dengan ….
+
+Konteks dalam teks:
+
+(3) Tindakan warga tersebut mendapat apresiasi yang baik di media sosial.
+
+Makna apresiasi dalam konteks ini adalah penghargaan atau pujian terhadap suatu tindakan baik.
+
+Pilihan:
+
+A. penilaian → Lebih netral, belum tentu positif.
+
+B. penggemar → Tidak tepat secara makna.
+
+C. penghormatan → Biasanya lebih untuk sosok/jasa, bukan sekadar respons terhadap berita.
+
+D. perhatian → Bisa, tapi terlalu umum.
+
+E. penghargaan → Paling tepat, karena apresiasi = penghargaan atas nilai baik sesuatu.
+
+✅ Jawaban: E (penghargaan)
+
+2.
+Pertanyaan:
+Bentuk pasif dari kalimat aktif "Fast fashion memiliki dampak negatif yang terstruktur" memiliki pola yang sama dengan pola kalimat ….
+
+Analisis:
+Kalimat aktif tersebut adalah:
+Subjek (Fast fashion) + Predikat (memiliki) + Objek (dampak negatif yang terstruktur).
+
+Kalimat pasifnya bisa dibuat:
+"Dampak negatif yang terstruktur dimiliki oleh fast fashion"
+Pola pasif: O + di-verb + (oleh S).
+
+Sekarang kita lihat kalimat dalam teks satu per satu:
+
+(1) warga berbondong-bondong membantu memungut ikan → Aktif, bukan pasif.
+
+(2) truk bermuatan ikan mengalami kecelakaan → Mengalami adalah verba aktif (bukan pasif dialami).
+
+(3) Tindakan warga tersebut mendapat apresiasi → Polanya: O (tindakan) + mendapat + apresiasi → Ini kalimat aktif, bukan pasif, karena subjeknya tindakan melakukan mendapat. Tidak ada imbuhan *di-* di predikat.
+
+(4) Ini dianggap contoh nyata → Kalimat pasif! Polanya: Ini (subjek) + dianggap (di-verb) + pelengkap (contoh nyata...). Mirip dengan pola pasif soal: O + di-V + pelengkap/objek tersisa. Subjek "Ini" sebenarnya adalah objek dari verba transitif menganggap.
+
+(5) banyak orang yang mungkin tergoda mengambil keuntungan → tergoda bukan pasif berpelaku, tapi kecenderungan keadaan.
+
+Yang paling cocok pola pasif transitif di-V adalah kalimat (4).
+
+3.
+Imbuhan ber- pada berbondong-bondong berarti melakukan tindakan secara bersama-sama dalam jumlah banyak. Pola ini sama dengan pilihan A, B, D, dan E. Sementara berguguran (C) bermakna keadaan benda berjatuhan secara alami, bukan tindakan bersama yang disengaja.
+
+
+4.
+Nilai moral memiliki pola KB + KS (kata benda + kata sifat), di mana nilai sebagai kata benda dan moral sebagai kata sifat yang menjelaskan jenis nilai. Pola yang sama terdapat pada contoh nyata (contoh = KB, nyata = KS). Pilihan lain tidak mengikuti pola ini.
+
+5.
+Kalimat (6) menyebutkan kebiasaan penjarahan di daerah lain ketika terjadi kecelakaan. Kalimat (7) menggunakan kata justru untuk menunjukkan bahwa warga Aceh bertindak sebaliknya (empati dan kepedulian), sehingga hubungannya adalah pertentangan atau perbandingan berlawanan.
+
+6.
+Kata menuai dalam konteks kalimat (3) digunakan secara kiasan untuk menyatakan “mendapatkan/menghasilkan (reaksi/tanggapan)”, bukan makna harfiah memanen dengan sabit.
+
+7.Kata daring (dalam jaringan) lebih bersifat nonformal dibandingkan online atau bentuk formal lainnya.
+
+8.Demonstrasi mengandaikan tindakan publik menuntut perubahan, sementara keyakinan lebih pada penerimaan tanpa perlawanan.
+
+9.Penundaan pengangkatan adalah istilah tetap yang sering muncul dalam konteks ketenagakerjaan/kepegawaian.
+
+10.Frasa seperti diketahui berfungsi memberikan penjelasan dengan merujuk pada pengetahuan bersama sebelum menyampaikan informasi lanjutan.
+
+11.
