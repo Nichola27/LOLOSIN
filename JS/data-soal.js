@@ -1027,7 +1027,7 @@ const SOAL_DATA = {
        },
        
                               {  //soal no 20
-          tanya: `<sup style="font-size: 20px; color: red;">1</sup>Perkembangan teknologi digital saat ini berlangsung sangat cepat.`+
+          tanya: `<sup style="font-size: 20px; color: red;">1</sup>Tantangan seorang guru masa.`+
 `<sup style="font-size: 20px; color: red;">2</sup>Internet menjadi sarana utama penyebaran informasi di berbagai bidang kehidupan.`+
 `<sup style="font-size: 20px; color: red;">3</sup>Media sosial memungkinkan setiap individu untuk memproduksi dan menyebarkan informasi secara mandiri.`+
 `<sup style="font-size: 20px; color: red;">4</sup>Namun, kemudahan tersebut juga meningkatkan risiko penyebaran informasi yang tidak akurat.`+
@@ -1056,31 +1056,539 @@ const SOAL_DATA = {
   ],
 
   "pbm" : [
-                                  {  //soal no 20
-          tanya: `<sup style="font-size: 20px; color: red;">1</sup>Perkembangan teknologi digital saat ini berlangsung sangat cepat.`+
-`<sup style="font-size: 20px; color: red;">2</sup>Internet menjadi sarana utama penyebaran informasi di berbagai bidang kehidupan.`+
-`<sup style="font-size: 20px; color: red;">3</sup>Media sosial memungkinkan setiap individu untuk memproduksi dan menyebarkan informasi secara mandiri.`+
-`<sup style="font-size: 20px; color: red;">4</sup>Namun, kemudahan tersebut juga meningkatkan risiko penyebaran informasi yang tidak akurat.`+
-`<sup style="font-size: 20px; color: red;">5</sup>Informasi yang tidak terverifikasi dapat memengaruhi opini publik secara luas.`+
-`<sup style="font-size: 20px; color: red;">6</sup>Oleh karena itu, literasi digital menjadi kemampuan penting bagi masyarakat modern.`+
-`<sup style="font-size: 20px; color: red;">7</sup>Literasi digital mencakup kemampuan mengakses, memahami, dan mengevaluasi informasi secara kritis.`+
-`<sup style="font-size: 20px; color: red;">8</sup>Selain itu, literasi digital juga berkaitan dengan etika dalam menggunakan teknologi.`+
-`<sup style="font-size: 20px; color: red;">9</sup>Peningkatan literasi digital diharapkan dapat menekan dampak negatif penyalahgunaan informasi.`+
-`<sup style="font-size: 20px; color: red;">10</sup>Dengan demikian, teknologi digital dapat dimanfaatkan secara lebih bijak dan bertanggung jawab.
+                                
+{  //soal no 1
+       tanya: `<sup style="font-size: 20px; color: red;">1</sup>Perkembangan teknologi informasi saat ini berlangsung sangat pesat.` +
+`<sup style="font-size: 20px; color: red;">2</sup>Berbagai peristiwa di belahan dunia lain dapat diketahui hanya dalam hitungan detik.`+
+`<sup style="font-size: 20px; color: red;">3</sup>Media digital menjadi sarana utama penyebaran informasi di era modern.`+
+`<sup style="font-size: 20px; color: red;">4</sup>Tidak dapat dimungkiri bahwa kehadiran internet telah mengubah cara manusia berkomunikasi.`+
+`<sup style="font-size: 20px; color: red;">5</sup>Namun, kemudahan akses informasi tersebut tidak selalu diiringi dengan ketepatan data.`+
+`<sup style="font-size: 20px; color: red;">6</sup>Banyak informasi beredar tanpa melalui proses verifikasi yang memadai.`+
+`<sup style="font-size: 20px; color: red;">7</sup>Akibatnya, berita palsu atau hoaks mudah tersebar di masyarakat.`+
+`<sup style="font-size: 20px; color: red;">8</sup>Kondisi ini menuntut setiap individu memiliki kemampuan literasi digital yang baik.`+
+`<sup style="font-size: 20px; color: red;">9</sup>Literasi digital mencakup kemampuan memahami, mengevaluasi, serta menggunakan informasi secara bijak.`+
+`<sup style="font-size: 20px; color: red;">10</sup>Tanpa kemampuan tersebut, masyarakat rentan terpengaruh informasi yang menyesatkan.`+
+`<sup style="font-size: 20px; color: red;">11</sup>Oleh karena itu, pendidikan literasi digital menjadi kebutuhan penting di era sekarang.` +
+`<sup style="font-size: 20px; color: red;">12</sup>Literasi digital, sangat diperlukan oleh masyarakat modern.
 
               
-              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 17 s.d. 20, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
-             Hubungan sebab–akibat yang tepat berdasarkan kalimat 1 – 6 adalah …`,
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 01 s.d. 05, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+             Kata yakni dalam kalimat (9) seharusnya …`,
 
 
-       opsi: ["Perkembangan teknologi digital yang cepat menyebabkan masyarakat enggan memanfaatkan internet.", 
-              "Kemudahan penyebaran informasi melalui media sosial menurunkan kebutuhan akan literasi digital.",
-              "Risiko penyebaran informasi tidak akurat mendorong pentingnya literasi digital.",
-              "Literasi digital muncul karena masyarakat modern tidak mampu menggunakan teknologi.  ",
-               "Internet menjadi penyebab utama penyalahgunaan informasi di masyarakat."],
+       opsi: ["dibiarkan saja", 
+              "dihilangkan",
+              "didahului kata adalah",
+              "diikuti kata menjadi  ",
+               "diganti dengan kata antara lain"],
+
+      jawab: 0
+       },
+{  //soal no 2
+              tanya: `<sup style="font-size: 20px; color: red;">1</sup>Perkembangan teknologi informasi saat ini berlangsung sangat pesat.`+
+`<sup style="font-size: 20px; color: red;">2</sup>Berbagai peristiwa di belahan dunia lain dapat diketahui hanya dalam hitungan detik.`+
+`<sup style="font-size: 20px; color: red;">3</sup>Media digital menjadi sarana utama penyebaran informasi di era modern.`+
+`<sup style="font-size: 20px; color: red;">4</sup>Tidak dapat dimungkiri bahwa kehadiran internet telah mengubah cara manusia berkomunikasi.`+
+`<sup style="font-size: 20px; color: red;">5</sup>Namun, kemudahan akses informasi tersebut tidak selalu diiringi dengan ketepatan data.`+
+`<sup style="font-size: 20px; color: red;">6</sup>Banyak informasi beredar tanpa melalui proses verifikasi yang memadai.`+
+`<sup style="font-size: 20px; color: red;">7</sup>Akibatnya, berita palsu atau hoaks mudah tersebar di masyarakat.`+
+`<sup style="font-size: 20px; color: red;">8</sup>Kondisi ini menuntut setiap individu memiliki kemampuan literasi digital yang baik.`+
+`<sup style="font-size: 20px; color: red;">9</sup>Literasi digital mencakup kemampuan memahami, mengevaluasi, serta menggunakan informasi secara bijak.`+
+`<sup style="font-size: 20px; color: red;">10</sup>Tanpa kemampuan tersebut, masyarakat rentan terpengaruh informasi yang menyesatkan.`+
+`<sup style="font-size: 20px; color: red;">11</sup>Oleh karena itu, pendidikan literasi digital menjadi kebutuhan penting di era sekarang.`+
+`<sup style="font-size: 20px; color: red;">12</sup>Literasi digital, sangat diperlukan oleh masyarakat modern.
+              
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 01 s.d. 05, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+             Kalimat manakah yang paling efektif sebagai hasil penggabungan kalimat (10) dan (11)?`,
+
+
+       opsi: ["Tanpa kemampuan tersebut, masyarakat rentan terpengaruh informasi yang menyesatkan, oleh karena itu pendidikan literasi digital menjadi kebutuhan penting di era sekarang", 
+              "Tanpa kemampuan tersebut, masyarakat rentan terpengaruh informasi yang menyesatkan sehingga pendidikan literasi digital menjadi kebutuhan penting di era sekarang",
+              "Tanpa kemampuan tersebut masyarakat yang rentan terpengaruh informasi yang menyesatkan, pendidikan literasi digital menjadi kebutuhan penting di era sekarang",
+              "Tanpa kemampuan tersebut, masyarakat rentan terpengaruh informasi yang menyesatkan, yang pendidikan literasi digital menjadi kebutuhan penting di era sekarang  ",
+               "Tanpa kemampuan tersebut, masyarakat rentan terpengaruh informasi , yang menyesatkan, yang pendidikan literasi digital menjadi kebutuhan penting di era sekarang"],
+
+      jawab: 1
+       },
+ {  //soal no 3
+                tanya: `<sup style="font-size: 20px; color: red;">1</sup>Perkembangan teknologi informasi saat ini berlangsung sangat pesat.`+
+`<sup style="font-size: 20px; color: red;">2</sup>Berbagai peristiwa di belahan dunia lain dapat diketahui hanya dalam hitungan detik.`+
+`<sup style="font-size: 20px; color: red;">3</sup>Media digital menjadi sarana utama penyebaran informasi di era modern.`+
+`<sup style="font-size: 20px; color: red;">4</sup>Tidak dapat dimungkiri bahwa kehadiran internet telah mengubah cara manusia berkomunikasi.`+
+`<sup style="font-size: 20px; color: red;">5</sup>Namun, kemudahan akses informasi tersebut tidak selalu diiringi dengan ketepatan data.`+
+`<sup style="font-size: 20px; color: red;">6</sup>Banyak informasi beredar tanpa melalui proses verifikasi yang memadai.`+
+`<sup style="font-size: 20px; color: red;">7</sup>Akibatnya, berita palsu atau hoaks mudah tersebar di masyarakat.`+
+`<sup style="font-size: 20px; color: red;">8</sup>Kondisi ini menuntut setiap individu memiliki kemampuan literasi digital yang baik.`+
+`<sup style="font-size: 20px; color: red;">9</sup>Literasi digital mencakup kemampuan memahami, mengevaluasi, serta menggunakan informasi secara bijak.`+
+`<sup style="font-size: 20px; color: red;">10</sup>Tanpa kemampuan tersebut, masyarakat rentan terpengaruh informasi yang menyesatkan.`+
+`<sup style="font-size: 20px; color: red;">11</sup>Oleh karena itu, pendidikan literasi digital menjadi kebutuhan penting di era sekarang.`+
+`<sup style="font-size: 20px; color: red;">12</sup>Literasi digital, sangat diperlukan oleh masyarakat modern.
+
+
+              
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 01 s.d. 05, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+             Apa judul yang paling tepat untuk teks tersebut?`,
+
+
+       opsi: ["Perkembangan Teknologi Informasi di Era Modern", 
+              "Peran Media Digital dalam Penyebaran Informasi",
+              "Tantangan Penyebaran Informasi di Masyarakat Digital",
+              "Pentingnya Literasi Digital di Era Informasi",
+               "Dampak Internet terhadap Pola Komunikasi Manusia"],
+
+      jawab: 3
+       },
+       
+    {  //soal no 4
+                 tanya: `<sup style="font-size: 20px; color: red;">1</sup>Perkembangan teknologi informasi saat ini berlangsung sangat pesat.`+
+`<sup style="font-size: 20px; color: red;">2</sup>Berbagai peristiwa di belahan dunia lain dapat diketahui hanya dalam hitungan detik.`+
+`<sup style="font-size: 20px; color: red;">3</sup>Media digital menjadi sarana utama penyebaran informasi di era modern.`+
+`<sup style="font-size: 20px; color: red;">4</sup>Tidak dapat dimungkiri bahwa kehadiran internet telah mengubah cara manusia berkomunikasi.`+
+`<sup style="font-size: 20px; color: red;">5</sup>Namun, kemudahan akses informasi tersebut tidak selalu diiringi dengan ketepatan data.`+
+`<sup style="font-size: 20px; color: red;">6</sup>Banyak informasi beredar tanpa melalui proses verifikasi yang memadai.`+
+`<sup style="font-size: 20px; color: red;">7</sup>Akibatnya, berita palsu atau hoaks mudah tersebar di masyarakat.`+
+`<sup style="font-size: 20px; color: red;">8</sup>Kondisi ini menuntut setiap individu memiliki kemampuan literasi digital yang baik.`+
+`<sup style="font-size: 20px; color: red;">9</sup>Literasi digital mencakup kemampuan memahami, mengevaluasi, serta menggunakan informasi secara bijak.`+
+`<sup style="font-size: 20px; color: red;">10</sup>Tanpa kemampuan tersebut, masyarakat rentan terpengaruh informasi yang menyesatkan.`+
+`<sup style="font-size: 20px; color: red;">11</sup>Oleh karena itu, pendidikan literasi digital menjadi kebutuhan penting di era sekarang.`+
+`<sup style="font-size: 20px; color: red;">12</sup>Literasi digital, sangat diperlukan oleh masyarakat modern.
+
+              
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 01 s.d. 05, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+             Penggunaan kata sambung yang paling tepat untuk menunjukkan hubungan sebab–akibat terdapat pada ...`,
+
+
+       opsi: ["kalimat (4)", 
+              "kalimat (5)",
+              "kalimat (7)",
+              "kalimat (10)",
+               "kalimat (11)"],
 
       jawab: 2
-       }
+       },
+
+       {  //soal no 5
+          tanya: `<sup style="font-size: 20px; color: red;">1</sup>Perkembangan teknologi informasi saat ini berlangsung sangat pesat.`+
+`<sup style="font-size: 20px; color: red;">2</sup>Berbagai peristiwa di belahan dunia lain dapat diketahui hanya dalam hitungan detik.`+
+`<sup style="font-size: 20px; color: red;">3</sup>Media digital menjadi sarana utama penyebaran informasi di era modern.`+
+`<sup style="font-size: 20px; color: red;">4</sup>Tidak dapat dimungkiri bahwa kehadiran internet telah mengubah cara manusia berkomunikasi.`+
+`<sup style="font-size: 20px; color: red;">5</sup>Namun, kemudahan akses informasi tersebut tidak selalu diiringi dengan ketepatan data.`+
+`<sup style="font-size: 20px; color: red;">6</sup>Banyak informasi beredar tanpa melalui proses verifikasi yang memadai.`+
+`<sup style="font-size: 20px; color: red;">7</sup>Akibatnya, berita palsu atau hoaks mudah tersebar di masyarakat.`+
+`<sup style="font-size: 20px; color: red;">8</sup>Kondisi ini menuntut setiap individu memiliki kemampuan literasi digital yang baik.`+
+`<sup style="font-size: 20px; color: red;">9</sup>Literasi digital mencakup kemampuan memahami, mengevaluasi, serta menggunakan informasi secara bijak.`+
+`<sup style="font-size: 20px; color: red;">10</sup>Tanpa kemampuan tersebut, masyarakat rentan terpengaruh informasi yang menyesatkan.`+
+`<sup style="font-size: 20px; color: red;">11</sup>Oleh karena itu, pendidikan literasi digital menjadi kebutuhan penting di era sekarang.`+
+`<sup style="font-size: 20px; color: red;">12</sup>Literasi digital, sangat diperlukan oleh masyarakat modern.
+
+
+
+              
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 01 s.d. 05, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+           Penggunaan tanda koma yang tidak tepat terlihat pada kalimat nomor …`,
+
+
+       opsi: ["kalimat (3)", 
+              "kalimat (5)",
+              "kalimat (7)",
+              "kalimat (11)",
+               "kalimat (12)"],
+
+      jawab: 4
+       },
+
+
+             {  //soal no 6
+          tanya: `<sup style="font-size: 20px; color: red;">1</sup>Perkembangan teknologi kecerdasan buatan semakin terasa dalam kehidupan sehari-hari.`+
+`<sup style="font-size: 20px; color: red;">2</sup>Berbagai sektor, mulai dari pendidikan hingga industri, memanfaatkan teknologi ini untuk meningkatkan efisiensi kerja.`+
+`<sup style="font-size: 20px; color: red;">3</sup>Di bidang pendidikan, kecerdasan buatan digunakan untuk membantu proses pembelajaran yang lebih personal.`+
+`<sup style="font-size: 20px; color: red;">4</sup>Namun, penggunaan teknologi tersebut juga menimbulkan tantangan baru bagi pendidik.`+
+`<sup style="font-size: 20px; color: red;">5</sup>Guru dituntut mampu beradaptasi dengan perubahan metode pembelajaran yang terus berkembang.`+
+`<sup style="font-size: 20px; color: red;">6</sup>Selain itu, ketergantungan berlebihan pada teknologi dapat mengurangi kemampuan berpikir kritis peserta didik.`+
+`<sup style="font-size: 20px; color: red;">7</sup>Oleh sebab itu, pemanfaatan kecerdasan buatan harus disertai pengawasan yang tepat.`+
+`<sup style="font-size: 20px; color: red;">8</sup>Keseimbangan antara penggunaan teknologi dan interaksi manusia perlu tetap dijaga.`+
+`<sup style="font-size: 20px; color: red;">9</sup>Pendidikan, tidak hanya berfokus pada penguasaan teknologi, tetapi juga pada pembentukan karakter.`+
+`<sup style="font-size: 20px; color: red;">10</sup>Dengan demikian, teknologi dapat berperan sebagai alat pendukung, bukan pengganti peran manusia.
+
+              
+           Guru dituntut mampu beradaptasi dengan perubahan metode pembelajaran yang terus berkembang ( … ).`,
+
+
+       opsi: ["sehingga proses pembelajaran dapat berjalan lebih efektif", 
+              "supaya teknologi dapat sepenuhnya menggantikan peran guru",
+              "yang menyebabkan peserta didik bergantung pada teknologi",
+              "demi mengikuti perkembangan teknologi tanpa pertimbangan",
+               "karena teknologi selalu memberikan dampak positif"],
+
+      jawab: 0
+       },
+
+            {  //soal no 7
+          tanya: `<sup style="font-size: 20px; color: red;">1</sup>Perilaku anak sebagian besar di tentukan oleh lingkungannya.`+
+`<sup style="font-size: 20px; color: red;">2</sup>Oleh karena, anak perlu tumbuh kembang di dalam lingkungan yang positif.`+
+`<sup style="font-size: 20px; color: red;">3</sup>Oleh karena, anak perlu tumbuh kembang di dalam lingkungan yang positif.`+
+`<sup style="font-size: 20px; color: red;">4</sup>Pola asuh orang tua terhadap anak juga menjadi hal yang penting.`+
+`<sup style="font-size: 20px; color: red;">5</sup>Orang tua perlu bekerja sama dengan semua pihak [….] .
+
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 07 s.d. 09, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+           Penulisan kata yang salah terdapat pada kalimat nomor …. `,
+
+
+       opsi: ["kalimat (1)", 
+              "kalimat (2)",
+              "kalimat (3)",
+              "kalimat (4)",
+               "kalimat (5)"],
+
+      jawab: 0
+       },
+
+                   {  //soal no 8
+          tanya: `<sup style="font-size: 20px; color: red;">1</sup>Perilaku anak sebagian besar di tentukan oleh lingkungannya.`+
+`<sup style="font-size: 20px; color: red;">2</sup>Oleh karena, anak perlu tumbuh kembang di dalam lingkungan yang positif.`+
+`<sup style="font-size: 20px; color: red;">3</sup>Oleh karena, anak perlu tumbuh kembang di dalam lingkungan yang positif.`+
+`<sup style="font-size: 20px; color: red;">4</sup>Pola asuh orang tua terhadap anak juga menjadi hal yang penting.`+
+`<sup style="font-size: 20px; color: red;">5</sup>Orang tua perlu bekerja sama dengan semua pihak [….] .
+
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 07 s.d. 09, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+           Pernyataan yang paling tepat untuk mengisi rumpang pada 
+kalimat (5) sehingga menjadi padu dengan kalimat lainnya 
+adalah ….`,
+
+
+       opsi: ["sehingga anak dapat tumbuh menjadi pribadi yang baik", 
+              "supaya lingkungannya juga mendukung tumbuh kembang anak ",
+              "yang mau saling membantu dalam kemajuan anak ",
+              "demi kebaikan anak dan orang tua ",
+               "karena tumbuh kembang anak merupakan kewajiban bersama "],
+
+      jawab: 1
+       },
+
+                          {  //soal no 9
+          tanya: `<sup style="font-size: 20px; color: red;">1</sup>Perilaku anak sebagian besar di tentukan oleh lingkungannya.`+
+`<sup style="font-size: 20px; color: red;">2</sup>Oleh karena, anak perlu tumbuh kembang di dalam lingkungan yang positif.`+
+`<sup style="font-size: 20px; color: red;">3</sup>Oleh karena, anak perlu tumbuh kembang di dalam lingkungan yang positif.`+
+`<sup style="font-size: 20px; color: red;">4</sup>Pola asuh orang tua terhadap anak juga menjadi hal yang penting.`+
+`<sup style="font-size: 20px; color: red;">5</sup>Orang tua perlu bekerja sama dengan semua pihak [….] .
+
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 07 s.d. 09, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+           Pernyataan yang paling tepat untuk mengisi rumpang pada 
+kalimat (5) sehingga menjadi padu dengan kalimat lainnya 
+adalah ….`,
+
+
+       opsi: ["sehingga anak dapat tumbuh menjadi pribadi yang baik", 
+              "supaya lingkungannya juga mendukung tumbuh kembang anak ",
+              "yang mau saling membantu dalam kemajuan anak ",
+              "demi kebaikan anak dan orang tua ",
+               "karena tumbuh kembang anak merupakan kewajiban bersama "],
+
+      jawab: 1
+       },
+             {  //soal no 10
+          tanya: `<sup style="font-size: 20px; color: red;">1</sup>Bagaimana Anda dapat mengetahui berbagai peristiwa yang terjadi bertahun-tahun yang lalu atau ratusan tahun yang lampau?`+
+`<sup style="font-size: 20px; color: red;">2</sup>Buku sejarah mungkin menjadi jawaban Anda.`+
+`<sup style="font-size: 20px; color: red;">3</sup>Tidak salah memang dikarenakan buku-buku sejarah banyak mengisahkan apa yang terjadi, jauh sebelum zaman informasi ini.`+
+`<sup style="font-size: 20px; color: red;">4</sup>Belum lagi, adanya perubahan yang mendasar tentang mesin cetak dan internet memungkinkan informasi masa lalu terekam dengan baik.`+
+`<sup style="font-size: 20px; color: red;">5</sup>Meski literatur saat ini bisa dikatakan komplet dan beragam, sejarah masa lalu umat manusia tidak seketika itu juga dihadirkan lewat buku-buku atau perangkat digital yang saat ini tersedia.`+
+`<sup style="font-size: 20px; color: red;">6</sup>Sebab, budaya tulisan bukanlah budaya manusia tertua.`+
+`<sup style="font-size: 20px; color: red;">7</sup>Budaya lisan, sebaliknya, jauh lebih tua daripada budaya tulisan.`+
+`<sup style="font-size: 20px; color: red;">8</sup>Kelompok-kelompok masyarakat tertentu, bahkan masih mempertahankan budaya lisan ini.`+
+`<sup style="font-size: 20px; color: red;">9</sup>Sebelum era tulisan, pengalihan tradisi dari generasi ke generasi dilakukan secara lisan.`+
+`<sup style="font-size: 20px; color: red;">10</sup>Para leluhur akan bertutur kepada anak-cucunya, menyampaikan kisah-kisah moral, termasuk berbagai pengajaran.`+
+`<sup style="font-size: 20px; color: red;">11</sup>Metode ini masih bisa ditemukan pada sejumlah suku bangsa.
+
+<sup style="font-size: 20px; color: red;">12</sup>          Hanya saja, metode lisan memiliki sejumlah kelemahan.`+
+`<sup style="font-size: 20px; color: red;">13</sup>Kelemahan yang utama yakni tidak banyak orang yang bisa mengingat apa yang disampaikan pendulunya setepat yang dikemukakan kepadanya.`+
+`<sup style="font-size: 20px; color: red;">14</sup>Sedikit banyak, tentu ada saja yang tidak tersampaikan.`+
+`<sup style="font-size: 20px; color: red;">15</sup>Belum lagi, kemungkinan untuk menambah ataupun menguranginya secara sadar cukup terbuka.
+
+
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 10 s.d. 13, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+           Kalimat manakah yang paling efektif sebagai hasil
+penggabungan kalimat (10) dan (11)?`,
+
+
+       opsi: [`Para leluhur akan bertutur kepada anak-cucunya,
+menyampaikan kisah-kisah moral, termasuk berbagai
+pengajaran, dan masih bisa ditemukan pada sejumlah suku
+bangsa.`, 
+               `Para leluhur akan bertutur kepada anak-cucunya,
+menyampaikan kisah-kisah moral, termasuk berbagai
+pengajaran, yang masih bisa ditemukan pada sejumlah
+suku bangsa.`,
+              `Para leluhur yang akan bertutur kepada anak-cucunya,
+menyampaikan kisah-kisah moral, termasuk berbagai
+pengajaran, serta masih bisa ditemukan pada sejumlah suku
+bangsa.`,
+              `Para leluhur yang bertutur kepada anak-cucunya,
+menyampaikan kisah-kisah moral, termasuk berbagai
+pengajaran, sehingga masih bisa ditemukan pada sejumlah
+suku bangsa.`,
+              ` Para leluhur yang bertutur kepada anak-cucunya, 
+menyampaikan kisah-kisah moral, termasuk berbagai 
+pengajaran, masih bisa ditemukan pada sejumlah suku 
+bangsa.  `],
+
+      jawab: 4
+       },
+
+                   {  //soal no 11
+          tanya: `<sup style="font-size: 20px; color: red;">1</sup>Bagaimana Anda dapat mengetahui berbagai peristiwa yang terjadi bertahun-tahun yang lalu atau ratusan tahun yang lampau?`+
+`<sup style="font-size: 20px; color: red;">2</sup>Buku sejarah mungkin menjadi jawaban Anda.`+
+`<sup style="font-size: 20px; color: red;">3</sup>Tidak salah memang dikarenakan buku-buku sejarah banyak mengisahkan apa yang terjadi, jauh sebelum zaman informasi ini.`+
+`<sup style="font-size: 20px; color: red;">4</sup>Belum lagi, adanya perubahan yang mendasar tentang mesin cetak dan internet memungkinkan informasi masa lalu terekam dengan baik.`+
+`<sup style="font-size: 20px; color: red;">5</sup>Meski literatur saat ini bisa dikatakan komplet dan beragam, sejarah masa lalu umat manusia tidak seketika itu juga dihadirkan lewat buku-buku atau perangkat digital yang saat ini tersedia.`+
+`<sup style="font-size: 20px; color: red;">6</sup>Sebab, budaya tulisan bukanlah budaya manusia tertua.`+
+`<sup style="font-size: 20px; color: red;">7</sup>Budaya lisan, sebaliknya, jauh lebih tua daripada budaya tulisan.`+
+`<sup style="font-size: 20px; color: red;">8</sup>Kelompok-kelompok masyarakat tertentu, bahkan masih mempertahankan budaya lisan ini.`+
+`<sup style="font-size: 20px; color: red;">9</sup>Sebelum era tulisan, pengalihan tradisi dari generasi ke generasi dilakukan secara lisan.`+
+`<sup style="font-size: 20px; color: red;">10</sup>Para leluhur akan bertutur kepada anak-cucunya, menyampaikan kisah-kisah moral, termasuk berbagai pengajaran.`+
+`<sup style="font-size: 20px; color: red;">11</sup>Metode ini masih bisa ditemukan pada sejumlah suku bangsa.
+
+<sup style="font-size: 20px; color: red;">12</sup>          Hanya saja, metode lisan memiliki sejumlah kelemahan.`+
+`<sup style="font-size: 20px; color: red;">13</sup>Kelemahan yang utama yakni tidak banyak orang yang bisa mengingat apa yang disampaikan pendulunya setepat yang dikemukakan kepadanya.`+
+`<sup style="font-size: 20px; color: red;">14</sup>Sedikit banyak, tentu ada saja yang tidak tersampaikan.`+
+`<sup style="font-size: 20px; color: red;">15</sup>Belum lagi, kemungkinan untuk menambah ataupun menguranginya secara sadar cukup terbuka.
+
+
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 10 s.d. 13, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+           Penggunaan kata sambung yang tidak tepat terdapat pada …`,
+
+
+        opsi: ["kalimat (1)", 
+              "kalimat (2)",
+              "kalimat (3)",
+              "kalimat (4)",
+               "kalimat (5)"],
+
+      jawab: 0
+       },
+          {  //soal no 12 
+          tanya: `<sup style="font-size: 20px; color: red;">1</sup>Bagaimana Anda dapat mengetahui berbagai peristiwa yang terjadi bertahun-tahun yang lalu atau ratusan tahun yang lampau?`+
+`<sup style="font-size: 20px; color: red;">2</sup>Buku sejarah mungkin menjadi jawaban Anda.`+
+`<sup style="font-size: 20px; color: red;">3</sup>Tidak salah memang dikarenakan buku-buku sejarah banyak mengisahkan apa yang terjadi, jauh sebelum zaman informasi ini.`+
+`<sup style="font-size: 20px; color: red;">4</sup>Belum lagi, adanya perubahan yang mendasar tentang mesin cetak dan internet memungkinkan informasi masa lalu terekam dengan baik.`+
+`<sup style="font-size: 20px; color: red;">5</sup>Meski literatur saat ini bisa dikatakan komplet dan beragam, sejarah masa lalu umat manusia tidak seketika itu juga dihadirkan lewat buku-buku atau perangkat digital yang saat ini tersedia.`+
+`<sup style="font-size: 20px; color: red;">6</sup>Sebab, budaya tulisan bukanlah budaya manusia tertua.`+
+`<sup style="font-size: 20px; color: red;">7</sup>Budaya lisan, sebaliknya, jauh lebih tua daripada budaya tulisan.`+
+`<sup style="font-size: 20px; color: red;">8</sup>Kelompok-kelompok masyarakat tertentu, bahkan masih mempertahankan budaya lisan ini.`+
+`<sup style="font-size: 20px; color: red;">9</sup>Sebelum era tulisan, pengalihan tradisi dari generasi ke generasi dilakukan secara lisan.`+
+`<sup style="font-size: 20px; color: red;">10</sup>Para leluhur akan bertutur kepada anak-cucunya, menyampaikan kisah-kisah moral, termasuk berbagai pengajaran.`+
+`<sup style="font-size: 20px; color: red;">11</sup>Metode ini masih bisa ditemukan pada sejumlah suku bangsa.
+
+<sup style="font-size: 20px; color: red;">12</sup>          Hanya saja, metode lisan memiliki sejumlah kelemahan.`+
+`<sup style="font-size: 20px; color: red;">13</sup>Kelemahan yang utama yakni tidak banyak orang yang bisa mengingat apa yang disampaikan pendulunya setepat yang dikemukakan kepadanya.`+
+`<sup style="font-size: 20px; color: red;">14</sup>Sedikit banyak, tentu ada saja yang tidak tersampaikan.`+
+`<sup style="font-size: 20px; color: red;">15</sup>Belum lagi, kemungkinan untuk menambah ataupun menguranginya secara sadar cukup terbuka.
+
+
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 10 s.d. 13, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+          Apa judul yang paling tepat untuk teks tersebut? `,
+
+
+        opsi: ["Cara Mengetahui Peristiwa Sejarah Melalui Tulisan ", 
+              "Sejarah Budaya Lisan sebagai Proses Bertutur ",
+              "Fungsi Budaya Lisan dalam Transfer Informasi ",
+              "Kelemahan dan Kelebihan Budaya Lisan dalam Sejarah",
+               "Pengalihan Informasi dalam Sejarah Lisan "],
+
+      jawab: 4
+       },
+
+       {  //soal no 13 
+          tanya: `<sup style="font-size: 20px; color: red;">1</sup>Bagaimana Anda dapat mengetahui berbagai peristiwa yang terjadi bertahun-tahun yang lalu atau ratusan tahun yang lampau?`+
+`<sup style="font-size: 20px; color: red;">2</sup>Buku sejarah mungkin menjadi jawaban Anda.`+
+`<sup style="font-size: 20px; color: red;">3</sup>Tidak salah memang dikarenakan buku-buku sejarah banyak mengisahkan apa yang terjadi, jauh sebelum zaman informasi ini.`+
+`<sup style="font-size: 20px; color: red;">4</sup>Belum lagi, adanya perubahan yang mendasar tentang mesin cetak dan internet memungkinkan informasi masa lalu terekam dengan baik.`+
+`<sup style="font-size: 20px; color: red;">5</sup>Meski literatur saat ini bisa dikatakan komplet dan beragam, sejarah masa lalu umat manusia tidak seketika itu juga dihadirkan lewat buku-buku atau perangkat digital yang saat ini tersedia.`+
+`<sup style="font-size: 20px; color: red;">6</sup>Sebab, budaya tulisan bukanlah budaya manusia tertua.`+
+`<sup style="font-size: 20px; color: red;">7</sup>Budaya lisan, sebaliknya, jauh lebih tua daripada budaya tulisan.`+
+`<sup style="font-size: 20px; color: red;">8</sup>Kelompok-kelompok masyarakat tertentu, bahkan masih mempertahankan budaya lisan ini.`+
+`<sup style="font-size: 20px; color: red;">9</sup>Sebelum era tulisan, pengalihan tradisi dari generasi ke generasi dilakukan secara lisan.`+
+`<sup style="font-size: 20px; color: red;">10</sup>Para leluhur akan bertutur kepada anak-cucunya, menyampaikan kisah-kisah moral, termasuk berbagai pengajaran.`+
+`<sup style="font-size: 20px; color: red;">11</sup>Metode ini masih bisa ditemukan pada sejumlah suku bangsa.
+
+<sup style="font-size: 20px; color: red;">12</sup>          Hanya saja, metode lisan memiliki sejumlah kelemahan.`+
+`<sup style="font-size: 20px; color: red;">13</sup>Kelemahan yang utama yakni tidak banyak orang yang bisa mengingat apa yang disampaikan pendulunya setepat yang dikemukakan kepadanya.`+
+`<sup style="font-size: 20px; color: red;">14</sup>Sedikit banyak, tentu ada saja yang tidak tersampaikan.`+
+`<sup style="font-size: 20px; color: red;">15</sup>Belum lagi, kemungkinan untuk menambah ataupun menguranginya secara sadar cukup terbuka.
+
+
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 10 s.d. 13, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+          Kata yakni dalam kalimat (13) seharusnya … `,
+
+
+        opsi: ["dibiarkan saja (sudah benar).", 
+              "dihilangkan.",
+              " didahului kata adalah",
+              "diikuti kata menjadi.",
+               "diganti dengan kata antara lain."],
+
+      jawab: 2
+       },
+        {  //soal no 14
+          tanya: `<sup style="font-size: 20px; color: red;">1</sup>Indonesia tak hanya kaya akan keberagaman bahasa, suku, makanan, dan tarian, tapi juga warisan budaya.`+
+`<sup style="font-size: 20px; color: red;">2</sup>Salah satunya yakni cerita rakyat yang turun-temurun disampaikan dari mulut ke mulut oleh orang tua, kakek, nenek hingga guru di sekolah.`+
+`<sup style="font-size: 20px; color: red;">3</sup>Cerita yang mengandung kearifan lokal dan tradisi-tradisi dari suatu daerah ini hadir dalam berbagai versi.`+
+`<sup style="font-size: 20px; color: red;">4</sup>Meski begitu, cerita rakyat pada dasarnya tetap sama, terutama pada cerita-cerita yang bersifat sakral.`+
+`<sup style="font-size: 20px; color: red;">5</sup>Dan karena penyebarannya tidak tertulis, cerita rakyat umumnya anonim.`+
+`<sup style="font-size: 20px; color: red;">6</sup>Masing-masing daerah di Indonesia memiliki cerita rakyatnya sendiri-sendiri.`+
+`<sup style="font-size: 20px; color: red;">7</sup>Hal itu disebut legenda setempat, yakni cerita yang berhubungan dengan suatu tempat, nama tempat, atau bentang alam—asal-usul terbentuknya Danau Toba atau Gunung Tangkuban Perahu, misalnya.`+
+`<sup style="font-size: 20px; color: red;">8</sup>Pada masa lalu, nenek moyang Nusantara memang belum memiliki pengetahuan sehebat sekarang untuk mengetahui bagaimana proses bentang alam terbentuk.`+
+`<sup style="font-size: 20px; color: red;">9</sup>Namun, legenda-legenda itu merupakan salah satu “kenang-kenangan” dari para leluhur yang perlu dilestarikan.
+
+
+
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 14 s.d. 17, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+          Penggunaan kata yang kurang tepat terdapat pada …`,
+
+
+            opsi: ["kalimat (1)", 
+              "kalimat (3)",
+              "kalimat (4)",
+              "kalimat (5)",
+               "kalimat (7)"],
+
+      jawab: 3
+       },
+               {  //soal no 15
+          tanya: `<sup style="font-size: 20px; color: red;">1</sup>Indonesia tak hanya kaya akan keberagaman bahasa, suku, makanan, dan tarian, tapi juga warisan budaya.`+
+`<sup style="font-size: 20px; color: red;">2</sup>Salah satunya yakni cerita rakyat yang turun-temurun disampaikan dari mulut ke mulut oleh orang tua, kakek, nenek hingga guru di sekolah.`+
+`<sup style="font-size: 20px; color: red;">3</sup>Cerita yang mengandung kearifan lokal dan tradisi-tradisi dari suatu daerah ini hadir dalam berbagai versi.`+
+`<sup style="font-size: 20px; color: red;">4</sup>Meski begitu, cerita rakyat pada dasarnya tetap sama, terutama pada cerita-cerita yang bersifat sakral.`+
+`<sup style="font-size: 20px; color: red;">5</sup>Dan karena penyebarannya tidak tertulis, cerita rakyat umumnya anonim.`+
+`<sup style="font-size: 20px; color: red;">6</sup>Masing-masing daerah di Indonesia memiliki cerita rakyatnya sendiri-sendiri.`+
+`<sup style="font-size: 20px; color: red;">7</sup>Hal itu disebut legenda setempat, yakni cerita yang berhubungan dengan suatu tempat, nama tempat, atau bentang alam—asal-usul terbentuknya Danau Toba atau Gunung Tangkuban Perahu, misalnya.`+
+`<sup style="font-size: 20px; color: red;">8</sup>Pada masa lalu, nenek moyang Nusantara memang belum memiliki pengetahuan sehebat sekarang untuk mengetahui bagaimana proses bentang alam terbentuk.`+
+`<sup style="font-size: 20px; color: red;">9</sup>Namun, legenda-legenda itu merupakan salah satu “kenang-kenangan” dari para leluhur yang perlu dilestarikan.
+
+
+
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 14 s.d. 17, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+          Kalimat manakah yang merupakan perbaikan dari kalimat (6)?`,
+
+
+            opsi: ["Masing-masing daerah di Indonesia memiliki cerita rakyatnya.", 
+              " Tiap-tiap daerah-daerah di Indonesia memiliki cerita rakyatnya sendiri.",
+              "Masing-masing daerah di Indonesia memiliki cerita rakyatnya sendiri-sendiri.",
+              "Tiap-tiap daerah di Indonesia memiliki cerita rakyatnya masing-masing.",
+               "Tiap-tiap daerah di Indonesia masing-masing memiliki cerita rakyatnya sendiri."],
+
+      jawab: 3
+       },
+                    {  //soal no 16
+          tanya: `<sup style="font-size: 20px; color: red;">1</sup>Indonesia tak hanya kaya akan keberagaman bahasa, suku, makanan, dan tarian, tapi juga warisan budaya.`+
+`<sup style="font-size: 20px; color: red;">2</sup>Salah satunya yakni cerita rakyat yang turun-temurun disampaikan dari mulut ke mulut oleh orang tua, kakek, nenek hingga guru di sekolah.`+
+`<sup style="font-size: 20px; color: red;">3</sup>Cerita yang mengandung kearifan lokal dan tradisi-tradisi dari suatu daerah ini hadir dalam berbagai versi.`+
+`<sup style="font-size: 20px; color: red;">4</sup>Meski begitu, cerita rakyat pada dasarnya tetap sama, terutama pada cerita-cerita yang bersifat sakral.`+
+`<sup style="font-size: 20px; color: red;">5</sup>Dan karena penyebarannya tidak tertulis, cerita rakyat umumnya anonim.`+
+`<sup style="font-size: 20px; color: red;">6</sup>Masing-masing daerah di Indonesia memiliki cerita rakyatnya sendiri-sendiri.`+
+`<sup style="font-size: 20px; color: red;">7</sup>Hal itu disebut legenda setempat, yakni cerita yang berhubungan dengan suatu tempat, nama tempat, atau bentang alam—asal-usul terbentuknya Danau Toba atau Gunung Tangkuban Perahu, misalnya.`+
+`<sup style="font-size: 20px; color: red;">8</sup>Pada masa lalu, nenek moyang Nusantara memang belum memiliki pengetahuan sehebat sekarang untuk mengetahui bagaimana proses bentang alam terbentuk.`+
+`<sup style="font-size: 20px; color: red;">9</sup>Namun, legenda-legenda itu merupakan salah satu “kenang-kenangan” dari para leluhur yang perlu dilestarikan.
+
+
+
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 14 s.d. 17, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+           Kata yang paling tepat menggantikan cerita-cerita yang
+bersifat sakral dalam kalimat (4) adalah …. `,
+
+
+            opsi: ["Tradisi", 
+              " Mitos",
+              "Fabel",
+              "Gaib",
+               "Epos"],
+
+      jawab: 0
+       },
+       
+                           {  //soal no 17
+          tanya: `<sup style="font-size: 20px; color: red;">1</sup>Indonesia tak hanya kaya akan keberagaman bahasa, suku, makanan, dan tarian, tapi juga warisan budaya.`+
+`<sup style="font-size: 20px; color: red;">2</sup>Salah satunya yakni cerita rakyat yang turun-temurun disampaikan dari mulut ke mulut oleh orang tua, kakek, nenek hingga guru di sekolah.`+
+`<sup style="font-size: 20px; color: red;">3</sup>Cerita yang mengandung kearifan lokal dan tradisi-tradisi dari suatu daerah ini hadir dalam berbagai versi.`+
+`<sup style="font-size: 20px; color: red;">4</sup>Meski begitu, cerita rakyat pada dasarnya tetap sama, terutama pada cerita-cerita yang bersifat sakral.`+
+`<sup style="font-size: 20px; color: red;">5</sup>Dan karena penyebarannya tidak tertulis, cerita rakyat umumnya anonim.`+
+`<sup style="font-size: 20px; color: red;">6</sup>Masing-masing daerah di Indonesia memiliki cerita rakyatnya sendiri-sendiri.`+
+`<sup style="font-size: 20px; color: red;">7</sup>Hal itu disebut legenda setempat, yakni cerita yang berhubungan dengan suatu tempat, nama tempat, atau bentang alam—asal-usul terbentuknya Danau Toba atau Gunung Tangkuban Perahu, misalnya.`+
+`<sup style="font-size: 20px; color: red;">8</sup>Pada masa lalu, nenek moyang Nusantara memang belum memiliki pengetahuan sehebat sekarang untuk mengetahui bagaimana proses bentang alam terbentuk.`+
+`<sup style="font-size: 20px; color: red;">9</sup>Namun, legenda-legenda itu merupakan salah satu “kenang-kenangan” dari para leluhur yang perlu dilestarikan.
+
+
+
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 14 s.d. 17, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+           Manakah yang paling tepat sebagai kalimat inti dari kalimat
+(3)? `,
+
+
+            opsi: [" Cerita mengandung kearifan lokal dan tradisi-tradisi.", 
+              "Cerita tradisi-tradisi dari suatu daerah dalam berbagai versi.",
+              "Cerita kearifan lokal dan tradisi-tradisi ini hadir.",
+              "Cerita mengandung kearifan lokal.",
+               "Cerita ini hadir dalam berbagai versi. "],
+
+      jawab: 4
+       },
+
+                                 {  //soal no 18
+          tanya: `<sup style="font-size: 20px; color: red;">1</sup>Indonesia tak hanya kaya akan keberagaman bahasa, suku, makanan, dan tarian, tapi juga warisan budaya.`+
+`<sup style="font-size: 20px; color: red;">2</sup>Salah satunya yakni cerita rakyat yang turun-temurun disampaikan dari mulut ke mulut oleh orang tua, kakek, nenek hingga guru di sekolah.`+
+`<sup style="font-size: 20px; color: red;">3</sup>Cerita yang mengandung kearifan lokal dan tradisi-tradisi dari suatu daerah ini hadir dalam berbagai versi.`+
+`<sup style="font-size: 20px; color: red;">4</sup>Meski begitu, cerita rakyat pada dasarnya tetap sama, terutama pada cerita-cerita yang bersifat sakral.`+
+`<sup style="font-size: 20px; color: red;">5</sup>Dan karena penyebarannya tidak tertulis, cerita rakyat umumnya anonim.`+
+`<sup style="font-size: 20px; color: red;">6</sup>Masing-masing daerah di Indonesia memiliki cerita rakyatnya sendiri-sendiri.`+
+`<sup style="font-size: 20px; color: red;">7</sup>Hal itu disebut legenda setempat, yakni cerita yang berhubungan dengan suatu tempat, nama tempat, atau bentang alam—asal-usul terbentuknya Danau Toba atau Gunung Tangkuban Perahu, misalnya.`+
+`<sup style="font-size: 20px; color: red;">8</sup>Pada masa lalu, nenek moyang Nusantara memang belum memiliki pengetahuan sehebat sekarang untuk mengetahui bagaimana proses bentang alam terbentuk.`+
+`<sup style="font-size: 20px; color: red;">9</sup>Namun, legenda-legenda itu merupakan salah satu “kenang-kenangan” dari para leluhur yang perlu dilestarikan.
+
+
+
+              <p style="font-size: 20px;">Bacalah tulisan di atas untuk menjawab soal 14 s.d. 17, kemudian jawablah soal-soal yang tersedia dengan memilih jawaban yang tepat di antara pilihan A, B, C, D, atau E.</p>
+            Penggunaan tanda koma yang salah terdapat pada kalimat
+nomor ? `,
+
+
+            opsi: ["kalimat (1)", 
+              "kalimat (6)",
+              "kalimat (2)",
+              "kalimat (3)",
+               "kalimat (9)"],
+
+      jawab: 3
+       },
+  { // soal no 19
+  tanya: `Penulisan kapital yang tepat terdapat pada kalimat ….`,
+  
+  opsi: [
+    "UPI resmi mendirikan Program Studi Dokter Fakultas Kedokteran UPI pada 5 Mei 2023 berdasarkan izin dari Konsil Kedokteran Indonesia (KKI).",
+    "UPI (Universitas Pendidikan Indonesia) membuka Fakuktas Kedokteran dengan keunggulan sport medicine and tourism.",
+    "Fakultas Kedokteran UPI telah bekerja sama dengan banyak Rumah Sakit, seperti RS Polri Sarika Asih Bandung, RS Banyuasih Purwakarta, RS Olahraga Cibubur, serta puskesmas di Kabupaten Bandung.",
+    "Harapannya adalah dokter-dokter muda lulusan UPI dapat memberikan warna baru bagi Fakultas Kedokteran khususnya sport medicine and tourism di Indonesia.",
+    "Selain itu, diharapkan juga mampu melayani masyarakat dari segi kesehatan, baik di dalam skala Pemerintah Daerah maupun nasional."
+  ],
+
+  jawab: 1
+},
+{ // soal no 20
+  tanya: `Kalimat manakah yang penulisan katanya tepat?`,
+  
+  opsi: [
+    "Dengan berolahraga, badan menjadi sehat, apalagi olahraga sepakbola.",
+    "Pasca integrasi dengan stasiun MRT, trans-Jakarta sekarang menambah armadanya.",
+    "Mahasiswa wajib proaktif dalam mencari ilmu.",
+    "Setelah pengkhianatannya, susah bagiku untuk bersikap manis seperti sedia kala.",
+    "Cenderamata khas Nusa Tenggara Timur adalah tas bere."
+  ],
+
+  jawab: 3
+},
+
+  ],
+
+  "pk" :[
+    
   ]
 }
 

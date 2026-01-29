@@ -1,9 +1,9 @@
-// validasi.js - WAKTU YANG BENAR
+
 const SUBTES_ORDER = ["pu", "ppu", "pbm","pk","lbi","lbe", "pm"];
 const params = new URLSearchParams(window.location.search);
 const subtes = params.get("subtes") || "pu";
 
-// Validasi
+
 if (!SOAL_DATA[subtes]) {
     alert("Subtes tidak valid");
     window.location.href = "index.html";
@@ -19,7 +19,7 @@ if (idx > 0) {
     }
 }
 
-// =============== WAKTU YANG BENAR SESUAI INFORMASI ANDA ===============
+
 const SUBTES_TIMES = {
     "pu": 30 * 60,   
     "ppu": 15 * 60,    
@@ -34,7 +34,7 @@ const SUBTES_TIMES = {
 const SUBTES_NAMES = {
     "pu": "TPS - Penalaran Umum",
     "ppu": "TPS - Pengetahuan & Pemahaman Umum", 
-    "pbm": "TPS - Pemahaman Baca dan Menulis",
+    "pbm": "TPS - Pemahaman Baca & Menulis",
     "pk": "TPS - Pengatahuan Kuantitatif",
     "lbi": "TLB - Literasi Bahasa Indonesia",
     "lbe": "TLB - Literasi Bahasa Inggris",
