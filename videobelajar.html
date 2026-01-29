@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lolosin</title>
+    <link rel="icon" type="image/x-icon" href="asets/favicon-lolosin (1).jpeg">
+    <link rel="stylesheet" href="stylepaket.css">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="asets/lolosin-removebg-preview.png" alt="CGTS Logo">
+                </a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="belajar.html" class="active">BELAJAR</a></li>
+                <li><a href="tryout.html">TRYOUT</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+            </ul>
+
+            <div class="nav-social">
+
+                <a href="https://www.instagram.com/cgtsman1tra?igsh=emljcGcxN2w0aHI5" target="_blank">
+                    <img src="instagram.svg" alt="Instagram">
+                </a>
+            </div>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html" onclick="toggleMenu()">HOME</a></li>
+            <li><a href="about.html" onclick="toggleMenu()">ABOUT</a></li>
+            <li><a href="gallery.html" onclick="toggleMenu()">GALLERY</a></li>
+            <li><a href="mantai.html" onclick="toggleMenu()">CAKE</a></li>
+        </ul>
+        <div class="mobile-social">
+            <a href="https://www.tiktok.com/@cgtssman1tra?_r=1&_t=ZS-92OiEDOb6yy" target="_blank">
+                <img src="tiktok.png" alt="TikTok">
+            </a>
+            <a href="https://www.instagram.com/cgtsman1tra?igsh=emljcGcxN2w0aHI5" target="_blank">
+                <img src="instagram.svg" alt="Instagram">
+            </a>
+        </div>
+    </div>
+
+    <main>
+        <div >
+            <div>
+                <h1 >PENALARAN UMUM</h1>
+            </div>  
+           
+    </main>
+
+
+ 
+
+
+
+
+
+   <footer>
+        <div class="footer-content">
+ 
+            <div class="ptn its">
+                <img src="asets/PTN/ITS.png" alt="ITS">
+            </div>
+            <div class="ptn">
+                <img src="asets/PTN/ITB.png" alt="ITB">
+            </div>
+            <div class="ptn ui">
+                <img src="asets/PTN/UI.png" alt="UI">
+            </div>
+            <div class="ptn ugm">
+                <img src="asets/PTN/UGM.png" alt="UGM">
+            </div>
+            <div class="ptn ipb">
+                <img src="asets/PTN/IPB.png" alt="IPB">
+            </div>
+            <div class="ptn undip">
+                <img src="asets/PTN/UNDIP.png" alt="UNDIP">
+            </div>
+            <div class="ptn unpad">
+                <img src="asets/PTN/UNPAD.png" alt="UNPAD">
+            </div>
+            <div class="ptn ub">
+                <img src="asets/PTN/UB.png" alt="UB">
+            </div>
+            <div class="ptn unair">
+                <img src="asets/PTN/UNAIR.png" alt="UNAIR">
+            </div>
+
+
+        </div>
+    
+    </footer>
+ <script>
+  document.querySelectorAll('.section-header').forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.parentElement.classList.toggle('active');
+    });
+  });
+
+ 
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".isiisi").forEach((el, i) => {
+    setTimeout(() => {
+      el.classList.add("show");
+    }, i * 150); 
+  });
+});
+
+
+
+</script>
+
+</body>
+</html>

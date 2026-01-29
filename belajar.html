@@ -1,12 +1,326 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Lolosin, Simulasi UTBK, TryOut UTBK, TryOut SNBT, Belajar UTBK, Belajar SNBT">
-    <title>Lolosin</title>
-     <link rel="icon" type="image/x-icon" href="asets/favicon-lolosin (1).jpeg">
+    <title>Lolosin - Belajar</title>
+    <link rel="icon" type="image/x-icon" href="asets/favicon-lolosin (1).jpeg">
     <link rel="stylesheet" href="style.css">
+    <style>
+        
+
+        .video-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.3s ease;
+            padding: 20px;
+        }
+        
+        .video-modal.active {
+            display: flex;
+        }
+        
+        .modal-content {
+            width: 100%;
+            max-width: 1200px;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+            animation: slideUp 0.4s ease;
+        }
+        
+        .modal-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .modal-header h2 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        
+        .subtes-code {
+            background: rgba(255,255,255,0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        
+        .close-modal {
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            line-height: 1;
+            padding: 5px 15px;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .close-modal:hover {
+            background: rgba(255,255,255,0.3);
+            transform: rotate(90deg);
+        }
+        
+        .video-container {
+            background: #000;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        #video-player {
+            width: 100%;
+            max-width: 900px;
+            height: 500px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        
+        .video-info {
+            padding: 30px;
+            background: #f8f9fa;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .video-meta {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #666;
+            font-size: 15px;
+        }
+        
+        .meta-item i {
+            font-size: 18px;
+            color: #667eea;
+        }
+        
+        .video-description {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-top: 20px;
+            line-height: 1.7;
+            color: #444;
+        }
+        
+        .progress-section {
+            margin-top: 25px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .progress-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .progress-bar {
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #4CAF50, #8BC34A);
+            width: 0%;
+            transition: width 0.5s ease;
+            border-radius: 4px;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .action-btn {
+            padding: 10px 25px;
+            border: none;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .complete-btn {
+            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            color: white;
+        }
+        
+        .complete-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+        }
+        
+        .next-btn {
+            background: linear-gradient(135deg, #2196F3, #1976D2);
+            color: white;
+        }
+        
+        .next-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(33, 150, 243, 0.3);
+        }
+        
+        .material-btn {
+            background: linear-gradient(135deg, #FF9800, #F57C00);
+            color: white;
+        }
+        
+        .material-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 152, 0, 0.3);
+        }
+        
+        /* Indikator Progress di Tombol Kartu */
+        .card-bg.watched {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card-bg.watched::after {
+            content: '✓';
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #4CAF50;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 0 3px 10px rgba(76, 175, 80, 0.3);
+            z-index: 2;
+        }
+        
+        .card-bg.in-progress::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: var(--progress-width, 0%);
+            height: 5px;
+            background: linear-gradient(90deg, #2196F3, #03A9F4);
+            border-radius: 0 0 0 5px;
+            z-index: 1;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { 
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .video-container {
+                padding: 15px;
+            }
+            
+            #video-player {
+                height: 300px;
+            }
+            
+            .modal-header {
+                padding: 20px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            
+            .modal-header h2 {
+                font-size: 22px;
+            }
+            
+            .video-meta {
+                gap: 15px;
+            }
+            
+            .modal-content {
+                margin: 10px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            #video-player {
+                height: 250px;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+            }
+            
+            .action-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Top Navigation -->
@@ -14,19 +328,18 @@
         <div class="nav-container">
             <div class="nav-logo">
                 <a href="index.html">
-                    <img src="asets/lolosin-removebg-preview.png" alt="CGTS Logo">
+                    <img src="asets/lolosin-removebg-preview.png" alt="Lolosin Logo">
                 </a>
             </div>
 
             <ul class="nav-links">
-                <li><a href="index.html" >HOME</a></li>
-                <li><a href="belajar.html"class="active">BELAJAR</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="belajar.html" class="active">BELAJAR</a></li>
                 <li><a href="tryout.html">TRYOUT</a></li>
                 <li><a href="about.html">ABOUT US</a></li>
             </ul>
 
             <div class="nav-social">
-                
                 <a href="https://www.instagram.com/cgtsman1tra?igsh=emljcGcxN2w0aHI5" target="_blank">
                     <img src="instagram.svg" alt="Instagram">
                 </a>
@@ -44,14 +357,11 @@
     <div class="mobile-menu" id="mobileMenu">
         <ul>
             <li><a href="index.html" onclick="toggleMenu()">HOME</a></li>
-            <li><a href="about.html" onclick="toggleMenu()">ABOUT</a></li>
-            <li><a href="gallery.html" onclick="toggleMenu()">GALLERY</a></li>
-            <li><a href="mantai.html" onclick="toggleMenu()">CAKE</a></li>
+            <li><a href="belajar.html" onclick="toggleMenu()">BELAJAR</a></li>
+            <li><a href="tryout.html" onclick="toggleMenu()">TRYOUT</a></li>
+            <li><a href="about.html" onclick="toggleMenu()">ABOUT US</a></li>
         </ul>
         <div class="mobile-social">
-            <a href="https://www.tiktok.com/@cgtssman1tra?_r=1&_t=ZS-92OiEDOb6yy" target="_blank">
-                <img src="tiktok.png" alt="TikTok">
-            </a>
             <a href="https://www.instagram.com/cgtsman1tra?igsh=emljcGcxN2w0aHI5" target="_blank">
                 <img src="instagram.svg" alt="Instagram">
             </a>
@@ -70,78 +380,143 @@
             </div>
 
             <div class="event-cards">
-                <a href="elektro.html" class="event-card">
+  
+                <a href="javascript:void(0)" class="event-card" onclick="openVideoModal('pu')">
                     <div class="card-content">
-                        <div class="card-bg belajar" data-title="Penalaran Umum">
+                        <div class="card-bg belajar" data-title="Penalaran Umum" id="card-pu">
                             <h1>PU</h1>
                         </div>
                     </div>
-
                 </a>
-                
-                <a href="kesehatan.html" class="event-card">
-                    <div class="card-content belajar" >
-                        <div class="card-bg" data-title="Pengetahuan dan Pemahaman Umum">
+   
+                <a href="javascript:void(0)" class="event-card" onclick="openVideoModal('ppu')">
+                    <div class="card-content">
+                        <div class="card-bg belajar" data-title="Pengetahuan dan Pemahaman Umum" id="card-ppu">
                             <h1>PPU</h1>
                         </div>
                     </div>
-
                 </a>
 
-                <a href="ekonomi.html" class="event-card">
+               
+                <a href="javascript:void(0)" class="event-card" onclick="openVideoModal('pbm')">
                     <div class="card-content">
-                        <div class="card-bg belajar" data-title="Pemahaman Bacaan dan Menulis">
-                           <h1>PBM</h1>
+                        <div class="card-bg belajar" data-title="Pemahaman Bacaan dan Menulis" id="card-pbm">
+                            <h1>PBM</h1>
                         </div>
                     </div>
-
                 </a>
                 
-                <a href="sospol.html" class="event-card">
+      
+                <a href="javascript:void(0)" class="event-card" onclick="openVideoModal('pk')">
                     <div class="card-content">
-                        <div class="card-bg belajar" data-title="Pengetahuan Kuantitatif">
+                        <div class="card-bg belajar" data-title="Pengetahuan Kuantitatif" id="card-pk">
                             <h1>PK</h1>
                         </div>
                     </div>
-
                 </a>
 
-                <a href="sipil.html" class="event-card">
+           
+                <a href="javascript:void(0)" class="event-card" onclick="openVideoModal('lbi')">
                     <div class="card-content">
-                        <div class="card-bg belajar" data-title="Literasi Bahasa Indonesia">
+                        <div class="card-bg belajar" data-title="Literasi Bahasa Indonesia" id="card-lbi">
                             <h1>LBI</h1>
                         </div>
                     </div>
-
                 </a>
                 
-                <a href="industri.html" class="event-card">
+      
+                <a href="javascript:void(0)" class="event-card" onclick="openVideoModal('lbe')">
                     <div class="card-content">
-                        <div class="card-bg belajar" data-title="Literasi Bahasa Inggris">
+                        <div class="card-bg belajar" data-title="Literasi Bahasa Inggris" id="card-lbe">
                             <h1>LBE</h1>
                         </div>
                     </div>
-
                 </a>
 
-                <a href="kedinasan.html" class="event-card">
+                <!-- SUBTES 7: PENALARAN MATEMATIKA -->
+                <a href="javascript:void(0)" class="event-card" onclick="openVideoModal('pm')">
                     <div class="card-content">
-                        <div class="card-bg belajar" data-title="Penalaran Matematika">
+                        <div class="card-bg belajar" data-title="Penalaran Matematika" id="card-pm">
                             <h1>PM</h1>
                         </div>
                     </div>
-
                 </a>
-
-
-
-                
+            </div>
         </section>
     </main>
 
-   <footer>
+    <!-- MODAL VIDEO PLAYER -->
+    <div class="video-modal" id="videoModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h2 id="modal-title">Penalaran Umum</h2>
+                    <div class="subtes-code" id="modal-subtes-code">PU</div>
+                </div>
+                <button class="close-modal" onclick="closeVideoModal()">×</button>
+            </div>
+            
+            <div class="video-container">
+                <iframe 
+                    id="video-player"
+                    src=""
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            
+            <div class="video-info">
+                <div class="video-meta">
+                    <div class="meta-item">
+                        <i>⏱️</i>
+                        <span>Durasi: <span id="video-duration">15:30</span></span>
+                    </div>
+                    <div class="meta-item">
+                        <i>👁️</i>
+                        <span>Ditonton: <span id="video-views">0</span> kali</span>
+                    </div>
+                    <div class="meta-item">
+                        <i>📊</i>
+                        <span>Tingkat: <span id="video-difficulty">Sedang</span></span>
+                    </div>
+                    <div class="meta-item">
+                        <i>📅</i>
+                        <span>Update: <span id="video-update">Jan 2024</span></span>
+                    </div>
+                </div>
+                
+                <div class="video-description" id="video-description">
+                    Materi lengkap untuk memahami konsep dasar penalaran umum dengan contoh soal dan pembahasan detail.
+                </div>
+                
+                <div class="progress-section">
+                    <div class="progress-label">
+                        <span>Progress Belajar</span>
+                        <span id="progress-text">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+                    </div>
+                    
+                    <div class="action-buttons">
+                        <button onclick="markAsComplete()" class="action-btn complete-btn" id="complete-btn">
+                            <span>✓</span> Tandai Selesai
+                        </button>
+                        <button onclick="playNextVideo()" class="action-btn next-btn">
+                            <span>→</span> Materi Selanjutnya
+                        </button>
+                        <button onclick="downloadMaterials()" class="action-btn material-btn">
+                            <span>📥</span> Download Materi PDF
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
         <div class="footer-content">
- 
             <div class="ptn its">
                 <img src="asets/PTN/ITS.png" alt="ITS">
             </div>
@@ -169,10 +544,332 @@
             <div class="ptn unair">
                 <img src="asets/PTN/UNAIR.png" alt="UNAIR">
             </div>
-
-
         </div>
     </footer>
+
     <script src="script.js"></script>
+    
+    <script>
+        // DATA SEMUA SUBTES
+        const subtesData = {
+            'pu': {
+                title: 'Penalaran Umum',
+                code: 'PU',
+                description: 'Materi lengkap penalaran umum untuk UTBK SNBT, mencakup logika, pola, analogi, dan silogisme dengan contoh soal dan pembahasan detail.',
+                videoUrl: 'https://www.youtube.com/watch?v=uEb4eqHhqO0', 
+                duration: '25:15',
+                difficulty: 'Sedang',
+                views: 0,
+                progress: 0,
+                lastWatched: null,
+                materials: 'pu-materials.pdf',
+                color: '#667eea'
+            },
+            'ppu': {
+                title: 'Pengetahuan dan Pemahaman Umum',
+                code: 'PPU',
+                description: 'Materi pengetahuan umum, wawasan kebangsaan, sejarah, dan budaya Indonesia untuk persiapan UTBK.',
+                videoUrl: 'https://www.youtube.com/embed/abc123', 
+                duration: '30:45',
+                difficulty: 'Mudah',
+                views: 0,
+                progress: 0,
+                lastWatched: null,
+                materials: 'ppu-materials.pdf',
+                color: '#764ba2'
+            },
+            'pbm': {
+                title: 'Pemahaman Bacaan dan Menulis',
+                code: 'PBM',
+                description: 'Teknik membaca cepat, memahami bacaan, dan menulis efektif untuk tes UTBK.',
+                videoUrl: 'https://www.youtube.com/embed/def456', 
+                duration: '22:30',
+                difficulty: 'Sedang',
+                views: 0,
+                progress: 0,
+                lastWatched: null,
+                materials: 'pbm-materials.pdf',
+                color: '#f093fb'
+            },
+            'pk': {
+                title: 'Pengetahuan Kuantitatif',
+                code: 'PK',
+                description: 'Matematika dasar, aljabar, geometri, dan statistik untuk UTBK.',
+                videoUrl: 'https://www.youtube.com/embed/ghi789', 
+                difficulty: 'Sulit',
+                views: 0,
+                progress: 0,
+                lastWatched: null,
+                materials: 'pk-materials.pdf',
+                color: '#4facfe'
+            },
+            'lbi': {
+                title: 'Literasi Bahasa Indonesia',
+                code: 'LBI',
+                description: 'Tata bahasa, ejaan, makna kata, dan memahami teks dalam bahasa Indonesia.',
+                videoUrl: 'https://www.youtube.com/embed/jkl012', 
+                duration: '28:10',
+                difficulty: 'Sedang',
+                views: 0,
+                progress: 0,
+                lastWatched: null,
+                materials: 'lbi-materials.pdf',
+                color: '#43e97b'
+            },
+            'lbe': {
+                title: 'Literasi Bahasa Inggris',
+                code: 'LBE',
+                description: 'Reading comprehension, vocabulary, grammar, dan structure untuk tes bahasa Inggris.',
+                videoUrl: 'https://www.youtube.com/embed/mno345', 
+                duration: '32:45',
+                difficulty: 'Sulit',
+                views: 0,
+                progress: 0,
+                lastWatched: null,
+                materials: 'lbe-materials.pdf',
+                color: '#fa709a'
+            },
+            'pm': {
+                title: 'Penalaran Matematika',
+                code: 'PM',
+                description: 'Logika matematika, pola bilangan, dan penyelesaian masalah matematika kompleks.',
+                videoUrl: 'https://www.youtube.com/embed/pqr678', 
+                duration: '40:15',
+                difficulty: 'Sangat Sulit',
+                views: 0,
+                progress: 0,
+                lastWatched: null,
+                materials: 'pm-materials.pdf',
+                color: '#30cfd0'
+            }
+        };
+
+        // Buka modal video berdasarkan subtes
+        function openVideoModal(subtesId) {
+            const data = subtesData[subtesId];
+            if (!data) return;
+            
+            // Update data views
+            data.views++;
+            
+            // Update UI modal
+            document.getElementById('modal-title').textContent = data.title;
+            document.getElementById('modal-subtes-code').textContent = data.code;
+            document.getElementById('video-description').textContent = data.description;
+            document.getElementById('video-duration').textContent = data.duration;
+            document.getElementById('video-views').textContent = data.views;
+            document.getElementById('video-difficulty').textContent = data.difficulty;
+            document.getElementById('video-update').textContent = 'Jan 2024';
+            
+            // Update progress
+            updateProgressDisplay(subtesId);
+            
+            // Set video URL
+            const videoPlayer = document.getElementById('video-player');
+            videoPlayer.src = data.videoUrl + '?autoplay=1';
+            
+            // Buka modal
+            document.getElementById('videoModal').classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+            
+            // Simpan ke localStorage
+            saveToLocalStorage(subtesId);
+            
+            // Update card progress indicator
+            updateCardProgress(subtesId);
+        }
+
+        // Tutup modal
+        function closeVideoModal() {
+            document.getElementById('videoModal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+            
+            // Pause video
+            const videoPlayer = document.getElementById('video-player');
+            videoPlayer.src = videoPlayer.src.replace('?autoplay=1', '');
+        }
+
+        // Update progress display
+        function updateProgressDisplay(subtesId) {
+            const data = subtesData[subtesId];
+            const progressFill = document.getElementById('progress-fill');
+            const progressText = document.getElementById('progress-text');
+            
+            progressFill.style.width = data.progress + '%';
+            progressText.textContent = data.progress + '%';
+            
+            // Update button text
+            const completeBtn = document.getElementById('complete-btn');
+            if (data.progress >= 100) {
+                completeBtn.innerHTML = '<span>✓</span> Sudah Selesai';
+                completeBtn.style.background = 'linear-gradient(135deg, #666, #888)';
+                completeBtn.disabled = true;
+            } else {
+                completeBtn.innerHTML = '<span>✓</span> Tandai Selesai';
+                completeBtn.style.background = 'linear-gradient(135deg, #4CAF50, #2E7D32)';
+                completeBtn.disabled = false;
+            }
+        }
+
+        // Tandai sebagai selesai
+        function markAsComplete() {
+            const currentTitle = document.getElementById('modal-title').textContent;
+            const subtesId = getSubtesIdByTitle(currentTitle);
+            
+            if (subtesId && subtesData[subtesId]) {
+                subtesData[subtesId].progress = 100;
+                updateProgressDisplay(subtesId);
+                updateCardProgress(subtesId);
+                
+                // Show notification
+                showNotification('✅ Materi berhasil ditandai selesai!');
+            }
+        }
+
+        // Mainkan video berikutnya
+        function playNextVideo() {
+            const currentCode = document.getElementById('modal-subtes-code').textContent;
+            const subtesIds = Object.keys(subtesData);
+            const currentIndex = subtesIds.findIndex(id => subtesData[id].code === currentCode);
+            
+            if (currentIndex < subtesIds.length - 1) {
+                closeVideoModal();
+                setTimeout(() => {
+                    openVideoModal(subtesIds[currentIndex + 1]);
+                }, 300);
+            } else {
+                showNotification('🎉 Selamat! Anda sudah menyelesaikan semua materi!');
+            }
+        }
+
+        // Download materi PDF
+        function downloadMaterials() {
+            const currentTitle = document.getElementById('modal-title').textContent;
+            const subtesId = getSubtesIdByTitle(currentTitle);
+            
+            if (subtesId && subtesData[subtesId]) {
+                const filename = subtesData[subtesId].materials;
+                // Simulasi download
+                showNotification(`📥 Download materi ${filename} dimulai...`);
+                // window.location.href = `materials/${filename}`; // Uncomment untuk real download
+            }
+        }
+
+        // Update card progress indicator
+        function updateCardProgress(subtesId) {
+            const card = document.getElementById(`card-${subtesId}`);
+            const data = subtesData[subtesId];
+            
+            if (card) {
+                if (data.progress >= 100) {
+                    card.classList.add('watched');
+                    card.classList.remove('in-progress');
+                } else if (data.progress > 0) {
+                    card.classList.add('in-progress');
+                    card.classList.remove('watched');
+                    card.style.setProperty('--progress-width', data.progress + '%');
+                } else {
+                    card.classList.remove('watched', 'in-progress');
+                }
+            }
+        }
+
+        // Helper functions
+        function getSubtesIdByTitle(title) {
+            for (const [id, data] of Object.entries(subtesData)) {
+                if (data.title === title) return id;
+            }
+            return null;
+        }
+
+        function saveToLocalStorage(subtesId) {
+            let progress = JSON.parse(localStorage.getItem('lolosinProgress') || '{}');
+            progress[subtesId] = {
+                lastWatched: new Date().toISOString(),
+                views: subtesData[subtesId].views,
+                progress: subtesData[subtesId].progress
+            };
+            localStorage.setItem('lolosinProgress', JSON.stringify(progress));
+        }
+
+        function loadFromLocalStorage() {
+            const progress = JSON.parse(localStorage.getItem('lolosinProgress') || '{}');
+            Object.keys(progress).forEach(subtesId => {
+                if (subtesData[subtesId]) {
+                    subtesData[subtesId].views = progress[subtesId].views || 0;
+                    subtesData[subtesId].progress = progress[subtesId].progress || 0;
+                    subtesData[subtesId].lastWatched = progress[subtesId].lastWatched;
+                    
+                    // Update card display
+                    updateCardProgress(subtesId);
+                }
+            });
+        }
+
+        function showNotification(message) {
+            // Buat elemen notifikasi
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: white;
+                color: #333;
+                padding: 15px 25px;
+                border-radius: 10px;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+                z-index: 1001;
+                animation: slideInRight 0.3s ease;
+                border-left: 5px solid #4CAF50;
+                max-width: 300px;
+            `;
+            notification.textContent = message;
+            document.body.appendChild(notification);
+            
+
+            setTimeout(() => {
+                notification.style.animation = 'slideOutRight 0.3s ease';
+                setTimeout(() => notification.remove(), 300);
+            }, 3000);
+            
+     
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes slideInRight {
+                    from { transform: translateX(100%); opacity: 0; }
+                    to { transform: translateX(0); opacity: 1; }
+                }
+                @keyframes slideOutRight {
+                    from { transform: translateX(0); opacity: 1; }
+                    to { transform: translateX(100%); opacity: 0; }
+                }
+            `;
+            document.head.appendChild(style);
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && document.getElementById('videoModal').classList.contains('active')) {
+                closeVideoModal();
+            }
+        });
+
+        document.getElementById('videoModal').addEventListener('click', (e) => {
+            if (e.target.id === 'videoModal') {
+                closeVideoModal();
+            }
+        });
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            loadFromLocalStorage();
+            
+
+            document.querySelectorAll('.event-card').forEach(card => {
+                card.addEventListener('click', function(e) {
+                    e.preventDefault();
+                });
+            });
+        });
+    </script>
 </body>
 </html>
