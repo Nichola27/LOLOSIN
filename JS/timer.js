@@ -124,7 +124,7 @@ function resetTimer() {
     clearInterval(timerInterval);
     const timerDisplay = document.getElementById('timerDisplay');
     if (timerDisplay) {
-        timerDisplay.textContent = "45:00";
+        timerDisplay.textContent = "30:00";
         timerDisplay.style.color = "#3b82f6";
         timerDisplay.classList.remove('warning', 'danger');
     }

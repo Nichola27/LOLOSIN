@@ -548,7 +548,7 @@ h1 {
     transform: scale(1.1);
 }
 
-#prev-btn, #next-btn, #submit-btn {
+#prev-btn, #next-btn, #submit-btn{
   padding: 12px 25px;
   background: #3b82f6;
   color: white;
@@ -572,6 +572,8 @@ h1 {
 
 #submit-btn {
   background: #10b981;
+  position: fixed;
+  bottom: 30px;
 }
 
 #submit-btn:hover {
@@ -579,7 +581,7 @@ h1 {
 }
 
 .nomor-soal li.answered {
-  background-color: #3b82f6 !important;  /* BIRU */
+  background-color: #3b82f6 !important;  
   color: white !important;
   z-index: 10;
   border-color: #2563eb;

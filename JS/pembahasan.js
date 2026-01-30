@@ -125,11 +125,7 @@ function loadQuestion() {
         
         opsiContainer.appendChild(div);
     });
-    
-    // Update progress
-    const totalDijawab = userAnswers.filter(a => a !== null).length;
-    document.querySelector(".progress span:first-child").textContent = totalDijawab;
-    document.querySelector(".progress span:last-child").textContent = soal.length;
+
     
     // Update tombol di bottom navigation
     document.getElementById("prev-btn").style.display = currentQuestion === 0 ? "none" : "block";
@@ -201,7 +197,7 @@ function nextQuestion() {
         currentQuestion++;
         loadQuestion();
     } else {
-        submitAnswers();
+       
     }
 }
 
@@ -240,7 +236,7 @@ function lanjutKeSubtesBerikutnya() {
         resetTimer();
     }
     
-    // Cek subtes berikutnya
+    
     const nextIdx = SUBTES_ORDER.indexOf(subtes) + 1;
     
     if (nextIdx < SUBTES_ORDER.length) {
