@@ -170,17 +170,17 @@ function selectAnswer(answerIndex) {
     saveAnswers();
     updateQuestionStatus();
     
-    // Update progress
+   
     const totalDijawab = userAnswers.filter(a => a !== null).length;
     document.querySelector(".progress span:first-child").textContent = totalDijawab;
 }
 
-// Save answers
+
 function saveAnswers() {
     localStorage.setItem(`jawaban_${subtes}`, JSON.stringify(userAnswers));
 }
 
-// Load saved answers
+
 function loadSavedAnswers() {
     const saved = localStorage.getItem(`jawaban_${subtes}`);
     if (saved) {

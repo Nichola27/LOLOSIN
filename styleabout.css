@@ -25,6 +25,7 @@
     src: url('assets/font/ShipporiAntique   B1-Regular.ttf');
 }
 
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -260,12 +261,12 @@ h1 {
     
 }
 
-/* ===== EVENT CARDS ===== */
+
 .event-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
-    gap: 30px;
-    justify-content: center;
+    gap: 70px;
+    justify-content: space-evenly;
 }
 
 .event-card {
@@ -292,8 +293,8 @@ h1 {
     justify-content: center;
     align-items: center;
     background-image: url(asets/BG.png);
-    width: 100%;
-    height: 100%;
+    width: 120%;
+    height: 120%;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 1 5px rgba(0, 0, 0, 0.2);
@@ -318,13 +319,14 @@ h1 {
     justify-content: center;
     align-content: center;
     font-family: 'Asset', sans-serif;
-    font-size: 26px;      /* 🔥 LEBIH BESAR */
+    font-size: 26px;      
     font-weight: bold;
     letter-spacing: 1.5px;
     color: #0c2c55;
     border-radius: 15px 15px 0 0;
     z-index: 2;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+     white-space: pre-line;
 }
 
 
@@ -511,7 +513,7 @@ footer {
     to { opacity: 1; }
 }
 
-/* ===== RESPONSIVE ===== */
+
 @media (max-width: 1200px) {
     main { padding: 40px; }
         .footer-content {
@@ -536,4 +538,3 @@ footer {
 h1 a{
     text-decoration:  none;
 }
-/* ===== FORCE ALL TEXT TO BLACK ===== */
