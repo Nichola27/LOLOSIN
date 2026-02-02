@@ -540,7 +540,11 @@ footer {
     main{
         margin-left: 3px;
     }
-
+    .card-bg h1{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
     body{
         overflow-x: hidden;
     }
