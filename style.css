@@ -505,7 +505,7 @@ footer {
     height: 30px;
 }
 
-/* ===== ANIMATIONS ===== */
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -529,6 +529,21 @@ footer {
 }
 
 @media (max-width: 480px) {
+
+    .top-nav{
+        position: sticky;
+        top:0;
+        height: 140px;
+        width: 100%;
+
+    }
+    main{
+        margin-left: 3px;
+    }
+
+    body{
+        overflow-x: none;
+    }
     h1 { font-size: 20px; }
     h2 { font-size: 16px; }
 }
