@@ -25,7 +25,7 @@
     src: url('assets/font/ShipporiAntique   B1-Regular.ttf');
 }
 
-/* Reset CSS */
+
 * {
     margin: 0;
     padding: 0;
@@ -572,8 +572,8 @@ h1 {
 
 #submit-btn {
   background: #10b981;
-  position: fixed;
-  bottom: 30px;
+  position: relative;
+  bottom: -50px;
 }
 
 #submit-btn:hover {

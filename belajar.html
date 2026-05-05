@@ -662,35 +662,34 @@
             document.getElementById('video-difficulty').textContent = data.difficulty;
             document.getElementById('video-update').textContent = 'Jan 2024';
             
-            // Update progress
+           
             updateProgressDisplay(subtesId);
             
-            // Set video URL
+        
             const videoPlayer = document.getElementById('video-player');
             videoPlayer.src = data.videoUrl + '?autoplay=1';
             
-            // Buka modal
+            
             document.getElementById('videoModal').classList.add('active');
             document.body.style.overflow = 'hidden'; // Prevent scrolling
             
-            // Simpan ke localStorage
+         
             saveToLocalStorage(subtesId);
+
             
-            // Update card progress indicator
             updateCardProgress(subtesId);
         }
 
-        // Tutup modal
+     
         function closeVideoModal() {
             document.getElementById('videoModal').classList.remove('active');
             document.body.style.overflow = 'auto';
             
-            // Pause video
             const videoPlayer = document.getElementById('video-player');
             videoPlayer.src = videoPlayer.src.replace('?autoplay=1', '');
         }
 
-        // Update progress display
+      
         function updateProgressDisplay(subtesId) {
             const data = subtesData[subtesId];
             const progressFill = document.getElementById('progress-fill');

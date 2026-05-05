@@ -544,6 +544,7 @@ footer {
         display: grid;
         align-items: center;
         justify-items: center;
+        margin-right: 25px;
     }
     body{
         overflow-x: hidden;
